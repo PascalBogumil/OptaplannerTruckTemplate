@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver xmlns="https://www.optaplanner.org/xsd/solver" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.optaplanner.org/xsd/solver https://www.optaplanner.org/xsd/solver/solver.xsd">
+  <!--<environmentMode>FULL_ASSERT</environmentMode>--><!-- To slowly prove there are no bugs in this code -->
+  <!--<moveThreadCount>AUTO</moveThreadCount>--><!-- To solve faster by saturating multiple CPU cores -->
+  <randomSeed>0</randomSeed>
+  
+  
+  <solutionClass>org.optaplanner.trucktemplate.TruckTemplateSolution</solutionClass>
+  <entityClass>org.optaplanner.trucktemplate.OpPallet</entityClass>
+  <entityClass>org.optaplanner.trucktemplate.OpRow</entityClass>
+
+  <scoreDirectorFactory>
+    <constraintProviderClass>org.optaplanner.trucktemplate.TruckTemplateConstraints</constraintProviderClass>
+    <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
+  </scoreDirectorFactory>
+
+  <termination>
+    <!--<bestScoreLimit>1hard/3000soft</bestScoreLimit>-->
+    <secondsSpentLimit>30</secondsSpentLimit>
+    <!--<bestScoreFeasible>true</bestScoreFeasible>>-->
+  </termination>
+  <!--<exhaustiveSearch>
+  	<exhaustiveSearchType>BRANCH_AND_BOUND</exhaustiveSearchType>
+  	<nodeExplorationType>DEPTH_FIRST</nodeExplorationType>
+  	<entitySorterManner>DECREASING_DIFFICULTY_IF_AVAILABLE</entitySorterManner>
+  	<valueSorterManner>INCREASING_STRENGTH_IF_AVAILABLE</valueSorterManner>
+  </exhaustiveSearch>-->
+  
+  
+  <!--<localSearch>
+  	<unionMoveSelector>
+  		<selectionOrder>ORIGINAL</selectionOrder>
+  		<moveListFactory>
+  			<selectionOrder>ORIGINAL</selectionOrder>
+	    	<moveListFactoryClass>org.optaplanner.trucktemplate.OpPalletChangeMoveFactory</moveListFactoryClass>
+		</moveListFactory>
+  		<moveListFactory>
+  			<selectionOrder>ORIGINAL</selectionOrder>
+	    	<moveListFactoryClass>org.optaplanner.trucktemplate.OpRowChangeMoveFactory</moveListFactoryClass>
+		</moveListFactory>		
+	</unionMoveSelector>
+  </localSearch>-->
+ 
+  <localSearch>  
+  	<unionMoveSelector> 
+  		<cacheType>JUST_IN_TIME</cacheType>
+  		<selectionOrder>ORIGINAL</selectionOrder>	
+  		<!--<changeMoveSelector>
+  			<filterClass>org.optaplanner.trucktemplate.OpPalletOverFillSelectionFilter</filterClass>
+	  		<entitySelector>
+	        	<entityClass>org.optaplanner.trucktemplate.OpPallet</entityClass>
+	     	</entitySelector>  
+  		</changeMoveSelector>
+  		
+  	  	<changeMoveSelector>
+  	  		<filterClass>org.optaplanner.trucktemplate.OpPalletSelectionFilter</filterClass>
+	  		<entitySelector>
+	        	<entityClass>org.optaplanner.trucktemplate.OpPallet</entityClass>
+	        	<cacheType>STEP</cacheType>
+	        	<selectionOrder>SORTED</selectionOrder>
+		        <sorterManner>DECREASING_DIFFICULTY</sorterManner>
+	     	</entitySelector>  
+  		</changeMoveSelector>
+  		
+  		<swapMoveSelector>
+  			<filterClass>org.optaplanner.trucktemplate.OpPalletSwapSelectionFilter</filterClass>
+  			<entitySelector>
+	        	<entityClass>org.optaplanner.trucktemplate.OpPallet</entityClass>
+	     	</entitySelector>
+  		</swapMoveSelector>-->
+  		
+  		<!--<changeMoveSelector>
+  			<cacheType>STEP</cacheType>
+  			<selectionOrder>ORIGINAL</selectionOrder>
+  			<filterClass>org.optaplanner.trucktemplate.OpRowSelectionFilter</filterClass>
+	  		<entitySelector>
+	        	<entityClass>org.optaplanner.trucktemplate.OpRow</entityClass>
+	        	<cacheType>STEP</cacheType>
+	        	<selectionOrder>SORTED</selectionOrder>
+	        	<sorterManner>DECREASING_DIFFICULTY</sorterManner>
+	     	</entitySelector>
+		    <valueSelector variableName="sequence">
+		    	<cacheType>STEP</cacheType>
+	        	<selectionOrder>SORTED</selectionOrder>
+	        	<sorterManner>INCREASING_STRENGTH</sorterManner>
+		    </valueSelector>
+  		</changeMoveSelector>-->
+  		
+  		
+  		<moveIteratorFactory>
+  			<cacheType>JUST_IN_TIME</cacheType>
+  			<selectionOrder>RANDOM</selectionOrder>
+  			<moveIteratorFactoryClass>org.optaplanner.trucktemplate.OpRowMoveIteratorFactory</moveIteratorFactoryClass>
+  		</moveIteratorFactory>
+	</unionMoveSelector>
+
+	<acceptor>
+		<entityTabuSize>8</entityTabuSize>
+		<!--<valueTabuSize>5</valueTabuSize>-->
+		<simulatedAnnealingStartingTemperature>16hard/10000soft</simulatedAnnealingStartingTemperature>
+	</acceptor>
+
+	<forager>
+		<acceptedCountLimit>4</acceptedCountLimit>
+	</forager>
+  </localSearch>
+  
+  <!--<constructionHeuristic>
+  	<queuedEntityPlacer>
+  	  <entitySelector id="palletSelector">    
+  	  	<entityClass>org.optaplanner.trucktemplate.OpPallet</entityClass>
+        <cacheType>PHASE</cacheType>
+        <selectionOrder>SORTED</selectionOrder>
+        <sorterManner>DECREASING_DIFFICULTY</sorterManner>
+      </entitySelector>
+  	  
+  	  <changeMoveSelector>
+  	  	<filterClass>org.optaplanner.trucktemplate.OpPalletSelectionFilter</filterClass>
+  	  	<entitySelector mimicSelectorRef="palletSelector" />
+	    <valueSelector variableName="row">
+	      <cacheType>PHASE</cacheType>
+	      <selectionOrder>SORTED</selectionOrder>
+	      <sorterManner>DECREASING_STRENGTH</sorterManner>
+	    </valueSelector>
+	  </changeMoveSelector>
+	</queuedEntityPlacer>
+	
+  <forager>
+      <pickEarlyType>FIRST_NON_DETERIORATING_SCORE</pickEarlyType>
+    </forager>
+  </constructionHeuristic>-->
+  
+  <!--<constructionHeuristic>
+  	<queuedEntityPlacer>
+  	  <entitySelector id="rowSelector">    
+  	  	<entityClass>org.optaplanner.trucktemplate.OpRow</entityClass>
+        <cacheType>PHASE</cacheType>
+        <selectionOrder>SORTED</selectionOrder>
+        <sorterManner>DECREASING_DIFFICULTY</sorterManner>
+      </entitySelector>
+  	  
+  	  <changeMoveSelector>
+  	  	<filterClass>org.optaplanner.trucktemplate.OpRowSelectionFilter</filterClass>
+  	  	<entitySelector mimicSelectorRef="rowSelector" />
+	    <valueSelector variableName="sequence">
+	      <cacheType>PHASE</cacheType>
+	      <selectionOrder>SORTED</selectionOrder>
+	      <sorterManner>DECREASING_STRENGTH</sorterManner>
+	    </valueSelector>
+	  </changeMoveSelector>
+	</queuedEntityPlacer>
+	
+	<forager>
+      <pickEarlyType>FIRST_NON_DETERIORATING_SCORE</pickEarlyType>
+    </forager>
+  </constructionHeuristic>-->
+  
+  <!--<localSearch>
+	  <unionMoveSelector>
+	    	  <changeMoveSelector>
+	  	  	<entitySelector>    
+		  	  	<entityClass>org.optaplanner.trucktemplate.OpPallet</entityClass>
+		        <cacheType>JUST_IN_TIME</cacheType>
+		        <selectionOrder>RANDOM</selectionOrder>
+	        </entitySelector>
+		    <valueSelector variableName="row">
+		      <cacheType>JUST_IN_TIME</cacheType>
+		      <selectionOrder>RANDOM</selectionOrder>
+		    </valueSelector>
+		  </changeMoveSelector>
+		  
+		  <changeMoveSelector>
+	  	  	<entitySelector>    
+		  	  	<entityClass>org.optaplanner.trucktemplate.OpRow</entityClass>
+		        <cacheType>JUST_IN_TIME</cacheType>
+		        <selectionOrder>RANDOM</selectionOrder>
+	      	</entitySelector>
+		    <valueSelector variableName="sequence">
+		      <cacheType>JUST_IN_TIME</cacheType>
+		      <selectionOrder>RANDOM</selectionOrder>
+		    </valueSelector>
+		  </changeMoveSelector>
+	  </unionMoveSelector>
+	  
+	  
+  </localSearch>-->
+  
+  
+  <!--<constructionHeuristic>
+    <queuedEntityPlacer>
+        <entitySelector id="jobAEntitySelector">
+        	<entityClass>org.optaplanner.trucktemplate.OpPallet</entityClass>
+            <cacheType>PHASE</cacheType>
+        </entitySelector>
+        <changeMoveSelector>
+            <entitySelector mimicSelectorRef="jobAEntitySelector"/>
+        </changeMoveSelector>
+        
+        <changeMoveSelector>
+            <entitySelector mimicSelectorRef="jobAEntitySelector2"/>
+        </changeMoveSelector>
+    </queuedEntityPlacer>
+  </constructionHeuristic>-->
+  
+  <!--<constructionHeuristic>
+	<queuedEntityPlacer>
+    	<changeMoveSelector>
+	        <entitySelector mimicSelectorRef="placerEntitySelector">
+	        	<entityClass>org.optaplanner.trucktemplate.OpPallet</entityClass>
+	        	<cacheType>PHASE</cacheType>
+	        	<selectionOrder>SORTED</selectionOrder>
+	        	<sorterManner>DECREASING_DIFFICULTY</sorterManner>  	
+	        </entitySelector>
+	        <valueSelector variableName="sequence">
+	        	<selectionOrder>SORTED</selectionOrder>
+	        	<sorterManner>DECREASING_STRENGTH</sorterManner>  
+	        </valueSelector>
+	    </changeMoveSelector>
+	    
+	    <changeMoveSelector>
+	        <entitySelector mimicSelectorRef="placerEntitySelector">
+	        	<entityClass>org.optaplanner.trucktemplate.OpPallet</entityClass>
+	        	<cacheType>PHASE</cacheType>
+	        	<selectionOrder>SORTED</selectionOrder>
+	        	<sorterManner>DECREASING_DIFFICULTY</sorterManner>  	
+	        </entitySelector>
+	        <valueSelector variableName="row">
+	        	<selectionOrder>SORTED</selectionOrder>
+	        	<sorterManner>DECREASING_STRENGTH</sorterManner>  
+	        </valueSelector>
+	    </changeMoveSelector>
+    </queuedEntityPlacer>
+  </constructionHeuristic>-->
+
+  <!-- To scale out, replace <localSearch> with this configuration: -->
+  <!--<localSearch>-->
+    <!--<acceptor>-->
+      <!--<entityTabuSize>11</entityTabuSize>-->
+    <!--</acceptor>-->
+    <!--<forager>-->
+      <!--<acceptedCountLimit>2000</acceptedCountLimit>-->
+      <!--<pickEarlyType>FIRST_BEST_SCORE_IMPROVING</pickEarlyType>-->
+    <!--</forager>-->
+  <!--</localSearch>-->
+
+  <!-- To super scale out, replace <constructionHeuristic> and <localSearch> with this configuration: -->
+  <!--<customPhase>-->
+    <!--<customPhaseCommandClass>org.optaplanner.examples.nqueens.optional.solver.solution.CheatingNQueensPhaseCommand</customPhaseCommandClass>-->
+  <!--</customPhase>-->
+</solver>
