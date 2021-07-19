@@ -44,23 +44,13 @@ public class OpRowChangeMove extends AbstractMove<TruckTemplateSolution> {
 		List<OpRow> wildcardRows = new ArrayList<>();
 		List<OpPallet> pallets = scoreDirector.getWorkingSolution().getOpPallets();
 		
-		rows.sort(new OpRowDifficultyComparator());
-		pallets.sort(new OpPalletDifficultyComparator());
-		Collections.reverse(pallets);
+		Collections.sort(rows);
+		Collections.sort(pallets);
 		
 		for(int i = 0; i < pallets.size(); i++) {
 			scoreDirector.beforeVariableChanged(pallets.get(i), "row");		
 			pallets.get(i).setRow(null);
 		}
-
-		/*for(int i = 0; i < rows.size(); i++) {
-			for(int j = 0; j < TruckTemplateSolution.getNumberOfTypes(); j++)
-				if(rows.get(i).isTypeOverFilled(j)) {
-					for(int k = 0; k < rows.get(i).getOpPalletsOfType(j).size(); k++) {
-						rows.get(i).getOpPalletsOfType(j).get(k).setRow(null);
-					}
-				}
-		}*/
 		
 		//Iterate each row
 		for(int k = 0; k < rows.size(); k++) {
@@ -96,7 +86,7 @@ public class OpRowChangeMove extends AbstractMove<TruckTemplateSolution> {
 			//Iterate through all pallets and check if there is a heavier pallet, if there is -> swap
 			for(int i = 0; i < palletsOfRow.size(); i++) {
 				OpPallet oldPallet = palletsOfRow.get(i);
-				Optional<OpPallet> newPallet = pallets.stream().filter(p -> p.getRow() == null && !Objects.equals(p.getRow(), oldPallet.getRow()) && p.getType() == oldPallet.getType() && p.getWeight() > oldPallet.getWeight()).min(new OpPalletDifficultyComparator());
+				Optional<OpPallet> newPallet = pallets.stream().filter(p -> p.getRow() == null && !Objects.equals(p.getRow(), oldPallet.getRow()) && p.getType() == oldPallet.getType() && p.getWeight() > oldPallet.getWeight()).max(OpPallet::compareTo);
 
 				int currentRowWeight = pallets.stream().filter(p -> Objects.equals(p.getRow(), row)).mapToInt(OpPallet::getWeight).sum();
 				
@@ -145,49 +135,6 @@ public class OpRowChangeMove extends AbstractMove<TruckTemplateSolution> {
 		
 		//Now we should have filled each row with the desired pallets, now we can check if there is any row which has exceeded weight and try so swap pallets between rows to satisfy the weight of each row
 		//TODO: Maybe
-		
-		
-		
-		
-		/*int palletsUsed = 0;
-		int weightUsed = 0;
-		for(OpRow r : scoreDirector.getWorkingSolution().getOpRows()) {
-			palletsUsed += r.getOpPallets().size();
-			weightUsed += r.getCurrentWeight();
-			System.out.println("Row: " + r.getId() + " Sequence: " + ((r.getSequence().isWildcard() ) ? "W" : r.getSequence()) + " Pallets: (" + r.getOpPalletsOfType(0).size() + " " + r.getOpPalletsOfType(1).size() + " " + r.getOpPalletsOfType(2).size() + " " + r.getOpPalletsOfType(3).size() + " " + r.getOpPalletsOfType(4).size() + " " + r.getOpPalletsOfType(5).size() + ") Weight: " + r.getCurrentWeight() + " Valid: " + r.isValid());
-		}
-		System.out.println("Pallets used: " + palletsUsed);
-		System.out.println("Weight used: " + weightUsed);
-		System.out.print("Pallets: (");
-		System.out.print(scoreDirector.getWorkingSolution().getOpPallets().stream().filter(p -> p.getRow() == null && p.getType() == 0).count() + " ");
-		System.out.print(scoreDirector.getWorkingSolution().getOpPallets().stream().filter(p -> p.getRow() == null && p.getType() == 1).count() + " ");
-		System.out.print(scoreDirector.getWorkingSolution().getOpPallets().stream().filter(p -> p.getRow() == null && p.getType() == 2).count() + " ");
-		System.out.print(scoreDirector.getWorkingSolution().getOpPallets().stream().filter(p -> p.getRow() == null && p.getType() == 3).count() + " ");
-		System.out.print(scoreDirector.getWorkingSolution().getOpPallets().stream().filter(p -> p.getRow() == null && p.getType() == 4).count() + " ");
-		System.out.println(scoreDirector.getWorkingSolution().getOpPallets().stream().filter(p -> p.getRow() == null && p.getType() == 5).count() + ")");
-		//OpPallet p : opRow.getOpPallets()
-		//for(int i = 0; i < opRow.getOpPallets().size(); i++) {
-		
-		/*List<OpPallet> palletsToReset = scoreDirector.getWorkingSolution().getOpPallets().stream().filter(p -> Objects.equals(p, opRow)).toList();
-		for(int i = 0; i < palletsToReset.size(); i++) {
-			scoreDirector.beforeVariableChanged(palletsToReset.get(i), "row");
-			palletsToReset.get(i).setRow(null);
-			scoreDirector.afterVariableChanged(palletsToReset.get(i), "row");
-		}*/
-		
-		//System.out.println("do " + opPallet.getRow());
-		/*if(opPallet.getRow() != null && opPallet.getRow().isValid()) {
-			opPallet.getRow().getOpPallets().forEach(p ->{
-				scoreDirector.beforeVariableChanged(p, "pinned");
-				p.setPinned(true);
-				scoreDirector.afterVariableChanged(p, "pinned");
-			});
-			System.out.println(opPallet.isPinned());
-			//System.exit(0);
-			scoreDirector.beforeVariableChanged(opPallet.getRow(), "pinned");
-			opPallet.getRow().setPinned(true);
-			scoreDirector.afterVariableChanged(opPallet.getRow(), "pinned");
-		}*/
 	}
 
 	@Override

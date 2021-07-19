@@ -1,6 +1,7 @@
 package org.optaplanner.trucktemplate;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty;
@@ -30,11 +31,6 @@ public class TruckTemplateSolution {
 	@ValueRangeProvider(id = "rows")
 	@PlanningEntityCollectionProperty
 	private List<OpRow> opRows;
-
-	/*@ValueRangeProvider(id = "sequences")
-	public CountableValueRange<Integer> getMaxSequence() {
-		return ValueRangeFactory.createIntValueRange(-1, maxSequence); //exclusive upper bound
-	}*/
 	
 	@PlanningScore
 	private HardSoftScore score;
@@ -43,26 +39,12 @@ public class TruckTemplateSolution {
 
 	}
 	
-	public TruckTemplateSolution(List<OpRow> opRows, List<OpPallet> opPallets) {
+	public TruckTemplateSolution(List<OpRow> opRows, List<OpPallet> opPallets) {		
 		this.opRows = opRows;
-		this.opPallets = opPallets;	
-		//this.maxSequence = opRows.stream().mapToInt(OpRow::getNumberOfSequences).max().orElse(0);
+		this.opPallets = opPallets;
+		Collections.sort(this.opRows);
+		Collections.sort(this.opPallets);
 	}
-	
-	/*public TruckTemplateSolution(int[][] pallets, int[][][] palletcounts, int[][] maxWeightPerColumn) {
-		opPallets = new ArrayList<>();
-		opRows = new ArrayList<>();
-		maxSequence = palletcounts[0].length;
-		
-		long ids = 0;
-		for(int j = 0; j < pallets.length; j++)
-			for(int i = 0; i < pallets[j].length; i++)
-				opPallets.add(new OpPallet(ids++, pallets[j][i], i));
-		
-		ids = 0;
-		for(int k = 0; k < palletcounts.length; k++)
-			opRows.add(new OpRow(ids++, maxWeightPerColumn[k], palletcounts[k]));
-	}*/
 	
 	public List<OpPallet> getOpPallets() {
 		return opPallets;

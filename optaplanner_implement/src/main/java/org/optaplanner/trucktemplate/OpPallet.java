@@ -5,12 +5,10 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.lookup.PlanningId;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
+import org.optaplanner.examples.common.domain.AbstractPersistable;
 
-@PlanningEntity(difficultyComparatorClass = OpPalletDifficultyComparator.class)
-public class OpPallet implements Comparable<OpPallet>{
-	
-	@PlanningId
-	private long id;
+@PlanningEntity
+public class OpPallet extends AbstractPersistable implements Comparable<OpPallet>{
 	
 	private int weight;
 	private int type;
@@ -23,16 +21,12 @@ public class OpPallet implements Comparable<OpPallet>{
 	}
 	
 	public OpPallet(long id, int weight, int type) {
-		this.id = id;
+		super(id);
 		this.weight = weight;
 		this.type = type;
 	}
 	
 	//Simple Getter & Setter
-	public long getId() {
-		return id;
-	}
-	
 	public OpRow getRow() {
 		return row;
 	}
@@ -71,22 +65,20 @@ public class OpPallet implements Comparable<OpPallet>{
         
         OpPallet other = (OpPallet) obj;
 		return new EqualsBuilder()
-				.append(id, other.getId())
-				//.append(row, other.getRow())
+				.append(getId(), other.getId())
 				.isEquals();
 	}
 	
 	@Override
 	public int hashCode() {
         return new HashCodeBuilder()
-                .append(id)
-                //.append(row)
+                .append(getId())
                 .toHashCode();
 	}
 	
 	@Override
 	public String toString() {
-		return "Pallet: " + id + " (" + type + " " + weight + ")";
+		return "Pallet: " + getId() + " (" + type + " " + weight + ")";
 	}
 	
 	@Override

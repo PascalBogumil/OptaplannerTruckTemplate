@@ -4,13 +4,14 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.IntStream;
 
+import org.apache.commons.lang3.builder.CompareToBuilder;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.optaplanner.examples.common.domain.AbstractPersistable;
 
-public class OpSequence implements Comparable<OpSequence>{
-
-	private long id;
+public class OpSequence extends AbstractPersistable implements Comparable<OpSequence> {
 	
 	private int maxWeight;
 	private int[] palletCountsMax;
@@ -27,14 +28,10 @@ public class OpSequence implements Comparable<OpSequence>{
 	}
 	
 	public OpSequence(long id, int maxWeight, int[] palletCountsMax) {
-		this.id = id;
+		super(id);
 		this.maxWeight = maxWeight;
 		this.palletCountsMax = palletCountsMax;
 		this.isWildcard = false;
-	}
-
-	public long getId() {
-		return id;
 	}
 
 	public int[] getPalletCountsMax() {
@@ -112,17 +109,21 @@ public class OpSequence implements Comparable<OpSequence>{
 	
 	@Override
 	public String toString() {
-		return "Sequence: " + ((isWildcard()) ? "W" : id);
+		return "Sequence: " + ((isWildcard()) ? "W" : getId());
 	}
 
 	@Override
-	public int compareTo(OpSequence o) {
-		/*if(isWildcard && o.isWildcard) return 0;
-		if(isWildcard) return 1;
-		if(o.isWildcard) return -1;
-
-		return -(IntStream.of(o.getPalletCountsMax()).sum() - IntStream.of(palletCountsMax).sum());*/
-		return (int)getId() - (int)o.getId();
+	public int compareTo(OpSequence o) {	
+		if(isWildcard() && o.isWildcard()) return 0;
+		if(isWildcard()) return 1;
+		if(o.isWildcard()) return -1;
+		
+		return new CompareToBuilder()
+				.append(IntStream.of(getPalletCountsMax()).sum(), IntStream.of(o.getPalletCountsMax()).sum())
+				////.append(a.maxPossibleWeight(), b.maxPossibleWeight())
+				.append(Arrays.stream(getPalletCountsMax()).max().getAsInt()-Arrays.stream(getPalletCountsMax()).min().getAsInt(), Arrays.stream(o.getPalletCountsMax()).max().getAsInt()-Arrays.stream(o.getPalletCountsMax()).min().getAsInt())
+				.append(getId(), o.getId())
+				.toComparison();
 	}
 
 	public static int getWildcardNorm() {

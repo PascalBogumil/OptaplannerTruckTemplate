@@ -1,6 +1,7 @@
 package org.optaplanner.trucktemplate;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
@@ -39,8 +40,8 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 			rows = solution.getOpRows().stream()
 					  .collect(Collectors.toList());			
 			
-			pallets.sort(new OpPalletDifficultyComparator());
-			rows.sort(new OpRowDifficultyComparator());
+			Collections.sort(pallets);
+			Collections.sort(rows);
 		}
 		
 		public OpRowChangeMoveIterator (TruckTemplateSolution solution, Random rand) {
@@ -48,8 +49,8 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 			pallets = solution.getOpPallets();
 			rows = solution.getOpRows();			
 			
-			pallets.sort(new OpPalletDifficultyComparator());
-			rows.sort(new OpRowDifficultyComparator());
+			Collections.sort(pallets);
+			Collections.sort(rows);
 		}
 		
 		@Override
@@ -66,8 +67,8 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 				return new OpRowChangeMove(randomRow, randomSequence);
 			}
 			
-			OpRow row = rows.iterator().next();	
-			row.getSequences().sort(new OpSequenceStrengthComparator());			
+			OpRow row = rows.iterator().next();
+			Collections.sort(row.getSequences());
 			OpSequence sequence = row.getSequences().stream().filter(s -> !Objects.equals(s, row.getSequence()) && row.getSequences().indexOf(s) > row.getSequences().indexOf(row.getSequence())).findFirst().orElse(null);
 			sequence = (sequence == null) ? row.getSequences().get(0) : sequence;
 				
