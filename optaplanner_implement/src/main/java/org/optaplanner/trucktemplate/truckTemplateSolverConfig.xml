@@ -17,7 +17,7 @@
 
   <termination>
     <!--<bestScoreLimit>1hard/3000soft</bestScoreLimit>-->
-    <secondsSpentLimit>30</secondsSpentLimit>
+    <secondsSpentLimit>300</secondsSpentLimit>
     <!--<bestScoreFeasible>true</bestScoreFeasible>>-->
   </termination>
   <!--<exhaustiveSearch>
@@ -96,7 +96,7 @@
 	</unionMoveSelector>
 
 	<acceptor>
-		<entityTabuSize>8</entityTabuSize>
+		<entityTabuSize>5</entityTabuSize>
 		<!--<valueTabuSize>5</valueTabuSize>-->
 		<simulatedAnnealingStartingTemperature>16hard/10000soft</simulatedAnnealingStartingTemperature>
 	</acceptor>
