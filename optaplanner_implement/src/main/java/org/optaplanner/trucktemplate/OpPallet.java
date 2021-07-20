@@ -7,7 +7,10 @@ import org.optaplanner.core.api.domain.lookup.PlanningId;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 @PlanningEntity
+@XStreamAlias("OpPallet")
 public class OpPallet extends AbstractPersistable implements Comparable<OpPallet>{
 	
 	private int weight;

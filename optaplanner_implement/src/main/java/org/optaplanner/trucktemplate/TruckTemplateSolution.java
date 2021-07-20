@@ -1,19 +1,22 @@
 package org.optaplanner.trucktemplate;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 import org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty;
 import org.optaplanner.core.api.domain.solution.PlanningScore;
 import org.optaplanner.core.api.domain.solution.PlanningSolution;
-import org.optaplanner.core.api.domain.valuerange.CountableValueRange;
-import org.optaplanner.core.api.domain.valuerange.ValueRangeFactory;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
 import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
+import org.optaplanner.examples.common.domain.AbstractPersistable;
+import org.optaplanner.persistence.xstream.api.score.buildin.hardsoft.HardSoftScoreXStreamConverter;
+
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamConverter;
 
 @PlanningSolution
-public class TruckTemplateSolution {
+@XStreamAlias("TruckTemplateSolution")
+public class TruckTemplateSolution extends AbstractPersistable {
 	
 	//Configuration
 	private final static int[] normalizedTypeValues = new int[] {4, 2, 1, 1, 2, 4};
@@ -33,6 +36,7 @@ public class TruckTemplateSolution {
 	private List<OpRow> opRows;
 	
 	@PlanningScore
+    @XStreamConverter(HardSoftScoreXStreamConverter.class)
 	private HardSoftScore score;
 	
 	public TruckTemplateSolution() {

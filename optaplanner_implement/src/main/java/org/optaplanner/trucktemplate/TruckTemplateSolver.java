@@ -1,25 +1,35 @@
 
 package org.optaplanner.trucktemplate;
 
-import static java.util.Comparator.comparingInt;
-
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
+import org.optaplanner.benchmark.api.PlannerBenchmark;
+import org.optaplanner.benchmark.api.PlannerBenchmarkFactory;
 import org.optaplanner.core.api.solver.Solver;
 import org.optaplanner.core.api.solver.SolverFactory;
 import org.optaplanner.core.api.solver.event.BestSolutionChangedEvent;
 import org.optaplanner.core.api.solver.event.SolverEventListener;
 
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.StaxDriver;
+
 public class TruckTemplateSolver {
 	public static final String SOLVER_CONFIG = "org/optaplanner/trucktemplate/truckTemplateSolverConfig.xml";
 	
 	public static void main(String[] args) {
-		SolverFactory<TruckTemplateSolution> solverFactory = SolverFactory.createFromXmlResource(SOLVER_CONFIG);
+		PlannerBenchmarkFactory benchmarkFactory = PlannerBenchmarkFactory.createFromXmlResource(
+		        "org/optaplanner/trucktemplate/TruckTemplateBenchmark.xml");
+		PlannerBenchmark benchmark = benchmarkFactory.buildPlannerBenchmark();
+		benchmark.benchmarkAndShowReportInBrowser();
+		
+		
+		
+		
+		
+		/*SolverFactory<TruckTemplateSolution> solverFactory = SolverFactory.createFromXmlResource(SOLVER_CONFIG);
 		Solver<TruckTemplateSolution> solver = solverFactory.buildSolver();
-		/*int[][] pallets = {{288,239,89,275,478,786},
+		int[][] pallets = {{288,239,89,275,478,786},
 		                   {376,389,24,293,6,492},
 		                   {123,259,98,40,417,25},
 		                   {662,359,128,288,566,753},
@@ -141,7 +151,7 @@ public class TruckTemplateSolver {
 		                   {262,158,324,0,0,0},
 		                   {523,734,186,0,0,0},
 		                   {749,0,346,0,0,0},
-		                   {479,0,77,0,0,0}};*/
+		                   {479,0,77,0,0,0}};
 
 		//10
 		int[][] pallets = {{288,239,89,275,478,786},
@@ -223,7 +233,7 @@ public class TruckTemplateSolver {
 			
 			opRows.add(new OpRow(id++, sequences, maxSequence));
 		}
-				
+
 		
 		System.out.println(opRows.toString());
 		//Collections.sort(opRows);
@@ -280,6 +290,6 @@ public class TruckTemplateSolver {
 		System.out.print(solved.getOpPallets().stream().filter(p -> p.getRow() == null && p.getType() == 4).count() + " ");
 		System.out.println(solved.getOpPallets().stream().filter(p -> p.getRow() == null && p.getType() == 5).count() + ")");
 
-		System.out.println(solved.getOpPallets().stream().filter(p -> p.getRow() == null).toList());
+		System.out.println(solved.getOpPallets().stream().filter(p -> p.getRow() == null).toList());*/
 	}
 }

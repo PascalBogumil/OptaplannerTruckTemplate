@@ -11,14 +11,17 @@ import org.apache.commons.lang3.builder.CompareToBuilder;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
-import org.optaplanner.core.api.domain.lookup.PlanningId;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
 import org.optaplanner.core.api.domain.variable.InverseRelationShadowVariable;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 @PlanningEntity
-public class OpRow extends AbstractPersistable implements Comparable<OpRow>{
+@XStreamAlias("OpRow")
+public class OpRow extends AbstractPersistable implements Comparable<OpRow> {
+	
 	@ValueRangeProvider(id = "sequences")
 	private List<OpSequence> sequences;
 	
@@ -29,14 +32,14 @@ public class OpRow extends AbstractPersistable implements Comparable<OpRow>{
 	private OpSequence sequence;
 	
 	public OpRow () {
-
+		
 	}
 		
 	public OpRow (long id, List<OpSequence> sequences, int maxSequence) {
 		super(id);
 		this.opPallets = new ArrayList<>();
 		this.sequences = sequences;
-		this.sequences.add(new OpSequence(sequences.size()));
+		//this.sequences.add(new OpSequence(sequences.size()));
 		Collections.sort(this.sequences);
 		this.sequence = sequences.get(0);
 	}
@@ -94,10 +97,11 @@ public class OpRow extends AbstractPersistable implements Comparable<OpRow>{
 
 	//Simple Getter & Setter
 	public List<OpPallet> getOpPalletsOfType(int type) {
-		return opPallets.stream().filter(p -> p.getType() == type).toList();
+		return getOpPallets().stream().filter(p -> p.getType() == type).toList();
 	}
 
 	public List<OpPallet> getOpPallets() {
+		if(opPallets == null) opPallets = new ArrayList<>();
 		return opPallets;
 	}
 

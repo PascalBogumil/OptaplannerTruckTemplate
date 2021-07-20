@@ -10,7 +10,9 @@ import org.apache.commons.lang3.builder.CompareToBuilder;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
 
+@XStreamAlias("OpSequence")
 public class OpSequence extends AbstractPersistable implements Comparable<OpSequence> {
 	
 	private int maxWeight;
