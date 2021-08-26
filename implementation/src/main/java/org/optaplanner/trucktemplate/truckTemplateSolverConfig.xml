@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver xmlns="https://www.optaplanner.org/xsd/solver" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.optaplanner.org/xsd/solver https://www.optaplanner.org/xsd/solver/solver.xsd">
+  <!--<environmentMode>FULL_ASSERT</environmentMode>--><!-- To slowly prove there are no bugs in this code -->
+  <!--<moveThreadCount>AUTO</moveThreadCount>--><!-- To solve faster by saturating multiple CPU cores -->
+  <randomSeed>0</randomSeed>
+  
+  
+  <solutionClass>org.optaplanner.trucktemplate.TruckTemplateSolution</solutionClass>
+  <entityClass>org.optaplanner.trucktemplate.OpPallet</entityClass>
+  <entityClass>org.optaplanner.trucktemplate.OpRow</entityClass>
+
+  <scoreDirectorFactory>
+    <constraintProviderClass>org.optaplanner.trucktemplate.TruckTemplateConstraints</constraintProviderClass>
+    <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
+  </scoreDirectorFactory>
+
+  <termination>
+    <secondsSpentLimit>600</secondsSpentLimit>
+  </termination>
+
+  <localSearch>  
+  	<unionMoveSelector> 
+  		<cacheType>JUST_IN_TIME</cacheType>
+  		<selectionOrder>ORIGINAL</selectionOrder>	
+  		<moveIteratorFactory>
+  			<cacheType>JUST_IN_TIME</cacheType>
+  			<selectionOrder>RANDOM</selectionOrder>
+  			<moveIteratorFactoryClass>org.optaplanner.trucktemplate.OpRowMoveIteratorFactory</moveIteratorFactoryClass>
+  		</moveIteratorFactory>
+	</unionMoveSelector>
+
+	<acceptor>
+		<entityTabuSize>5</entityTabuSize>
+		<!--<valueTabuSize>5</valueTabuSize>-->
+		<simulatedAnnealingStartingTemperature>16hard/10000soft</simulatedAnnealingStartingTemperature>
+	</acceptor>
+
+	<forager>
+		<acceptedCountLimit>4</acceptedCountLimit>
+	</forager>
+  </localSearch>
+</solver>

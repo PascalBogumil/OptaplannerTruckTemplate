@@ -1,0 +1,1608 @@
+<TruckTemplateSolution id="1">
+  <opPallets id="2">
+    <OpPallet id="3">
+      <id>0</id>
+      <weight>162</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="4">
+      <id>1</id>
+      <weight>725</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="5">
+      <id>2</id>
+      <weight>638</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="6">
+      <id>3</id>
+      <weight>796</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="7">
+      <id>4</id>
+      <weight>722</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="8">
+      <id>5</id>
+      <weight>562</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="9">
+      <id>6</id>
+      <weight>758</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="10">
+      <id>7</id>
+      <weight>98</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="11">
+      <id>8</id>
+      <weight>441</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="12">
+      <id>9</id>
+      <weight>368</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="13">
+      <id>10</id>
+      <weight>832</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="14">
+      <id>11</id>
+      <weight>360</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="15">
+      <id>12</id>
+      <weight>304</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="16">
+      <id>13</id>
+      <weight>15</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="17">
+      <id>14</id>
+      <weight>422</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="18">
+      <id>15</id>
+      <weight>421</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="19">
+      <id>16</id>
+      <weight>671</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="20">
+      <id>17</id>
+      <weight>538</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="21">
+      <id>18</id>
+      <weight>517</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="22">
+      <id>19</id>
+      <weight>625</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="23">
+      <id>20</id>
+      <weight>188</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="24">
+      <id>21</id>
+      <weight>670</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="25">
+      <id>22</id>
+      <weight>638</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="26">
+      <id>23</id>
+      <weight>535</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="27">
+      <id>24</id>
+      <weight>269</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="28">
+      <id>25</id>
+      <weight>287</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="29">
+      <id>26</id>
+      <weight>171</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="30">
+      <id>27</id>
+      <weight>73</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="31">
+      <id>28</id>
+      <weight>54</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="32">
+      <id>29</id>
+      <weight>26</weight>
+      <type>1</type>
+    </OpPallet>
+    <OpPallet id="33">
+      <id>30</id>
+      <weight>59</weight>
+      <type>2</type>
+    </OpPallet>
+    <OpPallet id="34">
+      <id>31</id>
+      <weight>373</weight>
+      <type>2</type>
+    </OpPallet>
+    <OpPallet id="35">
+      <id>32</id>
+      <weight>168</weight>
+      <type>2</type>
+    </OpPallet>
+    <OpPallet id="36">
+      <id>33</id>
+      <weight>293</weight>
+      <type>2</type>
+    </OpPallet>
+    <OpPallet id="37">
+      <id>34</id>
+      <weight>21</weight>
+      <type>2</type>
+    </OpPallet>
+    <OpPallet id="38">
+      <id>35</id>
+      <weight>235</weight>
+      <type>2</type>
+    </OpPallet>
+    <OpPallet id="39">
+      <id>36</id>
+      <weight>288</weight>
+      <type>2</type>
+    </OpPallet>
+    <OpPallet id="40">
+      <id>37</id>
+      <weight>312</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="41">
+      <id>38</id>
+      <weight>20</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="42">
+      <id>39</id>
+      <weight>118</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="43">
+      <id>40</id>
+      <weight>285</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="44">
+      <id>41</id>
+      <weight>192</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="45">
+      <id>42</id>
+      <weight>326</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="46">
+      <id>43</id>
+      <weight>287</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="47">
+      <id>44</id>
+      <weight>132</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="48">
+      <id>45</id>
+      <weight>244</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="49">
+      <id>46</id>
+      <weight>243</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="50">
+      <id>47</id>
+      <weight>338</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="51">
+      <id>48</id>
+      <weight>46</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="52">
+      <id>49</id>
+      <weight>300</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="53">
+      <id>50</id>
+      <weight>160</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="54">
+      <id>51</id>
+      <weight>29</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="55">
+      <id>52</id>
+      <weight>315</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="56">
+      <id>53</id>
+      <weight>224</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="57">
+      <id>54</id>
+      <weight>230</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="58">
+      <id>55</id>
+      <weight>284</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="59">
+      <id>56</id>
+      <weight>285</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="60">
+      <id>57</id>
+      <weight>35</weight>
+      <type>3</type>
+    </OpPallet>
+    <OpPallet id="61">
+      <id>58</id>
+      <weight>732</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="62">
+      <id>59</id>
+      <weight>347</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="63">
+      <id>60</id>
+      <weight>573</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="64">
+      <id>61</id>
+      <weight>52</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="65">
+      <id>62</id>
+      <weight>504</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="66">
+      <id>63</id>
+      <weight>182</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="67">
+      <id>64</id>
+      <weight>684</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="68">
+      <id>65</id>
+      <weight>389</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="69">
+      <id>66</id>
+      <weight>311</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="70">
+      <id>67</id>
+      <weight>254</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="71">
+      <id>68</id>
+      <weight>451</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="72">
+      <id>69</id>
+      <weight>47</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="73">
+      <id>70</id>
+      <weight>656</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="74">
+      <id>71</id>
+      <weight>265</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="75">
+      <id>72</id>
+      <weight>682</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="76">
+      <id>73</id>
+      <weight>353</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="77">
+      <id>74</id>
+      <weight>229</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="78">
+      <id>75</id>
+      <weight>178</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="79">
+      <id>76</id>
+      <weight>462</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="80">
+      <id>77</id>
+      <weight>251</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="81">
+      <id>78</id>
+      <weight>466</weight>
+      <type>4</type>
+    </OpPallet>
+    <OpPallet id="82">
+      <id>79</id>
+      <weight>841</weight>
+      <type>5</type>
+    </OpPallet>
+    <OpPallet id="83">
+      <id>80</id>
+      <weight>115</weight>
+      <type>5</type>
+    </OpPallet>
+    <OpPallet id="84">
+      <id>81</id>
+      <weight>94</weight>
+      <type>5</type>
+    </OpPallet>
+    <OpPallet id="85">
+      <id>82</id>
+      <weight>258</weight>
+      <type>5</type>
+    </OpPallet>
+    <OpPallet id="86">
+      <id>83</id>
+      <weight>507</weight>
+      <type>5</type>
+    </OpPallet>
+    <OpPallet id="87">
+      <id>84</id>
+      <weight>639</weight>
+      <type>5</type>
+    </OpPallet>
+    <OpPallet id="88">
+      <id>85</id>
+      <weight>381</weight>
+      <type>5</type>
+    </OpPallet>
+    <OpPallet id="89">
+      <id>86</id>
+      <weight>357</weight>
+      <type>5</type>
+    </OpPallet>
+    <OpPallet id="90">
+      <id>87</id>
+      <weight>502</weight>
+      <type>5</type>
+    </OpPallet>
+    <OpPallet id="91">
+      <id>88</id>
+      <weight>67</weight>
+      <type>5</type>
+    </OpPallet>
+    <OpPallet id="92">
+      <id>89</id>
+      <weight>485</weight>
+      <type>5</type>
+    </OpPallet>
+  </opPallets>
+  <opRows id="93">
+    <OpRow id="94">
+      <id>0</id>
+      <sequences id="95">
+        <OpSequence id="96">
+          <id>0</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="97">
+            <int>0</int>
+            <int>2</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="98">
+          <id>1</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="99">
+            <int>4</int>
+            <int>3</int>
+            <int>0</int>
+            <int>1</int>
+            <int>2</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="100">
+          <id>2</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="101">
+            <int>1</int>
+            <int>0</int>
+            <int>1</int>
+            <int>2</int>
+            <int>1</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="102">
+          <id>3</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="103">
+            <int>1</int>
+            <int>3</int>
+            <int>0</int>
+            <int>1</int>
+            <int>2</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="104">
+          <id>4</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="105">
+            <int>1</int>
+            <int>2</int>
+            <int>2</int>
+            <int>1</int>
+            <int>0</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="106"/>
+      <sequence reference="96"/>
+    </OpRow>
+    <OpRow id="107">
+      <id>1</id>
+      <sequences id="108">
+        <OpSequence id="109">
+          <id>5</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="110">
+            <int>2</int>
+            <int>3</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="111">
+          <id>6</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="112">
+            <int>2</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="113">
+          <id>7</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="114">
+            <int>1</int>
+            <int>2</int>
+            <int>2</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="115">
+          <id>8</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="116">
+            <int>2</int>
+            <int>3</int>
+            <int>2</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="117">
+          <id>9</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="118">
+            <int>0</int>
+            <int>5</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="119"/>
+      <sequence reference="109"/>
+    </OpRow>
+    <OpRow id="120">
+      <id>2</id>
+      <sequences id="121">
+        <OpSequence id="122">
+          <id>10</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="123">
+            <int>0</int>
+            <int>3</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="124">
+          <id>11</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="125">
+            <int>1</int>
+            <int>4</int>
+            <int>1</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="126">
+          <id>12</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="127">
+            <int>0</int>
+            <int>4</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="128">
+          <id>13</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="129">
+            <int>1</int>
+            <int>4</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="130">
+          <id>14</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="131">
+            <int>1</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+            <int>1</int>
+            <int>2</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="132"/>
+      <sequence reference="122"/>
+    </OpRow>
+    <OpRow id="133">
+      <id>3</id>
+      <sequences id="134">
+        <OpSequence id="135">
+          <id>15</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="136">
+            <int>1</int>
+            <int>1</int>
+            <int>1</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="137">
+          <id>16</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="138">
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="139">
+          <id>17</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="140">
+            <int>1</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="141">
+          <id>18</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="142">
+            <int>1</int>
+            <int>3</int>
+            <int>1</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="143">
+          <id>19</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="144">
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="145"/>
+      <sequence reference="135"/>
+    </OpRow>
+    <OpRow id="146">
+      <id>4</id>
+      <sequences id="147">
+        <OpSequence id="148">
+          <id>20</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="149">
+            <int>2</int>
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="150">
+          <id>21</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="151">
+            <int>2</int>
+            <int>3</int>
+            <int>1</int>
+            <int>0</int>
+            <int>2</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="152">
+          <id>22</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="153">
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="154">
+          <id>23</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="155">
+            <int>2</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="156">
+          <id>24</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="157">
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="158"/>
+      <sequence reference="148"/>
+    </OpRow>
+    <OpRow id="159">
+      <id>5</id>
+      <sequences id="160">
+        <OpSequence id="161">
+          <id>25</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="162">
+            <int>1</int>
+            <int>4</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="163">
+          <id>26</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="164">
+            <int>2</int>
+            <int>2</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="165">
+          <id>27</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="166">
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="167">
+          <id>28</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="168">
+            <int>1</int>
+            <int>2</int>
+            <int>1</int>
+            <int>1</int>
+            <int>2</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="169">
+          <id>29</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="170">
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="171"/>
+      <sequence reference="161"/>
+    </OpRow>
+    <OpRow id="172">
+      <id>6</id>
+      <sequences id="173">
+        <OpSequence id="174">
+          <id>30</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="175">
+            <int>0</int>
+            <int>4</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="176">
+          <id>31</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="177">
+            <int>1</int>
+            <int>4</int>
+            <int>2</int>
+            <int>0</int>
+            <int>2</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="178">
+          <id>32</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="179">
+            <int>1</int>
+            <int>3</int>
+            <int>1</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="180">
+          <id>33</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="181">
+            <int>0</int>
+            <int>2</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="182">
+          <id>34</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="183">
+            <int>0</int>
+            <int>3</int>
+            <int>1</int>
+            <int>0</int>
+            <int>2</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="184"/>
+      <sequence reference="174"/>
+    </OpRow>
+    <OpRow id="185">
+      <id>7</id>
+      <sequences id="186">
+        <OpSequence id="187">
+          <id>35</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="188">
+            <int>2</int>
+            <int>5</int>
+            <int>1</int>
+            <int>0</int>
+            <int>2</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="189">
+          <id>36</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="190">
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+            <int>3</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="191">
+          <id>37</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="192">
+            <int>0</int>
+            <int>2</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="193">
+          <id>38</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="194">
+            <int>0</int>
+            <int>4</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="195">
+          <id>39</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="196">
+            <int>3</int>
+            <int>4</int>
+            <int>2</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="197"/>
+      <sequence reference="187"/>
+    </OpRow>
+    <OpRow id="198">
+      <id>8</id>
+      <sequences id="199">
+        <OpSequence id="200">
+          <id>40</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="201">
+            <int>2</int>
+            <int>4</int>
+            <int>0</int>
+            <int>2</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="202">
+          <id>41</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="203">
+            <int>0</int>
+            <int>3</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="204">
+          <id>42</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="205">
+            <int>0</int>
+            <int>3</int>
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="206">
+          <id>43</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="207">
+            <int>1</int>
+            <int>2</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="208">
+          <id>44</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="209">
+            <int>0</int>
+            <int>4</int>
+            <int>1</int>
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="210"/>
+      <sequence reference="200"/>
+    </OpRow>
+    <OpRow id="211">
+      <id>9</id>
+      <sequences id="212">
+        <OpSequence id="213">
+          <id>45</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="214">
+            <int>2</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="215">
+          <id>46</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="216">
+            <int>0</int>
+            <int>3</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="217">
+          <id>47</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="218">
+            <int>2</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="219">
+          <id>48</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="220">
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="221">
+          <id>49</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="222">
+            <int>3</int>
+            <int>3</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="223"/>
+      <sequence reference="213"/>
+    </OpRow>
+    <OpRow id="224">
+      <id>10</id>
+      <sequences id="225">
+        <OpSequence id="226">
+          <id>50</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="227">
+            <int>1</int>
+            <int>6</int>
+            <int>0</int>
+            <int>0</int>
+            <int>3</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="228">
+          <id>51</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="229">
+            <int>1</int>
+            <int>3</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="230">
+          <id>52</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="231">
+            <int>1</int>
+            <int>6</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="232">
+          <id>53</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="233">
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="234">
+          <id>54</id>
+          <maxWeight>2000</maxWeight>
+          <palletCountsMax id="235">
+            <int>0</int>
+            <int>4</int>
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="236"/>
+      <sequence reference="226"/>
+    </OpRow>
+    <OpRow id="237">
+      <id>11</id>
+      <sequences id="238">
+        <OpSequence id="239">
+          <id>55</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="240">
+            <int>1</int>
+            <int>2</int>
+            <int>0</int>
+            <int>0</int>
+            <int>3</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="241">
+          <id>56</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="242">
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+            <int>1</int>
+            <int>2</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="243">
+          <id>57</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="244">
+            <int>2</int>
+            <int>4</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="245">
+          <id>58</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="246">
+            <int>3</int>
+            <int>2</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="247">
+          <id>59</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="248">
+            <int>0</int>
+            <int>2</int>
+            <int>0</int>
+            <int>2</int>
+            <int>0</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="249"/>
+      <sequence reference="239"/>
+    </OpRow>
+    <OpRow id="250">
+      <id>12</id>
+      <sequences id="251">
+        <OpSequence id="252">
+          <id>60</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="253">
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="254">
+          <id>61</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="255">
+            <int>0</int>
+            <int>2</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="256">
+          <id>62</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="257">
+            <int>1</int>
+            <int>1</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="258">
+          <id>63</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="259">
+            <int>1</int>
+            <int>4</int>
+            <int>0</int>
+            <int>1</int>
+            <int>2</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="260">
+          <id>64</id>
+          <maxWeight>1500</maxWeight>
+          <palletCountsMax id="261">
+            <int>2</int>
+            <int>2</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="262"/>
+      <sequence reference="252"/>
+    </OpRow>
+    <OpRow id="263">
+      <id>13</id>
+      <sequences id="264">
+        <OpSequence id="265">
+          <id>65</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="266">
+            <int>3</int>
+            <int>3</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="267">
+          <id>66</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="268">
+            <int>1</int>
+            <int>4</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="269">
+          <id>67</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="270">
+            <int>3</int>
+            <int>5</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="271">
+          <id>68</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="272">
+            <int>2</int>
+            <int>3</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="273">
+          <id>69</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="274">
+            <int>1</int>
+            <int>0</int>
+            <int>2</int>
+            <int>1</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="275"/>
+      <sequence reference="265"/>
+    </OpRow>
+    <OpRow id="276">
+      <id>14</id>
+      <sequences id="277">
+        <OpSequence id="278">
+          <id>70</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="279">
+            <int>1</int>
+            <int>1</int>
+            <int>2</int>
+            <int>1</int>
+            <int>0</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="280">
+          <id>71</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="281">
+            <int>0</int>
+            <int>3</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="282">
+          <id>72</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="283">
+            <int>2</int>
+            <int>4</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="284">
+          <id>73</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="285">
+            <int>1</int>
+            <int>3</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="286">
+          <id>74</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="287">
+            <int>2</int>
+            <int>4</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="288"/>
+      <sequence reference="278"/>
+    </OpRow>
+    <OpRow id="289">
+      <id>15</id>
+      <sequences id="290">
+        <OpSequence id="291">
+          <id>75</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="292">
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="293">
+          <id>76</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="294">
+            <int>3</int>
+            <int>4</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="295">
+          <id>77</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="296">
+            <int>2</int>
+            <int>5</int>
+            <int>0</int>
+            <int>1</int>
+            <int>2</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="297">
+          <id>78</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="298">
+            <int>1</int>
+            <int>4</int>
+            <int>1</int>
+            <int>0</int>
+            <int>0</int>
+            <int>1</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+        <OpSequence id="299">
+          <id>79</id>
+          <maxWeight>1000</maxWeight>
+          <palletCountsMax id="300">
+            <int>2</int>
+            <int>5</int>
+            <int>1</int>
+            <int>0</int>
+            <int>1</int>
+            <int>0</int>
+          </palletCountsMax>
+          <isWildcard>false</isWildcard>
+        </OpSequence>
+      </sequences>
+      <opPallets id="301"/>
+      <sequence reference="291"/>
+    </OpRow>
+  </opRows>
+</TruckTemplateSolution>

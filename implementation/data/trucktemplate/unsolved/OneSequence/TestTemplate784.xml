@@ -1,0 +1,50 @@
+<TruckTemplateSolution id="1">
+  <opPallets id="2">
+    <OpPallet id="3">
+      <id>0</id>
+      <weight>330</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="4">
+      <id>1</id>
+      <weight>515</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="5">
+      <id>2</id>
+      <weight>163</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="6">
+      <id>3</id>
+      <weight>395</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="7">
+      <id>4</id>
+      <weight>319</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="8">
+      <id>5</id>
+      <weight>752</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="9">
+      <id>6</id>
+      <weight>250</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="10">
+      <id>7</id>
+      <weight>598</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="11">
+      <id>8</id>
+      <weight>112</weight>
+      <type>0</type>
+    </OpPallet>
+    <OpPallet id="12">
+      <id>9</id>
+  
