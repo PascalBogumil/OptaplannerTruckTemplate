@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><plannerBenchmarkResult>
+  <name>2021-08-27_203548</name>
+  <aggregation>false</aggregation>
+  <availableProcessors>8</availableProcessors>
+  <loggingLevelOptaPlannerCore>debug</loggingLevelOptaPlannerCore>
+  <loggingLevelDroolsCore>warn</loggingLevelDroolsCore>
+  <maxMemory>2126512128</maxMemory>
+  <optaPlannerVersion>8.2.0.Final</optaPlannerVersion>
+  <javaVersion>Java 16.0.1 (Oracle Corporation)</javaVersion>
+  <javaVM>Java Java HotSpot(TM) 64-Bit Server VM 16.0.1+9-24 (Oracle Corporation)</javaVM>
+  <operatingSystem>Windows 10 amd64 10.0</operatingSystem>
+  <parallelBenchmarkCount>1</parallelBenchmarkCount>
+  <warmUpTimeMillisSpentLimit>30</warmUpTimeMillisSpentLimit>
+  <solverBenchmarkResult>
+    <name>First Try</name>
+    <subSingleCount>1</subSingleCount>
+    <solverConfig>
+      <randomSeed>0</randomSeed>
+      <solutionClass>org.optaplanner.trucktemplate.TruckTemplateSolution</solutionClass>
+      <entityClass>org.optaplanner.trucktemplate.OpPallet</entityClass>
+      <entityClass>org.optaplanner.trucktemplate.OpRow</entityClass>
+      <scoreDirectorFactory>
+        <constraintProviderClass>org.optaplanner.trucktemplate.TruckTemplateConstraints</constraintProviderClass>
+        <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
+      </scoreDirectorFactory>
+      <termination>
+        <secondsSpentLimit>30</secondsSpentLimit>
+      </termination>
+      <localSearch>
+        <unionMoveSelector>
+          <cacheType>JUST_IN_TIME</cacheType>
+          <selectionOrder>ORIGINAL</selectionOrder>
+          <moveIteratorFactory>
+            <cacheType>JUST_IN_TIME</cacheType>
+            <selectionOrder>RANDOM</selectionOrder>
+            <moveIteratorFactoryClass>org.optaplanner.trucktemplate.OpRowMoveIteratorFactory</moveIteratorFactoryClass>
+          </moveIteratorFactory>
+        </unionMoveSelector>
+        <acceptor>
+          <entityTabuSize>0</entityTabuSize>
+        </acceptor>
+        <forager>
+          <acceptedCountLimit>4000</acceptedCountLimit>
+        </forager>
+      </localSearch>
+    </solverConfig>
+    <singleBenchmarkResult id="1">
+      <subSingleBenchmarkResult>
+        <subSingleBenchmarkIndex>0</subSingleBenchmarkIndex>
+        <usedMemoryAfterInputSolution>11774456</usedMemoryAfterInputSolution>
+        <succeeded>true</succeeded>
+        <score class="org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore">0hard/3124soft</score>
+        <timeMillisSpent>30004</timeMillisSpent>
+        <scoreCalculationCount>10442</scoreCalculationCount>
+      </subSingleBenchmarkResult>
+      <timeMillisSpent>-1</timeMillisSpent>
+      <scoreCalculationCount>-1</scoreCalculationCount>
+    </singleBenchmarkResult>
+  </solverBenchmarkResult>
+  <unifiedProblemBenchmarkResult>
+    <name>Problem_0</name>
+    <instanceProblemProvider/>
+    <writeOutputSolutionEnabled>false</writeOutputSolutionEnabled>
+    <bestScoreProblemStatistic>
+      <problemStatisticType>BEST_SCORE</problemStatisticType>
+    </bestScoreProblemStatistic>
+    <stepScoreProblemStatistic>
+      <problemStatisticType>STEP_SCORE</problemStatisticType>
+    </stepScoreProblemStatistic>
+    <scoreCalculationSpeedProblemStatistic>
+      <problemStatisticType>SCORE_CALCULATION_SPEED</problemStatisticType>
+    </scoreCalculationSpeedProblemStatistic>
+    <bestSolutionMutationProblemStatistic>
+      <problemStatisticType>BEST_SOLUTION_MUTATION</problemStatisticType>
+    </bestSolutionMutationProblemStatistic>
+    <moveCountPerStepProblemStatistic>
+      <problemStatisticType>MOVE_COUNT_PER_STEP</problemStatisticType>
+    </moveCountPerStepProblemStatistic>
+    <singleBenchmarkResult>1</singleBenchmarkResult>
+    <entityCount>106</entityCount>
+    <variableCount>106</variableCount>
+    <maximumValueCount>17</maximumValueCount>
+    <problemScale>1562</problemScale>
+    <inputSolutionLoadingTimeMillisSpent>0</inputSolutionLoadingTimeMillisSpent>
+  </unifiedProblemBenchmarkResult>
+  <startingTimestamp>2021-08-27T20:35:48.0823296+02:00</startingTimestamp>
+  <benchmarkTimeMillisSpent>30411</benchmarkTimeMillisSpent>
+</plannerBenchmarkResult>

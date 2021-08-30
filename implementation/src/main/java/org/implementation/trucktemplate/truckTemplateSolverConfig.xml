@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver xmlns="https://www.optaplanner.org/xsd/solver" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.optaplanner.org/xsd/solver https://www.optaplanner.org/xsd/solver/solver.xsd">
+  <!--<environmentMode>FULL_ASSERT</environmentMode>--><!-- To slowly prove there are no bugs in this code -->
+  <!--<moveThreadCount>AUTO</moveThreadCount>--><!-- To solve faster by saturating multiple CPU cores -->
+  <randomSeed>0</randomSeed>
+  
+  <solutionClass>org.implementation.trucktemplate.TruckTemplateSolution</solutionClass>
+  <entityClass>org.implementation.trucktemplate.OpPallet</entityClass>
+  <entityClass>org.implementation.trucktemplate.OpRow</entityClass>
+
+  <scoreDirectorFactory>
+    <constraintProviderClass>org.implementation.trucktemplate.TruckTemplateConstraints</constraintProviderClass>
+    <!--<initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>-->
+  </scoreDirectorFactory>
+
+  <termination>
+    <secondsSpentLimit>300</secondsSpentLimit>
+  </termination>
+
+  <localSearch>  
+  	<moveIteratorFactory>
+  		<moveIteratorFactoryClass>org.implementation.trucktemplate.OpRowMoveIteratorFactory</moveIteratorFactoryClass>
+  	</moveIteratorFactory>
+
+	<acceptor>
+		<simulatedAnnealingStartingTemperature>16hard/24000soft</simulatedAnnealingStartingTemperature>
+	</acceptor>
+
+	<forager>
+		<acceptedCountLimit>4</acceptedCountLimit>
+	</forager>
+  </localSearch>
+</solver>
