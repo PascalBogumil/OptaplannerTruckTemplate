@@ -6,16 +6,25 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.BiFunction;
+import java.util.stream.IntStream;
 
+import org.optaplanner.benchmark.api.PlannerBenchmark;
+import org.optaplanner.benchmark.api.PlannerBenchmarkFactory;
+import org.optaplanner.benchmark.config.PlannerBenchmarkConfig;
+import org.optaplanner.benchmark.config.ProblemBenchmarksConfig;
+import org.optaplanner.benchmark.config.SolverBenchmarkConfig;
+import org.optaplanner.benchmark.config.ranking.SolverRankingType;
+import org.optaplanner.benchmark.config.report.BenchmarkReportConfig;
+import org.optaplanner.benchmark.config.statistic.ProblemStatisticType;
+import org.optaplanner.benchmark.config.statistic.SingleStatisticType;
 import org.optaplanner.core.api.solver.Solver;
 import org.optaplanner.core.api.solver.SolverFactory;
-import org.optaplanner.core.config.heuristic.selector.move.MoveSelectorConfig;
 import org.optaplanner.core.config.heuristic.selector.move.factory.MoveIteratorFactoryConfig;
 import org.optaplanner.core.config.localsearch.LocalSearchPhaseConfig;
-import org.optaplanner.core.config.localsearch.decider.acceptor.AcceptorType;
 import org.optaplanner.core.config.localsearch.decider.acceptor.LocalSearchAcceptorConfig;
 import org.optaplanner.core.config.localsearch.decider.forager.LocalSearchForagerConfig;
 import org.optaplanner.core.config.score.director.ScoreDirectorFactoryConfig;
@@ -34,22 +43,17 @@ import ilog.opl.IloOplModelSource;
 import ilog.opl.IloOplSettings;
 
 public class TruckTemplateSolver {
-	private static final String SOLVER_CONFIG = "org/implementation/trucktemplate/truckTemplateSolverConfig.xml";
-	private static final String BENCHMARK_CONFIG = "org/implementation/trucktemplate/TruckTemplateBenchmark.xml";
+	//private static final String SOLVER_CONFIG = "org/implementation/trucktemplate/truckTemplateSolverConfig.xml";
+	//private static final String BENCHMARK_CONFIG = "org/implementation/trucktemplate/TruckTemplateBenchmark.xml";
 	
 	private static final String TEST_FOLDER_OPTAPLANNER = "src/main/resources/org/Optaplanner/Tests/";
 	private static final String TEST_FOLDER_CPLEX = "src/main/resources/org/Cplex/Tests/";
 	private static final String ILP_CPLEX = "src/main/resources/org/Cplex/ILP.mod";
 	
-	private static int wildcardPenelty = 1400;
-	private static final long timeToSolve = 10;
+	//private static int wildcardPenelty = 1400;
+	//private static long timeToSolve = 300;
 	
 	public static void main(String[] args) {
-        System.out.println(new File(SOLVER_CONFIG).getAbsolutePath());
-        System.out.println(new File(ILP_CPLEX).getPath());
-
-        //System.exit(0);
-		
 		/*// Test 1
 		int seed = 1401;
 		int numberofTemplates = 240;
@@ -103,7 +107,7 @@ public class TruckTemplateSolver {
 		//sumDataFromCPLEXSolutionFiles(Path.of(TEST_FOLDER_CPLEX, "KalibrierungCPLEX\\40TestsProUWert1000Bis2000120Sekunden"), "Extraction.txt", "TruckTemplateSolution%s.txt", 240);
 		//sumDataFromCPLEXSolutionFiles(Path.of(TEST_FOLDER_CPLEX, "KalibrierungCPLEX\\40TestsProUWert1800Bis2800120Sekunden"), "Extraction.txt", "TruckTemplateSolution%s.txt", 240);
 		
-		TruckTemplateGenerator generator = new TruckTemplateGenerator(156, 16, 5, 90, true);
+		/*TruckTemplateGenerator generator = new TruckTemplateGenerator(156, 16, 5, 90, true);
 		TruckTemplate template = generator.generateTemplate();
 		
 		String problemFilePath = Path.of(TEST_FOLDER_CPLEX, "TruckTemplateOne.txt").toString();
@@ -115,15 +119,30 @@ public class TruckTemplateSolver {
 		problemFilePath = Path.of(TEST_FOLDER_OPTAPLANNER, "TruckTemplateOne.xml").toString();
 		solutionFilePath = Path.of(TEST_FOLDER_OPTAPLANNER, "TruckTemplateOneSolutionOptaplanner.txt").toString();
 		
-		template.saveTemplateAsOptaplannerProblemFile(problemFilePath);
-		solveWithOptaplanner(new String[]{problemFilePath}, solutionFilePath);
+		template.saveTemplateAsOptaplannerProblemFile(problemFilePath);*/
+		//solveWithOptaplanner(new String[]{problemFilePath}, solutionFilePath);
+		
+		//Entity and value tabu test
+		//OptaplannerTests.X_Tests_Pro_AcceptedCountLimit_Wert_X_Sekunden_Pro_Test_EntityTabu_X_und_Value_Tabu_X(170, 10, 4, 10, 0, 0);
+		//OptaplannerTests.X_Tests_Pro_AcceptedCountLimit_Wert_X_Sekunden_Pro_Test_EntityTabu_X_und_Value_Tabu_X(170, 10, 4, 10, 0, 2);
+		//OptaplannerTests.X_Tests_Pro_AcceptedCountLimit_Wert_X_Sekunden_Pro_Test_EntityTabu_X_und_Value_Tabu_X(170, 10, 4, 10, 2, 0);
+		//OptaplannerTests.X_Tests_Pro_AcceptedCountLimit_Wert_X_Sekunden_Pro_Test_EntityTabu_X_und_Value_Tabu_X(170, 10, 4, 10, 2, 2);
+		
+		//OptaplannerTests.X_Tests_Pro_AcceptedCountLimit_X_Sekunden_Pro_Test_EntityTabu_X_und_Value_Tabu_X(440, 40, 4, 30, 0, 0);
+		//OptaplannerTests.X_Tests_Pro_AcceptedCountLimit_X_Sekunden_Pro_Test_EntityTabu_X_und_Value_Tabu_X(440, 40, 4, 30, 0, 2);
+		//OptaplannerTests.X_Tests_Pro_AcceptedCountLimit_X_Sekunden_Pro_Test_EntityTabu_X_und_Value_Tabu_X(440, 40, 4, 30, 2, 0);
+		//OptaplannerTests.X_Tests_Pro_AcceptedCountLimit_X_Sekunden_Pro_Test_EntityTabu_X_und_Value_Tabu_X(440, 40, 4, 30, 2, 2);
+		
+		//Wildcard U-Value test
+		//OptaplannerTests.X_Tests_Pro_UValue_X_Sekunden_Pro_Test(360, 40, 200, 10);
+		OptaplannerTests.X_Tests_Pro_UValue_X_Sekunden_Pro_Test(360, 40, 200, 120);
 	}
 	
 	
 	
 	/* CPLEX */
 	
-	private static void solveWithCPLEX (String problemFilePath, String solutionFilePath) {
+	public static void solveWithCPLEX (String problemFilePath, String solutionFilePath, int timeToSolve) {
         try {
             IloOplFactory.setDebugMode(false);
             
@@ -135,7 +154,7 @@ public class TruckTemplateSolver {
             IloOplModelDefinition def = oplF.createOplModelDefinition(modelSource,settings);
             
             IloCplex cplex = oplF.createCplex();
-            cplex.setParam(IloCplex.Param.DetTimeLimit, timeToSolve*1000);
+            cplex.setParam(IloCplex.Param.DetTimeLimit, timeToSolve);
             cplex.setParam(IloCplex.Param.Advance, 0);
             cplex.setOut(null);
             
@@ -212,21 +231,107 @@ public class TruckTemplateSolver {
             }
             oplF.end();
         } catch (IloException ilx) {
-        	System.out.println(ilx.getMessage());
+        	ilx.printStackTrace();
         } catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
+
+	/* Optaplanner */
 	
-	private static void sumDataFromCPLEXSolutionFiles (Path folderPath, String sumFileName, String solutionFilesName, int numberOfFiles) {
+	public static void solveWithOptaplannerWithSolver (TruckTemplateSolution unsolved, SolverConfig config, String solutionFilePath, int wildcardPenelty) {
+		TruckTemplateSolution.setWildcardPenaltyValue(wildcardPenelty);
+		
+		if(config.getPhaseConfigList().isEmpty()) {
+			System.err.println("Solver is not configured");
+		}
+
+		//Start solver
+		SolverFactory<TruckTemplateSolution> solverFactory = SolverFactory.create(config);
+		Solver<TruckTemplateSolution> solver = solverFactory.buildSolver();
+		TruckTemplateSolution solved = solver.solve(unsolved);
+		
+
+		try (PrintStream output = new PrintStream(solutionFilePath)) {
+			for(OpRow row : solved.getOpRows()) {
+				output.print(String.format("Row: %s, %s, Pallets: ", (row.getId()+1), (row.getCurrentSequence().isWildcard()) ? "Wildcard" : "Sequenz: " + (row.getCurrentSequence().getId()+1)));
+				for(OpPallet pallet : row.getOpPallets()) {
+					output.print(String.format("(%s %s) ", pallet.getType(), pallet.getWeight()));
+				}
+				output.println();
+			}
+			
+			output.println("\nPallets used: " + solved.getOpRows().stream().mapToInt(r -> r.getOpPallets().size()).sum());
+			output.println("Weight used: " + solved.getOpRows().stream().mapToInt(r -> r.getCurrentWeight()).sum());
+			output.println("OBJECTIVE: " + solved.getScore().getSoftScore());
+			output.println("Computation Time: " + config.getTerminationConfig().getSecondsSpentLimit());
+			output.println("Wildcards used: " + solved.getOpRows().stream().filter(r -> r.getCurrentSequence().isWildcard()).count());
+			output.println("U-Value: " + wildcardPenelty);
+			output.println("Accepted Count Limit: " + ((LocalSearchPhaseConfig)config.getPhaseConfigList().get(0)).getForagerConfig().getAcceptedCountLimit());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}	
+	
+	public static SolverConfig createConfig(int timeToSolve, int numberOfSections, int maxPossibleWeight, int acceptedCountLimit, int entityTabuSize, int valueTabusize) {
+		//Config
+		SolverConfig config = new SolverConfig();
+		config.setRandomSeed(0L);
+		config.setSolutionClass(TruckTemplateSolution.class);
+		config.setEntityClassList(Arrays.asList(OpPallet.class, OpRow.class));
+		
+		//Score calculator
+		ScoreDirectorFactoryConfig sdfc = new ScoreDirectorFactoryConfig();
+		sdfc.setConstraintProviderClass(TruckTemplateConstraints.class);
+		config.setScoreDirectorFactoryConfig(sdfc);
+
+		//Termination config
+		TerminationConfig tc = new TerminationConfig();
+		tc.setSecondsSpentLimit((long)timeToSolve);
+		config.setTerminationConfig(tc);
+		
+		//LocalSearch phase
+		LocalSearchPhaseConfig pc = new LocalSearchPhaseConfig();
+		
+		//LocalSearch Termination
+		tc = new TerminationConfig();
+		//tc.setUnimprovedSecondsSpentLimit(20L);
+		pc.setTerminationConfig(tc);
+
+		//MoveIteratorFactory
+		MoveIteratorFactoryConfig mifc = new MoveIteratorFactoryConfig();
+		mifc.setMoveIteratorFactoryClass(OpRowMoveIteratorFactory.class);
+		pc.setMoveSelectorConfig(mifc);
+
+		//Acceptor
+		LocalSearchAcceptorConfig lsac = new LocalSearchAcceptorConfig();
+		lsac.setEntityTabuSize(entityTabuSize);
+		lsac.setValueTabuSize(valueTabusize);
+		lsac.setSimulatedAnnealingStartingTemperature(numberOfSections + "hard/" + maxPossibleWeight + "soft");
+		pc.setAcceptorConfig(lsac);
+		
+		//Forager
+		LocalSearchForagerConfig lsfc = new LocalSearchForagerConfig();
+		lsfc.setAcceptedCountLimit(acceptedCountLimit);
+		pc.setForagerConfig(lsfc);
+
+		//Set LocalSearch phase to config
+		config.setPhaseConfigList(Arrays.asList(pc));
+		
+		return config;
+	}
+		
+	/* Both */
+	
+	public static void sumDataFromSolutionFiles (Path folderPath, String sumFileName, String solutionFilesName, int numberOfFiles) {
 		BiFunction<String, String, String> getTextAfterSearch = (text, search) -> (text.indexOf(search) != -1) ? text.substring(text.indexOf(search) + search.length()) : "";
 		File file = new File(folderPath.toString());
 		file.mkdir();
 		Path sumFilePath = Path.of(folderPath.toString(), sumFileName);
 
 		try (FileWriter writer = new FileWriter(sumFilePath.toString())) {
-			writer.write("Test Pallets Weight Objective Time Wildcards U-Value\n");
-			for(int i = 1; i < numberOfFiles; i++)
+			writer.write("Test Pallets Weight Objective Time Wildcards U-Value AcceptedCountLimit\n");
+			for(int i = 1; i < numberOfFiles+1; i++)
 			{		
 				writer.write(i + " ");
 				Path solutionFilePath = Path.of(folderPath.toString(), String.format(solutionFilesName, i));
@@ -243,104 +348,14 @@ public class TruckTemplateSolver {
 					else if(getTextAfterSearch.apply(line, "Wildcards used: ") != "")
 						writer.write(getTextAfterSearch.apply(line, "Wildcards used: ") + " ");
 					else if(getTextAfterSearch.apply(line, "U-Value: ") != "")
-						writer.write(getTextAfterSearch.apply(line, "U-Value: "));
+						writer.write(getTextAfterSearch.apply(line, "U-Value: ") + " ");
+					else if(getTextAfterSearch.apply(line, "Accepted Count Limit: ") != "")
+						writer.write(getTextAfterSearch.apply(line, "Accepted Count Limit: "));
 				}
 				writer.write("\n");
 	 		}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
-
-	
-	
-	/* Optaplanner */
-	
-	private static void solveWithOptaplanner (String problemFilePaths[], String solutionFilePath) {
-		TruckTemplateSolution.setWildcardPenaltyValue(wildcardPenelty);
-		TruckTemplateXMLSolutioneFileIO xstream = new TruckTemplateXMLSolutioneFileIO();
-		TruckTemplateSolution[] unsolved = new TruckTemplateSolution[problemFilePaths.length];
-		
-		for(int i = 0; i < problemFilePaths.length; i++) {
-			unsolved[i] = xstream.read(new File(problemFilePaths[i]));
-		}
-
-		//PlannerBenchmarkFactory benchmarkFactory = PlannerBenchmarkFactory.createFromXmlResource(BENCHMARK_CONFIG);
-		//PlannerBenchmark benchmark = benchmarkFactory.buildPlannerBenchmark(unsolved);
-		//benchmark.benchmark();
-		
-		
-		//SolverConfig config = SolverConfig.createFromXmlResource(SOLVER_CONFIG);
-		//Config
-		SolverConfig config = new SolverConfig();
-		config.setRandomSeed(0L);
-		config.setSolutionClass(TruckTemplateSolution.class);
-		config.setEntityClassList(Arrays.asList(OpPallet.class, OpRow.class));
-		
-		//Score calculator
-		ScoreDirectorFactoryConfig sdfc = new ScoreDirectorFactoryConfig();
-		sdfc.setConstraintProviderClass(TruckTemplateConstraints.class);
-		config.setScoreDirectorFactoryConfig(sdfc);
-
-		//Termination config
-		TerminationConfig tc = new TerminationConfig();
-		tc.setSecondsSpentLimit(timeToSolve*100);
-		config.setTerminationConfig(tc);
-		
-		//LocalSearch phase
-		LocalSearchPhaseConfig pc = new LocalSearchPhaseConfig();
-		
-		//LocalSearch Termination
-		tc = new TerminationConfig();
-		tc.setUnimprovedSecondsSpentLimit(20L);
-		pc.setTerminationConfig(tc);
-
-		//MoveIteratorFactory
-		MoveIteratorFactoryConfig mifc = new MoveIteratorFactoryConfig();
-		mifc.setMoveIteratorFactoryClass(OpRowMoveIteratorFactory.class);
-		pc.setMoveSelectorConfig(mifc);
-
-		//Acceptor
-		LocalSearchAcceptorConfig lsac = new LocalSearchAcceptorConfig();
-		lsac.setSimulatedAnnealingStartingTemperature("16hard/24000soft");
-		pc.setAcceptorConfig(lsac);
-		
-		//Forager
-		LocalSearchForagerConfig lsfc = new LocalSearchForagerConfig();
-		lsfc.setAcceptedCountLimit(4);
-		pc.setForagerConfig(lsfc);
-
-		//Set LocalSearch phase to config
-		config.setPhaseConfigList(Arrays.asList(pc));
-		
-		//Start solver
-		SolverFactory<TruckTemplateSolution> solverFactory = SolverFactory.create(config);
-		Solver<TruckTemplateSolution> solver = solverFactory.buildSolver();
-		TruckTemplateSolution solved = solver.solve(unsolved[0]);
-		
-
-		try (PrintStream output = new PrintStream(solutionFilePath)) {
-			for(OpRow row : solved.getOpRows()) {
-				output.print(String.format("Row: %s, %s, Pallets: ", (row.getId()+1), (row.getCurrentSequence().isWildcard()) ? "Wildcard" : "Sequenz: " + (row.getCurrentSequence().getId()+1)));
-				for(OpPallet pallet : row.getOpPallets()) {
-					output.print(String.format("(%s %s) ", pallet.getType(), pallet.getWeight()));
-				}
-				output.println();
-			}
-			
-			output.println("\nPallets used: " + solved.getOpRows().stream().mapToInt(r -> r.getOpPallets().size()).sum());
-			output.println("Weight used: " + solved.getOpRows().stream().mapToInt(r -> r.getCurrentWeight()).sum());
-			output.println("OBJECTIVE: " + solved.getScore().getSoftScore());
-			output.println("Computation Time: " + timeToSolve);
-			output.println("Wildcards used: " + solved.getOpRows().stream().filter(r -> r.getCurrentSequence().isWildcard()).count());
-			output.println("U-Value: " + wildcardPenelty);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-        
-
-	}	
-	
-	private static void sumDataFromOptaplannerSolutionFiles (String folderName, String sumFileName) {
 	}
 }

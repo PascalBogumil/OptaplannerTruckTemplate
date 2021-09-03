@@ -64,24 +64,6 @@ public class OpSequence extends AbstractPersistable implements Comparable<OpSequ
 		return isWildcard;
 	}
 	
-	/*public int maxPossibleWeight() {
-		int[] eachTypePossibleWeight = new int[6];
-		
-		for(int i = 0; i < palletsNeeded.length; i++) {
-			eachTypePossibleWeight[i] = palletsNeeded[i]*OpPallet.getMaxWeightOfType(i);
-		}
-		
-		return Arrays.stream(eachTypePossibleWeight).sum();
-	}
-	
-	public Map<Integer, Integer> getCountPerType() {
-		Map<Integer, Integer> types = new HashMap<>();
-		for (int i = 0; i < palletsNeeded.length; i++)
-			//if(palletCountsMax[i] != 0)
-				types.put(i, palletsNeeded[i]);
-		return types;
-	}*/
-	
 	@Override
 	public boolean equals(Object obj) {
         if (this == obj)
@@ -93,8 +75,6 @@ public class OpSequence extends AbstractPersistable implements Comparable<OpSequ
         OpSequence other = (OpSequence) obj;
 		return new EqualsBuilder()
 				.append(id, other.getId())
-				//.append(maxWeight, other.getMaxWeight())
-				//.append(palletsNeeded, other.getPalletsNeededOfType())
 				.isEquals();
 	}
 	
@@ -102,8 +82,6 @@ public class OpSequence extends AbstractPersistable implements Comparable<OpSequ
 	public int hashCode() {
         return new HashCodeBuilder()
                 .append(id)
-				//.append(maxWeight)
-				//.append(palletsNeeded)
                 .toHashCode();
 	}
 	
@@ -124,9 +102,6 @@ public class OpSequence extends AbstractPersistable implements Comparable<OpSequ
 		if(o.isWildcard()) return 1;
 		
 		return new CompareToBuilder()
-				//.append(getNumberOfNeededPallets(), o.getNumberOfNeededPallets())
-				////.append(getMaxLoadCapacity(), o.getMaxLoadCapacity())
-				//.append(Arrays.stream(getPalletCountsMax()).max().getAsInt()-Arrays.stream(getPalletCountsMax()).min().getAsInt(), Arrays.stream(o.getPalletCountsMax()).max().getAsInt()-Arrays.stream(o.getPalletCountsMax()).min().getAsInt())
 				.append(getId(), o.getId())
 				.toComparison();
 	}

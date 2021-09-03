@@ -34,7 +34,6 @@ public class OpRow extends AbstractPersistable implements Comparable<OpRow> {
 		super(id);
 		this.opPallets = new ArrayList<>();
 		this.sequences = sequences;
-		//this.sequences.add(new OpSequence(999999));
 		Collections.sort(this.sequences);
 		this.currentSequence = sequences.get(0);
 	}
@@ -44,27 +43,7 @@ public class OpRow extends AbstractPersistable implements Comparable<OpRow> {
 	public int getNormalizedValueOfPallets() {
 		return getOpPallets().stream().mapToInt(OpPallet::getSize).sum();
 	}	
-	
-	/*public boolean isAnyOverFilled() {
-		for(int i = 0; i < OpPallet.getNumberOfTypes(); i++)
-			if(isTypeOverFilled(i)) return true;
-		return false;
-	}
-	
-	public boolean allTypesFilled() {
-		for(int i = 0; i < OpPallet.getNumberOfTypes(); i++)
-			if(currentSequence.getPalletsNeededOfType(i) != getOpPalletsOfType(i).size()) return false;
-		
-		return true;
-	}
-	
-	public boolean isTypeFilled(int type) {
-		return currentSequence.getPalletsNeededOfType(type) == getOpPalletsOfType(type).size();
-	}
-	
-	public boolean isTypeOverFilled(int type) {
-		return currentSequence.getPalletsNeededOfType(type) < getOpPalletsOfType(type).size();
-	}*/
+
 	
 	public boolean isValid() {
 		if(currentSequence.isWildcard()) 
@@ -83,18 +62,6 @@ public class OpRow extends AbstractPersistable implements Comparable<OpRow> {
 	public int getCurrentWeight() {
 		return getOpPallets().stream().collect(Collectors.summingInt(OpPallet::getWeight));
 	}
-	
-	/*public int countOfNeededPallets() {
-		return (sequences != null) ? currentSequence.getCountPerType().values().stream().collect(Collectors.summingInt(Integer::intValue)) : 0;
-	}
-	
-	public int getNeedOfType(int type) {
-		return currentSequence.getCountPerType().get(type);
-	}
-	
-	public Set<Integer> getNeededTypes() {
-		return (sequences != null) ? currentSequence.getCountPerType().keySet() : Collections.emptySet();
-	}*/
 
 	public List<OpSequence> getListAfterCurrentSequence() {
 		return sequences.stream().filter(s -> s.compareTo(currentSequence) == 1).toList();
@@ -156,10 +123,6 @@ public class OpRow extends AbstractPersistable implements Comparable<OpRow> {
 	@Override
 	public int compareTo(OpRow o) {
 		return new CompareToBuilder()
-				////.append(Arrays.stream(a.getSequence().getPalletCountsMax()).sum(), Arrays.stream(b.getSequence().getPalletCountsMax()).sum())
-				//.append(getCurrentSequence().getMaxLoadCapacity(), o.getCurrentSequence().getMaxLoadCapacity())
-				//.append(getCurrentSequence().getNumberOfNeededPallets(), o.getCurrentSequence().getNumberOfNeededPallets())
-				//.append(getSequences().stream().mapToInt(s -> s.getNumberOfNeededPallets()).sum(), o.getSequences().stream().mapToInt(s -> s.getNumberOfNeededPallets()).sum())
 				.append(getId(), o.getId())
 				.toComparison();
 	}

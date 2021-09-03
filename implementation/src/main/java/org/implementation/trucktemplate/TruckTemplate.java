@@ -92,7 +92,7 @@ public class TruckTemplate {
 		return sequencePalletsForRows;
 	}	
 	
-	public void saveTemplateAsCPLEXProblemFile(String filePath, int wildcardPenelty) {
+	public void saveTemplateAsCPLEXProblemFile(String filePath, int wildcardPenelty, int timeToSolve) {
 		File file = new File(filePath);
 		file.getParentFile().mkdirs();
 		
@@ -170,7 +170,7 @@ public class TruckTemplate {
 		}
 	}
 	
-	public void saveTemplateAsOptaplannerProblemFile(String filePath) {
+	public TruckTemplateSolution convertToOptaplannerProblem() {
 		//Convert sections
 		List<OpRow> sections = new ArrayList<>();
 		for(int k = 0; k < numberOfSections; k++) {
@@ -202,11 +202,6 @@ public class TruckTemplate {
 		}
 				
 		TruckTemplateSolution unsolved = new TruckTemplateSolution(sections, pallets);
-		
-		File file = new File(filePath);
-		file.getParentFile().mkdirs();
-		
-		TruckTemplateXMLSolutioneFileIO xstream = new TruckTemplateXMLSolutioneFileIO();
-		xstream.write(unsolved, file);
+		return unsolved;
 	}
 }
