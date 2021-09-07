@@ -6,11 +6,14 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.stream.Collectors;
 import java.util.Objects;
 import java.util.Random;
 
 import org.optaplanner.core.api.score.director.ScoreDirector;
 import org.optaplanner.core.impl.heuristic.selector.move.factory.MoveIteratorFactory;
+
+import com.github.javaparser.ast.expr.ThisExpr;
 
 public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTemplateSolution, OpRowChangeMove> {
 
@@ -36,6 +39,7 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 		private final ScoreDirector<TruckTemplateSolution> solution;		
 		private final List<OpPallet> pallets;
 		private final List<OpRow> rows;
+		private final List<OpRow> candidateRows;
 		
 		public OpRowChangeMoveIterator (ScoreDirector<TruckTemplateSolution> solution) {
 			this(solution, null);
@@ -46,7 +50,7 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 			this.solution = solution;
 			this.pallets = solution.getWorkingSolution().getOpPallets();
 			this.rows = solution.getWorkingSolution().getOpRows();			
-			
+			this.candidateRows = this.rows.stream().filter(r -> r.getSequences().size() > 1).collect(Collectors.toList());
 			Collections.sort(pallets);
 			Collections.sort(rows);
 		}
@@ -54,7 +58,7 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 		@Override
 		public boolean hasNext() {
 			long palletsWithoutRow = pallets.stream().filter(p -> p.getRow() == null).count();
-			return palletsWithoutRow != 0;
+			return !firstCalculation || palletsWithoutRow != 0 && candidateRows.size() > 0;
 		}
 		
 		@Override
@@ -70,8 +74,8 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 			//Random row and sequence selection
 			if(rand != null) {
 				do {
-					int randomRowIndex = rand.nextInt(rows.size());
-				    OpRow randomRow = rows.get(randomRowIndex);
+					int randomRowIndex = rand.nextInt(candidateRows.size());
+				    OpRow randomRow = candidateRows.get(randomRowIndex);
 				    
 				    int numberOfSequences = (int)randomRow.getSequences().stream().filter(s -> !Objects.equals(s, randomRow.getCurrentSequence())).count();
 				    int randomSequenceIndex = rand.nextInt(numberOfSequences);

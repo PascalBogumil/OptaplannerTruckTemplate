@@ -135,7 +135,45 @@ public class TruckTemplateSolver {
 		
 		//Wildcard U-Value test
 		//OptaplannerTests.X_Tests_Pro_UValue_X_Sekunden_Pro_Test(360, 40, 200, 10);
-		OptaplannerTests.X_Tests_Pro_UValue_X_Sekunden_Pro_Test(360, 40, 200, 120);
+		//OptaplannerTests.X_Tests_Pro_UValue_X_Sekunden_Pro_Test(360, 40, 200, 120);
+		
+		//Comparison Sequences
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(0, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 1, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(1, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 2, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(2, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 4, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(3, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 6, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(4, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 8, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(5, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 10, 90);
+		
+		//Comparison Sections
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(6, 50, 10, 1, new int[] {1000}, 5, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(7, 50, 10, 4, new int[] {1000, 1500, 1500, 1000}, 5, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(8, 50, 10, 8, new int[] {1000, 1500, 1500, 2000, 2000, 1500, 1500, 1000}, 5, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(9, 50, 10, 12, new int[] {1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000}, 5, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(10, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(11, 50, 10, 20, new int[] {1000, 1000, 1000, 1000, 1500, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1500, 1000, 1000, 1000, 1000}, 5, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(12, 50, 10, 24, new int[] {1000, 1000, 1000, 1000, 1500, 1500, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1500, 1500, 1000, 1000, 1000, 1000}, 5, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(13, 50, 10, 28, new int[] {1000, 1000, 1000, 1000, 1000, 1500, 1500, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1500, 1500, 1000, 1000, 1000, 1000, 1000}, 5, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(14, 50, 10, 32, new int[] {1000, 1000, 1000, 1000, 1000, 1000, 1500, 1500, 1500, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1500, 1500, 1500, 1000, 1000, 1000, 1000, 1000, 1000}, 5, 90);
+		
+		//Comparison Pallets
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(15, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 10);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(16, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 20);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(17, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 40);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(18, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 60);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(19, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 80);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(20, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 100);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(21, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 120);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(22, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 140);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(23, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 160);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(24, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 180);
+
+		//Comparison Section Weights
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Max_Weight_X_Test(25, 50, 10, 16, new int[] {250, 250, 250, 375, 375, 500, 500, 500, 500, 500, 500, 375, 375, 250, 250, 250}, 5, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Max_Weight_X_Test(26, 50, 10, 16, new int[] {500, 500, 500, 750, 750, 1000, 1000, 1000, 1000, 1000, 1000, 750, 750, 500, 500, 500}, 5, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Max_Weight_X_Test(27, 50, 10, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Max_Weight_X_Test(28, 50, 10, 16, new int[] {2000, 2000, 2000, 3000, 3000, 4000, 4000, 4000, 4000, 4000, 4000, 3000, 3000, 2000, 2000, 2000}, 5, 90);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Max_Weight_X_Test(29, 50, 10, 16, new int[] {4000, 4000, 4000, 6000, 6000, 8000, 8000, 8000, 8000, 8000, 8000, 6000, 6000, 4000, 4000, 4000}, 5, 90);
 	}
 	
 	
@@ -154,9 +192,9 @@ public class TruckTemplateSolver {
             IloOplModelDefinition def = oplF.createOplModelDefinition(modelSource,settings);
             
             IloCplex cplex = oplF.createCplex();
-            cplex.setParam(IloCplex.Param.DetTimeLimit, timeToSolve);
+            cplex.setParam(IloCplex.Param.DetTimeLimit, timeToSolve*1000);
             cplex.setParam(IloCplex.Param.Advance, 0);
-            cplex.setOut(null);
+            cplex.setOut(System.out);
             
             IloOplModel opl = oplF.createOplModel(def, cplex);
             IloOplDataSource dataSource = oplF.createOplDataSource(problemFilePath);
@@ -330,7 +368,8 @@ public class TruckTemplateSolver {
 		Path sumFilePath = Path.of(folderPath.toString(), sumFileName);
 
 		try (FileWriter writer = new FileWriter(sumFilePath.toString())) {
-			writer.write("Test Pallets Weight Objective Time Wildcards U-Value AcceptedCountLimit\n");
+			//writer.write("Test Pallets Weight Objective Time Wildcards U-Value AcceptedCountLimit\n");
+			writer.write("Test Pallets Weight Objective Time Wildcards\n");
 			for(int i = 1; i < numberOfFiles+1; i++)
 			{		
 				writer.write(i + " ");
@@ -347,10 +386,10 @@ public class TruckTemplateSolver {
 						writer.write(getTextAfterSearch.apply(line, "Computation Time: ") + " ");
 					else if(getTextAfterSearch.apply(line, "Wildcards used: ") != "")
 						writer.write(getTextAfterSearch.apply(line, "Wildcards used: ") + " ");
-					else if(getTextAfterSearch.apply(line, "U-Value: ") != "")
+					/*else if(getTextAfterSearch.apply(line, "U-Value: ") != "")
 						writer.write(getTextAfterSearch.apply(line, "U-Value: ") + " ");
 					else if(getTextAfterSearch.apply(line, "Accepted Count Limit: ") != "")
-						writer.write(getTextAfterSearch.apply(line, "Accepted Count Limit: "));
+						writer.write(getTextAfterSearch.apply(line, "Accepted Count Limit: "));*/
 				}
 				writer.write("\n");
 	 		}

@@ -170,7 +170,7 @@ public class TruckTemplate {
 		}
 	}
 	
-	public TruckTemplateSolution convertToOptaplannerProblem() {
+	public TruckTemplateSolution convertToOptaplannerProblem(boolean useWildcard) {
 		//Convert sections
 		List<OpRow> sections = new ArrayList<>();
 		for(int k = 0; k < numberOfSections; k++) {
@@ -179,16 +179,16 @@ public class TruckTemplate {
 				int sumOfWantedPallets = Arrays.stream(sequencePalletsForRows[k][l]).sum();
 				int weight = sequenceLoadCapacityForRows[k][l];
 				if(sumOfWantedPallets != 0 && weight != 0) {		
-					int[] typen = new int[numberOfTypes];
+					int[] types = new int[numberOfTypes];
 					for(int i = 0; i < numberOfTypes; i++) {
-						typen[i] = sequencePalletsForRows[k][l][i];
+						types[i] = sequencePalletsForRows[k][l][i];
 					}
 					
-					sequences.add(new OpSequence(l, weight, typen));
+					sequences.add(new OpSequence(l, weight, types));
 				}
 			}
-			sequences.add(new OpSequence(sequences.size()+1));
-			sections.add(new OpRow(k, sequences));	
+			//sequences.add(new OpSequence(sequences.size()+1));
+			sections.add(new OpRow(k, sequences, useWildcard));	
 		}
 		
 		//Convert pallets

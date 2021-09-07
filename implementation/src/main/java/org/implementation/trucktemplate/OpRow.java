@@ -29,11 +29,19 @@ public class OpRow extends AbstractPersistable implements Comparable<OpRow> {
 	private List<OpPallet> opPallets;
 	
 	public OpRow () { }
-		
+	
 	public OpRow (long id, List<OpSequence> sequences) {
+		this(id, sequences, false);
+	}
+	
+	
+	public OpRow (long id, List<OpSequence> sequences, boolean useWildcard) {
 		super(id);
 		this.opPallets = new ArrayList<>();
 		this.sequences = sequences;
+		
+		if (useWildcard) this.sequences.add(new OpSequence(this.sequences.size()));
+		
 		Collections.sort(this.sequences);
 		this.currentSequence = sequences.get(0);
 	}

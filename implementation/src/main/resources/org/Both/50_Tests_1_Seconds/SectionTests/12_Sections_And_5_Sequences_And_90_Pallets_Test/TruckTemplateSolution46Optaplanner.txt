@@ -1,0 +1,20 @@
+Row: 1, Sequenz: 2, Pallets: (0 13) (4 16) (3 20) (3 66) (4 81) (3 351) (2 375) 
+Row: 2, Sequenz: 4, Pallets: (1 12) (0 15) (1 113) (1 214) (4 621) 
+Row: 3, Sequenz: 2, Pallets: (3 12) (5 16) (4 108) (2 332) (1 461) (1 477) 
+Row: 4, Sequenz: 3, Pallets: (0 48) (2 278) (2 286) (4 300) (5 572) 
+Row: 5, Sequenz: 3, Pallets: (2 272) (5 292) (3 329) (3 343) (3 345) (5 416) 
+Row: 6, Sequenz: 3, Pallets: (0 273) (0 701) (0 785) 
+Row: 7, Sequenz: 5, Pallets: (0 638) (0 668) (0 669) 
+Row: 8, Sequenz: 1, Pallets: (0 229) (2 257) (2 267) (1 586) (0 621) 
+Row: 9, Sequenz: 5, Pallets: (5 166) (2 198) (2 244) (5 262) (3 304) (3 318) 
+Row: 10, Sequenz: 4, Pallets: (5 143) (5 234) (3 286) (3 304) (4 526) 
+Row: 11, Wildcard, Pallets: (3 144) (3 154) (2 172) (3 198) (3 217) (3 271) 
+Row: 12, Sequenz: 2, Pallets: (2 3) (2 35) (3 97) (3 106) (0 110) (3 124) (2 191) (4 321) 
+
+Pallets used: 65
+Weight used: 17606
+OBJECTIVE: 16206
+Computation Time: 1
+Wildcards used: 1
+U-Value: 1400
+Accepted Count Limit: 8
