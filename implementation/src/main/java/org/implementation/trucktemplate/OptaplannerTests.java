@@ -24,7 +24,7 @@ public class OptaplannerTests {
 			TruckTemplate template = generator.generateTemplate();
 			template.saveTemplateAsCPLEXProblemFile(String.format(problemFilePath, i), wildcardPenelty, timeToSolve);
 			SolverConfig config = TruckTemplateSolver.createConfig(timeToSolve, numberOfSections, IntStream.of(loadCapacityOfSections).sum(), acceptedCountLimit, entityTabuSize, valueTabuSize);
-			TruckTemplateSolver.solveWithOptaplannerWithSolver(template.convertToOptaplannerProblem(true), config, String.format(solutionFilePath, i), wildcardPenelty);
+			TruckTemplateSolver.solveWithOptaplannerWithSolver(template.convertToOptaplannerProblem(), config, String.format(solutionFilePath, i), wildcardPenelty);
 			
 			if(i % testsPerValue == 0) {
 				generator = new TruckTemplateGenerator(seed, numberOfSections, 5, 90, true, loadCapacityOfSections);
@@ -55,7 +55,7 @@ public class OptaplannerTests {
 			TruckTemplate template = generator.generateTemplate();
 			template.saveTemplateAsCPLEXProblemFile(String.format(problemFilePath, i), wildcardPenelty, timeToSolve);
 			SolverConfig config = TruckTemplateSolver.createConfig(timeToSolve, numberOfSections, IntStream.of(loadCapacityOfSections).sum(), acceptedCountLimit, 2, 0);
-			TruckTemplateSolver.solveWithOptaplannerWithSolver(template.convertToOptaplannerProblem(true), config, String.format(solutionFilePath, i), wildcardPenelty);
+			TruckTemplateSolver.solveWithOptaplannerWithSolver(template.convertToOptaplannerProblem(), config, String.format(solutionFilePath, i), wildcardPenelty);
 			
 			if(i % testsPerValue == 0) {
 				generator = new TruckTemplateGenerator(seed, numberOfSections, 5, 90, true, loadCapacityOfSections);

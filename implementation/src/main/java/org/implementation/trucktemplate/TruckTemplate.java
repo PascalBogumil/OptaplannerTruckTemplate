@@ -13,7 +13,7 @@ public class TruckTemplate {
 
 	//Fixed Parameters for each Truck Template
 	private static final int numberOfTypes = 6;
-	private static int wildcardWeight = 1200;
+	private static final int wildcardLoadCapacity = 1200;
 	private static final int wildcardSpace = 12;
 	private static final int[] normalizedValueOfType = new int[] {4, 2, 1, 1, 2, 4};
 	private static final int[] maxWeightEachType = new int[]{850, 750, 375, 375, 750, 850};
@@ -44,12 +44,8 @@ public class TruckTemplate {
 		return numberOfTypes;
 	}
 	
-	public static int getWildcardWeight() {
-		return wildcardWeight;
-	}
-	
-	public static int setWildcardWeight(int weight) {
-		return wildcardWeight = weight;
+	public static int getWildcardLoadCapacity() {
+		return wildcardLoadCapacity;
 	}
 
 	public static int getWildcardSpace() {
@@ -101,7 +97,7 @@ public class TruckTemplate {
 			writer.write("rows = " + numberOfSections + ";\n");
 			writer.write("maxSequences = " + maximumSequences + ";\n");
 			
-			writer.write("M = " + wildcardWeight + ";\n");
+			writer.write("M = " + wildcardLoadCapacity + ";\n");
 			writer.write("N = " + wildcardSpace + ";\n");
 			writer.write("U = " + wildcardPenelty + ";\n");
 			
@@ -170,7 +166,7 @@ public class TruckTemplate {
 		}
 	}
 	
-	public TruckTemplateSolution convertToOptaplannerProblem(boolean useWildcard) {
+	public TruckTemplateSolution convertToOptaplannerProblem() {
 		//Convert sections
 		List<OpRow> sections = new ArrayList<>();
 		for(int k = 0; k < numberOfSections; k++) {
@@ -187,8 +183,7 @@ public class TruckTemplate {
 					sequences.add(new OpSequence(l, weight, types));
 				}
 			}
-			//sequences.add(new OpSequence(sequences.size()+1));
-			sections.add(new OpRow(k, sequences, useWildcard));	
+			sections.add(new OpRow(k, sequences));	
 		}
 		
 		//Convert pallets

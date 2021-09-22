@@ -31,17 +31,10 @@ public class OpRow extends AbstractPersistable implements Comparable<OpRow> {
 	public OpRow () { }
 	
 	public OpRow (long id, List<OpSequence> sequences) {
-		this(id, sequences, false);
-	}
-	
-	
-	public OpRow (long id, List<OpSequence> sequences, boolean useWildcard) {
 		super(id);
 		this.opPallets = new ArrayList<>();
 		this.sequences = sequences;
-		
-		if (useWildcard) this.sequences.add(new OpSequence(this.sequences.size()));
-		
+		this.sequences.add(new OpSequence(this.sequences.size()));
 		Collections.sort(this.sequences);
 		this.currentSequence = sequences.get(0);
 	}
@@ -55,9 +48,9 @@ public class OpRow extends AbstractPersistable implements Comparable<OpRow> {
 	
 	public boolean isValid() {
 		if(currentSequence.isWildcard()) 
-			return getNormalizedValueOfPallets() <= OpSequence.getWildcardSpace() && getCurrentWeight() <= OpSequence.getWildcardWeight();
+			return getNormalizedValueOfPallets() <= OpSequence.getWildcardSpace() && getCurrentWeight() <= OpSequence.getWildcardLoadCapacity();
 		
-		if(getCurrentWeight() > currentSequence.getMaxLoadCapacity())
+		if(getCurrentWeight() > currentSequence.getLoadCapacity())
 			return false;	
 		
 		for(int i = 0; i < OpPallet.getNumberOfTypes(); i++)
@@ -69,10 +62,6 @@ public class OpRow extends AbstractPersistable implements Comparable<OpRow> {
 	
 	public int getCurrentWeight() {
 		return getOpPallets().stream().collect(Collectors.summingInt(OpPallet::getWeight));
-	}
-
-	public List<OpSequence> getListAfterCurrentSequence() {
-		return sequences.stream().filter(s -> s.compareTo(currentSequence) == 1).toList();
 	}
 	
 	public List<OpPallet> getOpPalletsOfType(int type) {
@@ -131,6 +120,7 @@ public class OpRow extends AbstractPersistable implements Comparable<OpRow> {
 	@Override
 	public int compareTo(OpRow o) {
 		return new CompareToBuilder()
+				.append(getCurrentSequence(), o.getCurrentSequence())
 				.append(getId(), o.getId())
 				.toComparison();
 	}
