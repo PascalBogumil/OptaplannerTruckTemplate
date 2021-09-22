@@ -27,6 +27,7 @@ import org.optaplanner.core.config.heuristic.selector.move.factory.MoveIteratorF
 import org.optaplanner.core.config.localsearch.LocalSearchPhaseConfig;
 import org.optaplanner.core.config.localsearch.decider.acceptor.LocalSearchAcceptorConfig;
 import org.optaplanner.core.config.localsearch.decider.forager.LocalSearchForagerConfig;
+import org.optaplanner.core.config.localsearch.decider.forager.LocalSearchPickEarlyType;
 import org.optaplanner.core.config.score.director.ScoreDirectorFactoryConfig;
 import org.optaplanner.core.config.solver.SolverConfig;
 import org.optaplanner.core.config.solver.termination.TerminationConfig;
@@ -177,9 +178,9 @@ public class TruckTemplateSolver {
 		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Max_Weight_X_Test(29, 50, 10, 16, new int[] {4000, 4000, 4000, 6000, 6000, 8000, 8000, 8000, 8000, 8000, 8000, 6000, 6000, 4000, 4000, 4000}, 5, 90);*/
 	
 		//Comparison Sections with same pallet/section ratio
-		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(40, 250, 120, 8, new int[] {1000, 1500, 1500, 2000, 2000, 1500, 1500, 1000}, 5, 45);
-		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(41, 250, 120, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 90);
-		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(42, 250, 120, 24, new int[] {1000, 1000, 1000, 1000, 1500, 1500, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1500, 1500, 1000, 1000, 1000, 1000}, 5, 135);
+		//BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(40, 250, 120, 8, new int[] {1000, 1500, 1500, 2000, 2000, 1500, 1500, 1000}, 5, 45);
+		//BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(41, 250, 120, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 90);
+		//BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(42, 250, 120, 24, new int[] {1000, 1000, 1000, 1000, 1500, 1500, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1500, 1500, 1000, 1000, 1000, 1000}, 5, 135);
 		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(43, 250, 120, 32, new int[] {1000, 1000, 1000, 1000, 1000, 1500, 1500, 1500, 1500, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1500, 1500, 1500, 1500, 1000, 1000, 1000, 1000, 1000}, 5, 180);
 		
 		//Comparison Sequences with same pallet/sequence ratio
@@ -356,11 +357,13 @@ public class TruckTemplateSolver {
 		//LocalSearch Termination
 		tc = new TerminationConfig();
 		//tc.setUnimprovedSecondsSpentLimit(20L);
+		//tc.setStepCountLimit(1000);
 		pc.setTerminationConfig(tc);
 
 		//MoveIteratorFactory
 		MoveIteratorFactoryConfig mifc = new MoveIteratorFactoryConfig();
 		mifc.setMoveIteratorFactoryClass(OpRowMoveIteratorFactory.class);
+		//mifc.setSelectedCountLimit(10L);
 		pc.setMoveSelectorConfig(mifc);
 
 		//Acceptor
@@ -373,6 +376,7 @@ public class TruckTemplateSolver {
 		//Forager
 		LocalSearchForagerConfig lsfc = new LocalSearchForagerConfig();
 		lsfc.setAcceptedCountLimit(acceptedCountLimit);
+		//lsfc.setPickEarlyType(LocalSearchPickEarlyType.FIRST_BEST_SCORE_IMPROVING);
 		pc.setForagerConfig(lsfc);
 
 		//Set LocalSearch phase to config

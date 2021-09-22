@@ -33,7 +33,7 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 	}
 
 	public static class OpRowChangeMoveIterator implements Iterator<OpRowChangeMove> {
-		private static boolean firstCalculation = false;
+		private /*static*/ boolean firstCalculation = false;
 
 		private final Random rand;
 		private final ScoreDirector<TruckTemplateSolution> solution;		
@@ -72,6 +72,7 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 			OpRowChangeMove move = null;
 			
 			//Random row and sequence selection
+			int countOfSelectedMoves = 0;
 			if(rand != null) {
 				do {
 					int randomRowIndex = rand.nextInt(candidateRows.size());
@@ -82,7 +83,7 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 				    
 				    OpSequence randomSequence = randomRow.getSequences().stream().filter(s -> !Objects.equals(s, randomRow.getCurrentSequence())).toList().get(randomSequenceIndex);
 				    move = new OpRowChangeMove(randomRow, randomSequence);
-				} while(!move.isMoveDoable(solution));
+				} while(!move.isMoveDoable(solution) && countOfSelectedMoves++ < 100000);
 			} 
 			
 			return move;

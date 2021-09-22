@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (3 120) (1 492) (1 576) 
+Row: 2, Wildcard, Pallets: (3 120) (5 147) (1 423) (1 510) 
+Row: 3, Wildcard, Pallets: (5 245) (1 412) (1 541) 
+Row: 4, Sequenz: 5, Pallets: (5 30) (0 74) (5 843) 
+Row: 5, Sequenz: 2, Pallets: (3 4) (3 6) (1 14) (0 78) (5 841) 
+Row: 6, Sequenz: 2, Pallets: (1 29) (0 79) (4 126) (5 836) 
+Row: 7, Sequenz: 2, Pallets: (3 27) (0 89) (4 130) (3 362) (5 833) 
+Row: 8, Sequenz: 1, Pallets: (3 28) (5 35) (3 46) (3 47) (3 342) (5 823) 
+Row: 9, Wildcard, Pallets: (1 337) (1 384) (1 477) 
+Row: 10, Sequenz: 2, Pallets: (1 55) (3 70) (0 103) (4 176) (3 337) (1 684) 
+Row: 11, Sequenz: 3, Pallets: (1 41) (3 75) (0 112) (3 292) (5 816) 
+Row: 12, Wildcard, Pallets: (1 324) (1 386) (5 484) 
+Row: 13, Sequenz: 1, Pallets: (0 114) (1 135) (1 658) (5 815) 
+Row: 14, Sequenz: 1, Pallets: (0 122) (1 155) (1 632) (5 812) 
+Row: 15, Sequenz: 3, Pallets: (3 94) (0 140) (3 284) (1 615) (5 800) 
+Row: 16, Sequenz: 3, Pallets: (0 254) (5 796) (0 810) 
+Row: 17, Sequenz: 5, Pallets: (0 244) (4 302) (4 482) (5 794) 
+Row: 18, Sequenz: 2, Pallets: (3 266) (3 270) (0 367) (0 391) (1 581) 
+Row: 19, Wildcard, Pallets: (1 376) (0 802) 
+Row: 20, Sequenz: 5, Pallets: (1 93) (3 100) (3 235) (5 777) (5 793) 
+Row: 21, Sequenz: 2, Pallets: (5 37) (3 201) (3 219) (4 717) (5 776) 
+Row: 22, Sequenz: 2, Pallets: (5 83) (3 157) (1 164) (3 187) (5 756) 
+Row: 23, Sequenz: 3, Pallets: (2 57) (5 84) (3 143) (1 201) (5 737) 
+Row: 24, Sequenz: 3, Pallets: (5 2) (1 233) (4 507) (5 725) 
+Row: 25, Wildcard, Pallets: (5 395) (0 802) 
+Row: 26, Wildcard, Pallets: (5 401) (0 792) 
+Row: 27, Sequenz: 1, Pallets: (5 119) (3 122) (3 129) (1 246) (5 720) 
+Row: 28, Sequenz: 4, Pallets: (5 97) (0 412) (0 437) 
+Row: 29, Sequenz: 2, Pallets: (3 18) (3 100) (5 123) (1 298) (0 444) 
+Row: 30, Wildcard, Pallets: (5 421) (0 779) 
+Row: 31, Wildcard, Pallets: (5 481) (5 712) 
+Row: 32, Wildcard, Pallets: (5 465) (0 694) 
+
+Pallets used: 124
+Weight used: 43763
+OBJECTIVE: 28363
+Computation Time: 120
+Wildcards used: 11
+U-Value: 1400
+Accepted Count Limit: 8

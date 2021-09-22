@@ -1,0 +1,31 @@
+Row: 1, Sequenz 2, Pallets: (8 4 1) (13 2 647) (16 1 7) (16 3 289) (27 2 50) (28 2 6) 
+Row: 2, Sequenz 5, Pallets: (1 3 119) (1 6 71) (6 1 190) (6 4 189) (8 3 131) (22 3 294) 
+Row: 3, Sequenz 1, Pallets: (1 4 344) (2 6 112) (6 6 152) (10 3 177) (16 2 212) 
+Row: 4, Sequenz 3, Pallets: (3 3 225) (5 4 185) (10 1 261) (23 3 145) (24 3 55) (34 6 129) 
+Row: 5, Sequenz 2, Pallets: (4 1 642) (20 1 436) (22 1 415) 
+Row: 6, Sequenz 3, Pallets: (7 2 291) (9 6 364) (19 1 337) (29 2 507) 
+Row: 7, Sequenz 1, Pallets: (4 3 167) (5 3 277) (6 3 269) (13 1 533) (13 3 220) (16 6 34) 
+Row: 8, Sequenz 3, Pallets: (13 6 691) (14 6 198) (32 6 610) 
+Row: 9, Sequenz 5, Pallets: (4 6 567) (8 6 838) (20 6 593) 
+Row: 10, Sequenz 3, Pallets: (4 2 686) (11 6 641) (12 3 331) (20 3 245) (24 1 92) 
+Row: 11, Sequenz 1, Pallets: (7 3 216) (9 1 63) (14 3 256) (17 1 777) (22 2 683) 
+Row: 12, Sequenz 3, Pallets: (14 2 213) (27 6 726) (31 6 427) (33 2 634) 
+Row: 13, Sequenz 1, Pallets: (10 2 494) (10 4 366) (26 3 348) (30 6 187) (32 2 112) (34 2 493) 
+Row: 14, Sequenz 5, Pallets: (1 5 30) (2 4 370) (2 5 659) (12 2 740) (18 3 86) (23 1 113) 
+Row: 15, Sequenz 1, Pallets: (7 4 230) (15 1 244) (19 3 268) (23 6 709) (37 2 549) 
+Row: 16, Sequenz 2, Pallets: (2 1 651) (3 1 842) (5 1 492) 
+Row: 17, Sequenz 4, Pallets: (1 2 598) (7 1 424) (7 6 102) (9 4 260) (25 3 116) 
+Row: 18, Sequenz 4, Pallets: (2 3 9) (15 2 514) (15 3 308) (23 2 56) (25 2 459) (26 6 154) 
+Row: 19, Sequenz 4, Pallets: (1 1 168) (14 1 529) (22 6 803) 
+Row: 20, Sequenz 2, Pallets: (11 1 588) (18 1 507) (25 6 392) 
+Row: 21, Sequenz 5, Pallets: (8 1 9) (9 3 295) (11 2 471) (17 3 15) (35 6 210) 
+Row: 22, Sequenz 3, Pallets: (9 2 196) (12 1 34) (18 2 561) (33 6 208) 
+Row: 23, Sequenz 4, Pallets: (19 6 314) (21 1 57) (26 2 406) (31 2 222) 
+Row: 24, Sequenz 3, Pallets: (3 4 212) (4 4 190) (10 6 57) (11 4 164) (21 3 25) (29 6 352) 
+
+Pallets used: 112
+Weight used: 35938
+OBJECTIVE: 35938.0
+Computation Time: 121.30634183979035
+Wildcards used: 0
+U-Value: 1400
