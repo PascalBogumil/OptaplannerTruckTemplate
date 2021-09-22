@@ -11,12 +11,10 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 @XStreamAlias("OpSequence")
 public class OpSequence extends AbstractPersistable implements Comparable<OpSequence> {
 	
-	private final static int WildcardWeight = 1200;
+	private final static int WildcardLoadCapacity = 1200;
 	private final static int WildcardSpace = 12;
 	
-	private final int maxWeight;
-	private final int maxSpace = WildcardSpace; // For XStream
-	private final int maxWildcardWeight = WildcardWeight; // For XStream
+	private final int loadCapacity;
 	private final int[] palletsNeeded;
 	private final boolean isWildcard;
 	
@@ -25,27 +23,27 @@ public class OpSequence extends AbstractPersistable implements Comparable<OpSequ
 		this.isWildcard = true;
 		
 		//Not used in a wildcard
-		this.maxWeight = 0;
+		this.loadCapacity = 0;
 		this.palletsNeeded = new int[] {0, 0, 0, 0, 0, 0};
 	}
 	
 	public OpSequence(long id, int maxWeight, int[] palletCountsMax) {
 		super(id);
-		this.maxWeight = maxWeight;
+		this.loadCapacity = maxWeight;
 		this.palletsNeeded = palletCountsMax;
 		this.isWildcard = false;
 	}
 
-	public static int getWildcardWeight() {
-		return WildcardWeight;
+	public static int getWildcardLoadCapacity() {
+		return WildcardLoadCapacity;
 	}
 
 	public static int getWildcardSpace() {
 		return WildcardSpace;
 	}
 	
-	public int getMaxLoadCapacity() {
-		return maxWeight;
+	public int getLoadCapacity() {
+		return loadCapacity;
 	}
 	
 	public int getPalletsNeededOfType(int type) {
@@ -92,7 +90,7 @@ public class OpSequence extends AbstractPersistable implements Comparable<OpSequ
 			counts += palletsNeeded[i] + " ";
 		}
 		
-		return "Sequence " + ((isWildcard()) ? "W" : getId() + ": " + maxWeight + " ( " + counts + ")");
+		return "Sequence " + ((isWildcard()) ? "W" : getId() + ": " + loadCapacity + " ( " + counts + ")");
 	}
 
 	@Override
@@ -102,7 +100,8 @@ public class OpSequence extends AbstractPersistable implements Comparable<OpSequ
 		if(o.isWildcard()) return 1;
 		
 		return new CompareToBuilder()
-				.append(getId(), o.getId())
+				.append(getLoadCapacity(), o.getLoadCapacity())
+				.append(-getNumberOfNeededPallets(), -o.getNumberOfNeededPallets())
 				.toComparison();
 	}
 }

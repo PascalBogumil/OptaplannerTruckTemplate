@@ -34,7 +34,7 @@ public class BothTests {
 			
 			//Solve with Optaplanner
 			SolverConfig config = TruckTemplateSolver.createConfig(timeToSolve, 16, IntStream.of(loadCapacityOfSections).sum(), 8, 2, 0);
-			TruckTemplateSolver.solveWithOptaplannerWithSolver(template.convertToOptaplannerProblem(true), config, String.format(solutionFilePathOptaplanner, i), 1400);
+			TruckTemplateSolver.solveWithOptaplannerWithSolver(template.convertToOptaplannerProblem(), config, String.format(solutionFilePathOptaplanner, i), 1400);
 		}
 		
 		TruckTemplateSolver.sumDataFromSolutionFiles(Path.of(TEST_FOLDER_BOTH, testFolder), "ExtractionCplex.txt", "TruckTemplateSolution%sCplex.txt", numberOfTests);

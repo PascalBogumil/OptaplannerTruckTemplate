@@ -95,7 +95,7 @@ public class OpRowChangeMove extends AbstractMove<TruckTemplateSolution> {
 						palletsOfRow.add(palletsNeeded.get(j));
 						
 						//If one row is not feasable do not continue
-						if(palletsOfRow.stream().mapToInt(OpPallet::getWeight).sum() > row.getCurrentSequence().getMaxLoadCapacity())
+						if(palletsOfRow.stream().mapToInt(OpPallet::getWeight).sum() > row.getCurrentSequence().getLoadCapacity())
 							return false;
 					}
 				} 
@@ -113,7 +113,7 @@ public class OpRowChangeMove extends AbstractMove<TruckTemplateSolution> {
 				Optional<OpPallet> newPallet = pallets.stream().filter(p -> p.getRow() == null && !Objects.equals(p.getRow(), oldPallet.getRow()) && p.getType() == oldPallet.getType() && p.getWeight() > oldPallet.getWeight()).max(OpPallet::compareTo);
 				
 				//If heavier pallet found then swap if weight is not exceeded
-				if(newPallet.isPresent() && newPallet.get().getWeight() + currentRowWeight - oldPallet.getWeight() <= row.getCurrentSequence().getMaxLoadCapacity()) {
+				if(newPallet.isPresent() && newPallet.get().getWeight() + currentRowWeight - oldPallet.getWeight() <= row.getCurrentSequence().getLoadCapacity()) {
 					oldPallet.setRow(null);
 					newPallet.get().setRow(row);
 					currentRowWeight = currentRowWeight + newPallet.get().getWeight() - oldPallet.getWeight();
@@ -145,7 +145,7 @@ public class OpRowChangeMove extends AbstractMove<TruckTemplateSolution> {
 				int currentWeightOfRow = palletsOfRow.stream().mapToInt(OpPallet::getWeight).sum();
 
 				//If normalized value and weight of the row are not exceeded add pallet to row
-				if(currentSpaceLeft + pallet.getSize() <= OpSequence.getWildcardSpace() && currentWeightOfRow + pallet.getWeight() <= OpSequence.getWildcardWeight()) {
+				if(currentSpaceLeft + pallet.getSize() <= OpSequence.getWildcardSpace() && currentWeightOfRow + pallet.getWeight() <= OpSequence.getWildcardLoadCapacity()) {
 					pallet.setRow(row);
 					palletsToPickFrom.remove(pallet);
 				}
