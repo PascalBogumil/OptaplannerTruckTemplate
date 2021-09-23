@@ -1,0 +1,31 @@
+Row: 1, Sequenz 5, Pallets: (3 3 152) (11 1 110) (17 6 120) (20 3 317) (27 5 298) 
+Row: 2, Sequenz 2, Pallets: (3 1 168) (3 6 96) (14 3 44) (19 3 299) (28 5 372) 
+Row: 3, Sequenz 4, Pallets: (1 3 68) (4 3 82) (10 4 159) (25 3 268) (25 6 354) (30 1 65) 
+Row: 4, Sequenz 2, Pallets: (5 6 234) (7 6 381) (11 6 378) 
+Row: 5, Sequenz 5, Pallets: (3 2 147) (5 5 365) (8 1 78) (20 5 531) (21 5 376) 
+Row: 6, Sequenz 2, Pallets: (1 5 554) (14 5 717) (26 1 184) (30 6 42) 
+Row: 7, Sequenz 5, Pallets: (5 3 370) (8 3 120) (10 5 33) (12 3 324) (16 3 18) (18 3 57) (22 3 111) (23 5 316) (29 5 124) 
+Row: 8, Sequenz 1, Pallets: (5 4 269) (8 5 502) (9 1 49) (24 3 254) (27 6 425) 
+Row: 9, Sequenz 5, Pallets: (1 6 457) (10 3 340) (14 4 332) (15 4 154) (16 4 90) (22 6 618) 
+Row: 10, Sequenz 3, Pallets: (4 6 465) (20 1 766) (24 1 759) 
+Row: 11, Sequenz 3, Pallets: (2 2 233) (8 4 265) (13 1 257) (15 3 251) (15 5 683) (16 5 305) 
+Row: 12, Sequenz 2, Pallets: (1 4 224) (6 3 371) (12 6 346) (13 6 644) (30 5 415) 
+Row: 13, Sequenz 3, Pallets: (18 1 676) (29 1 463) (29 6 838) 
+Row: 14, Sequenz 3, Pallets: (2 4 276) (10 6 249) (13 5 715) (16 1 367) (21 3 368) 
+Row: 15, Sequenz 4, Pallets: (12 1 558) (18 6 713) (21 6 726) 
+Row: 16, Sequenz 5, Pallets: (28 1 758) (28 6 534) (31 1 688) 
+Row: 17, Sequenz 1, Pallets: (6 1 351) (7 4 153) (11 3 206) (13 4 151) (17 3 301) (25 1 328) 
+Row: 18, Sequenz 5, Pallets: (2 1 204) (2 3 290) (3 4 196) (6 6 205) (7 3 248) (9 3 350) 
+Row: 19, Sequenz 4, Pallets: (1 2 587) (2 5 438) (19 1 432) (23 1 36) 
+Row: 20, Sequenz 4, Pallets: (9 5 544) (17 5 392) (23 6 169) (26 6 392) 
+Row: 21, Wildcard, Pallets: (14 6 527) (25 5 670) 
+Row: 22, Sequenz 5, Pallets: (4 1 537) (20 6 387) (21 1 46) 
+Row: 23, Sequenz 3, Pallets: (2 6 190) (7 1 663) (9 6 137) 
+Row: 24, Sequenz 3, Pallets: (4 4 212) (11 4 38) (11 5 96) (13 3 76) (15 6 104) (18 5 276) (23 3 174) 
+
+Pallets used: 111
+Weight used: 35941
+OBJECTIVE: 34541.0
+Computation Time: 10.017681976318359
+Wildcards used: 1
+U-Value: 1400

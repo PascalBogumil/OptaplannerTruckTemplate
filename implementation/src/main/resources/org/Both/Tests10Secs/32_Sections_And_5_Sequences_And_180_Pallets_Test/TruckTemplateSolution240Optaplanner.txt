@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (3 78) (1 473) (1 642) 
+Row: 5, Wildcard, Pallets: (1 499) (1 695) 
+Row: 6, Wildcard, Pallets: (4 593) (4 595) 
+Row: 14, Wildcard, Pallets: (0 27) (1 575) (1 594) 
+Row: 19, Wildcard, Pallets: (4 570) (4 592) 
+Row: 23, Wildcard, Pallets: (0 70) (1 559) (4 570) 
+Row: 28, Wildcard, Pallets: (0 69) (1 554) (4 562) 
+Row: 31, Wildcard, Pallets: (0 95) (1 542) (1 556) 
+Row: 2, Sequenz: 5, Pallets: (4 7) (1 21) (1 21) (1 54) (0 814) 
+Row: 4, Sequenz: 4, Pallets: (5 13) (4 21) (4 30) (1 94) (4 742) 
+Row: 29, Sequenz: 4, Pallets: (5 15) (4 19) (5 28) (2 274) (3 342) 
+Row: 30, Sequenz: 2, Pallets: (4 43) (5 43) (4 44) (0 809) 
+Row: 32, Sequenz: 2, Pallets: (0 4) (4 69) (5 151) (4 725) 
+Row: 3, Sequenz: 5, Pallets: (5 157) (5 162) (5 173) 
+Row: 25, Sequenz: 5, Pallets: (4 82) (3 123) (2 165) (5 193) (0 742) 
+Row: 11, Sequenz: 2, Pallets: (4 68) (4 81) (1 98) (1 109) (0 806) 
+Row: 8, Sequenz: 4, Pallets: (1 171) (5 197) (5 201) (1 741) 
+Row: 9, Sequenz: 1, Pallets: (4 90) (1 152) (5 207) (0 728) 
+Row: 10, Sequenz: 5, Pallets: (1 182) (5 231) (5 281) (4 724) 
+Row: 22, Sequenz: 4, Pallets: (4 96) (4 97) (5 301) (0 683) 
+Row: 24, Sequenz: 4, Pallets: (4 99) (5 324) (5 357) (4 717) 
+Row: 26, Sequenz: 4, Pallets: (4 118) (1 219) (5 359) (0 679) 
+Row: 27, Sequenz: 2, Pallets: (4 150) (1 231) (5 369) (0 651) 
+Row: 7, Sequenz: 5, Pallets: (5 399) (5 400) (0 591) 
+Row: 12, Sequenz: 5, Pallets: (2 7) (2 157) (0 545) (0 584) (4 678) 
+Row: 15, Sequenz: 5, Pallets: (1 242) (5 403) (0 525) (4 627) 
+Row: 16, Sequenz: 1, Pallets: (1 242) (5 435) (5 480) (4 618) 
+Row: 17, Sequenz: 2, Pallets: (4 201) (5 502) (5 505) (4 607) 
+Row: 18, Sequenz: 5, Pallets: (1 250) (5 508) (5 512) (1 723) 
+Row: 21, Sequenz: 3, Pallets: (1 301) (0 481) (5 513) (1 702) 
+Row: 13, Sequenz: 5, Pallets: (0 480) (5 576) (5 843) 
+Row: 20, Sequenz: 5, Pallets: (0 410) (5 726) (5 827) 
+
+Pallets used: 119
+Weight used: 42807
+OBJECTIVE: 31607
+Computation Time: 10
+Wildcards used: 8
+U-Value: 1400
+Accepted Count Limit: 8

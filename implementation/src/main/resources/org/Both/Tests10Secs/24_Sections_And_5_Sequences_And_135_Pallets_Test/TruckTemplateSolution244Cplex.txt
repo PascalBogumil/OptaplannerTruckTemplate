@@ -1,0 +1,31 @@
+Row: 1, Wildcard, Pallets: (3 4 332) (8 4 35) (20 3 109) (20 5 722) 
+Row: 2, Sequenz 4, Pallets: (1 4 7) (5 3 184) (15 1 113) (19 2 231) (19 5 212) (28 2 250) 
+Row: 3, Sequenz 2, Pallets: (7 6 15) (15 2 646) (21 1 70) (29 5 259) 
+Row: 4, Sequenz 1, Pallets: (2 3 28) (8 6 237) (13 3 116) (16 2 227) (26 5 26) (34 5 363) 
+Row: 5, Sequenz 5, Pallets: (1 1 24) (6 6 713) (9 3 354) (17 2 188) (18 3 209) 
+Row: 6, Sequenz 3, Pallets: (2 1 250) (7 3 162) (11 2 451) (16 5 95) (19 3 208) (26 2 329) 
+Row: 7, Sequenz 3, Pallets: (9 6 629) (18 2 409) (20 1 90) (25 5 364) 
+Row: 8, Sequenz 3, Pallets: (3 2 239) (5 6 97) (15 5 361) (23 2 341) (24 5 394) 
+Row: 9, Sequenz 2, Pallets: (2 4 354) (10 4 259) (12 6 722) (14 5 407) (18 1 249) 
+Row: 10, Sequenz 3, Pallets: (3 6 628) (9 2 578) (11 1 182) (33 5 553) 
+Row: 11, Sequenz 1, Pallets: (3 3 233) (4 1 348) (7 5 707) (11 4 119) (28 5 15) (32 2 576) 
+Row: 12, Sequenz 2, Pallets: (6 3 252) (12 3 336) (19 1 131) (22 2 461) (27 2 268) (31 5 544) 
+Row: 13, Sequenz 3, Pallets: (4 3 205) (5 1 509) (7 4 164) (12 5 464) (14 1 647) 
+Row: 14, Sequenz 1, Pallets: (1 6 627) (2 5 270) (13 1 785) (13 2 299) 
+Row: 15, Sequenz 2, Pallets: (2 6 835) (12 1 826) (14 6 269) 
+Row: 16, Sequenz 3, Pallets: (1 2 507) (22 1 177) (23 5 378) (30 2 538) (31 2 384) 
+Row: 17, Sequenz 1, Pallets: (4 6 14) (5 4 147) (17 3 250) (21 2 348) (27 5 372) (32 5 355) 
+Row: 18, Sequenz 5, Pallets: (4 5 718) (8 5 391) (16 1 10) (17 1 357) 
+Row: 19, Sequenz 2, Pallets: (3 5 98) (9 5 319) (11 6 404) (17 5 542) (35 5 72) 
+Row: 20, Sequenz 2, Pallets: (2 2 192) (6 1 518) (8 1 321) (11 3 231) (16 3 236) 
+Row: 21, Wildcard, Pallets: (4 2 430) (6 2 736) (7 2 21) 
+Row: 22, Sequenz 4, Pallets: (3 1 19) (4 4 83) (6 5 250) (8 2 212) (10 3 172) (24 2 249) 
+Row: 23, Sequenz 1, Pallets: (1 5 205) (5 2 98) (7 1 78) (14 2 32) (29 2 563) 
+Row: 24, Sequenz 1, Pallets: (10 1 321) (10 5 160) (10 6 99) (18 5 391) 
+
+Pallets used: 116
+Weight used: 35909
+OBJECTIVE: 33109.0
+Computation Time: 10.011727311134338
+Wildcards used: 2
+U-Value: 1400
