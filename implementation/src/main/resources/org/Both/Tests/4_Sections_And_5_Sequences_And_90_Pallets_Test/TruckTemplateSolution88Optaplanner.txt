@@ -1,0 +1,12 @@
+Row: 4, Sequenz: 4, Pallets: (2 1) (2 12) (0 28) (1 57) (4 384) (4 444) 
+Row: 1, Sequenz: 2, Pallets: (5 3) (1 108) (1 172) (1 179) (4 536) 
+Row: 3, Sequenz: 1, Pallets: (2 29) (0 36) (3 41) (2 89) (1 213) (2 346) (3 368) (3 368) 
+Row: 2, Sequenz: 5, Pallets: (5 20) (0 50) (3 359) (3 367) (1 685) 
+
+Pallets used: 24
+Weight used: 4895
+OBJECTIVE: 4895
+Computation Time: 90
+Wildcards used: 0
+U-Value: 1400
+Accepted Count Limit: 8

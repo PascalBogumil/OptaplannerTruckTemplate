@@ -1,0 +1,39 @@
+Row: 1, Wildcard, Pallets: (3 4 339) 
+Row: 2, Wildcard, Pallets: (9 1 735) 
+Row: 3, Sequenz 1, Pallets: (4 4 50) (6 3 98) (12 6 60) (18 3 141) (21 1 615) (23 4 13) 
+Row: 4, Sequenz 3, Pallets: (5 1 86) (5 6 11) (8 1 843) 
+Row: 5, Wildcard, Pallets: (16 1 656) 
+Row: 6, Wildcard, Pallets: (17 3 331) 
+Row: 7, Sequenz 2, Pallets: (3 1 259) (5 3 117) (8 3 326) (14 3 101) (14 4 117) (18 6 574) 
+Row: 8, Sequenz 2, Pallets: (4 1 567) (10 1 561) (22 1 360) 
+Row: 9, Wildcard, Pallets: 
+Row: 10, Wildcard, Pallets: (2 3 369) 
+Row: 11, Wildcard, Pallets: 
+Row: 12, Sequenz 3, Pallets: (2 4 318) (4 3 356) (7 1 404) (15 4 369) (19 4 211) (20 1 282) 
+Row: 13, Wildcard, Pallets: 
+Row: 14, Wildcard, Pallets: (22 6 845) 
+Row: 15, Sequenz 3, Pallets: (10 4 226) (10 6 276) (13 4 198) (18 4 265) (21 6 701) (22 4 169) 
+Row: 16, Sequenz 1, Pallets: (1 2 552) (2 1 187) (10 3 290) (13 6 682) (16 3 256) 
+Row: 17, Sequenz 2, Pallets: (14 6 705) (15 6 813) (24 1 248) 
+Row: 18, Sequenz 1, Pallets: (1 1 448) (4 6 801) (11 1 693) 
+Row: 19, Sequenz 5, Pallets: (6 1 607) (8 6 660) (14 1 714) 
+Row: 20, Sequenz 2, Pallets: (1 4 132) (1 5 336) (7 3 357) (16 6 709) (23 1 444) 
+Row: 21, Wildcard, Pallets: 
+Row: 22, Sequenz 3, Pallets: (5 4 220) (8 4 374) (11 3 70) (11 6 330) (12 4 280) (15 1 202) 
+Row: 23, Wildcard, Pallets: 
+Row: 24, Sequenz 2, Pallets: (2 2 536) (7 6 232) (12 3 294) (13 3 225) (20 6 184) 
+Row: 25, Wildcard, Pallets: 
+Row: 26, Sequenz 5, Pallets: (1 3 225) (6 6 516) (7 4 115) (9 3 283) (16 4 142) (17 1 213) 
+Row: 27, Sequenz 2, Pallets: (3 3 61) (6 4 189) (12 1 249) (15 3 204) (17 4 51) (19 6 142) 
+Row: 28, Wildcard, Pallets: 
+Row: 29, Wildcard, Pallets: 
+Row: 30, Sequenz 4, Pallets: (2 6 12) (3 6 270) (9 6 627) 
+Row: 31, Sequenz 1, Pallets: (9 4 75) (11 4 201) (18 1 323) (19 1 258) (20 4 121) (21 4 14) 
+Row: 32, Sequenz 4, Pallets: (1 6 89) (13 1 171) (17 6 721) 
+
+Pallets used: 90
+Weight used: 29802
+OBJECTIVE: 10202.0
+Computation Time: 14.384359372138977
+Wildcards used: 14
+U-Value: 1400
