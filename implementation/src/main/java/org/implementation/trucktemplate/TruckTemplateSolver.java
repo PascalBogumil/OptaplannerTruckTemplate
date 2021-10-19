@@ -126,7 +126,7 @@ public class TruckTemplateSolver {
 //		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(49, 250, 120, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 10, 180);
 //		
 		//Comparison Sections with same pallet count
-		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(6, 150, 90, 1, new int[] {1000}, 5, 90);
+		//BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(6, 150, 90, 1, new int[] {1000}, 5, 90);
 //		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(7, 150, 90, 4, new int[] {1000, 1500, 1500, 1000}, 5, 90);
 //		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(8, 150, 90, 8, new int[] {1000, 1500, 1500, 2000, 2000, 1500, 1500, 1000}, 5, 90);
 //		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(9, 150, 90, 12, new int[] {1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000}, 5, 90);
@@ -144,7 +144,7 @@ public class TruckTemplateSolver {
 //		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(48, 150, 90, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 8, 90);
 //		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(49, 150, 90, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 10, 90);
 //		
-//		//Comparison Pallets
+//		//Comparison Pallets with 16 Sections
 //		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(15, 150, 90, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 10);
 //		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(16, 150, 90, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 20);
 //		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(17, 150, 90, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 40);
@@ -155,6 +155,18 @@ public class TruckTemplateSolver {
 //		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(22, 150, 90, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 140);
 //		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(23, 150, 90, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 160);
 //		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(24, 150, 90, 16, new int[] {1000, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2000, 2000, 2000, 1500, 1500, 1000, 1000, 1000}, 5, 180);
+			
+		//Comparison Pallets with 32 Sections
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(150, 150, 90, 32, new int[] {2000, 2000, 2000, 2000, 2000, 2000, 3000, 3000, 3000, 3000, 3000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 3000, 3000, 3000, 3000, 3000, 2000, 2000, 2000, 2000, 2000, 2000}, 5, 20);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(160, 150, 90, 32, new int[] {2000, 2000, 2000, 2000, 2000, 2000, 3000, 3000, 3000, 3000, 3000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 3000, 3000, 3000, 3000, 3000, 2000, 2000, 2000, 2000, 2000, 2000}, 5, 40);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(170, 150, 90, 32, new int[] {2000, 2000, 2000, 2000, 2000, 2000, 3000, 3000, 3000, 3000, 3000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 3000, 3000, 3000, 3000, 3000, 2000, 2000, 2000, 2000, 2000, 2000}, 5, 80);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(180, 150, 90, 32, new int[] {2000, 2000, 2000, 2000, 2000, 2000, 3000, 3000, 3000, 3000, 3000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 3000, 3000, 3000, 3000, 3000, 2000, 2000, 2000, 2000, 2000, 2000}, 5, 120);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(190, 150, 90, 32, new int[] {2000, 2000, 2000, 2000, 2000, 2000, 3000, 3000, 3000, 3000, 3000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 3000, 3000, 3000, 3000, 3000, 2000, 2000, 2000, 2000, 2000, 2000}, 5, 160);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(200, 150, 90, 32, new int[] {2000, 2000, 2000, 2000, 2000, 2000, 3000, 3000, 3000, 3000, 3000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 3000, 3000, 3000, 3000, 3000, 2000, 2000, 2000, 2000, 2000, 2000}, 5, 200);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(210, 150, 90, 32, new int[] {2000, 2000, 2000, 2000, 2000, 2000, 3000, 3000, 3000, 3000, 3000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 3000, 3000, 3000, 3000, 3000, 2000, 2000, 2000, 2000, 2000, 2000}, 5, 240);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(220, 150, 90, 32, new int[] {2000, 2000, 2000, 2000, 2000, 2000, 3000, 3000, 3000, 3000, 3000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 3000, 3000, 3000, 3000, 3000, 2000, 2000, 2000, 2000, 2000, 2000}, 5, 280);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(230, 150, 90, 32, new int[] {2000, 2000, 2000, 2000, 2000, 2000, 3000, 3000, 3000, 3000, 3000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 3000, 3000, 3000, 3000, 3000, 2000, 2000, 2000, 2000, 2000, 2000}, 5, 320);
+		BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Test(240, 150, 90, 32, new int[] {2000, 2000, 2000, 2000, 2000, 2000, 3000, 3000, 3000, 3000, 3000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 4000, 3000, 3000, 3000, 3000, 3000, 2000, 2000, 2000, 2000, 2000, 2000}, 5, 360);
 		
 		//Comparison Section Weights with 360 pallets
 		//BothTests.X_Sections_And_X_Sequences_And_X_Pallets_Max_Weight_X_Test(50, 250, 120, 16, new int[] {250, 250, 250, 375, 375, 500, 500, 500, 500, 500, 500, 375, 375, 250, 250, 250}, 5, 360);

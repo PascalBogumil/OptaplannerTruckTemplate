@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (2 12) (3 152) (3 187) (3 245) (3 287) (3 317) 
+Row: 2, Wildcard, Pallets: (2 11) (2 39) (2 64) (3 71) (3 100) (3 112) (3 124) (3 143) (3 220) (3 289) 
+Row: 3, Wildcard, Pallets: (3 23) (4 40) (3 69) (3 111) (2 131) (3 282) (4 531) 
+Row: 4, Wildcard, Pallets: (5 20) (2 94) (3 174) (4 372) (1 537) 
+Row: 5, Wildcard, Pallets: (5 61) (2 117) (1 489) (4 526) 
+Row: 6, Wildcard, Pallets: (2 43) (4 253) (4 424) (4 463) 
+Row: 7, Wildcard, Pallets: (1 238) (4 413) (4 504) 
+Row: 8, Wildcard, Pallets: (4 108) (4 290) (4 340) (4 459) 
+Row: 10, Wildcard, Pallets: (4 169) (4 189) (4 202) (4 223) (4 358) 
+Row: 11, Wildcard, Pallets: (4 100) (1 149) (1 193) (4 335) (5 417) 
+Row: 12, Wildcard, Pallets: (5 55) (1 105) (4 219) (5 815) 
+Row: 13, Wildcard, Pallets: (0 159) (4 181) (0 809) 
+Row: 15, Wildcard, Pallets: (5 331) (0 828) 
+Row: 16, Wildcard, Pallets: (5 395) (0 805) 
+Row: 17, Wildcard, Pallets: (5 400) (5 797) 
+Row: 19, Wildcard, Pallets: (0 449) (5 729) 
+Row: 20, Wildcard, Pallets: (0 480) (0 692) 
+Row: 21, Wildcard, Pallets: (5 514) (0 682) 
+Row: 22, Wildcard, Pallets: (0 527) (5 669) 
+Row: 23, Wildcard, Pallets: (0 545) (5 655) 
+Row: 24, Wildcard, Pallets: (0 555) (5 591) 
+Row: 25, Wildcard, Pallets: (5 159) (5 425) (0 588) 
+Row: 26, Sequenz: 3, Pallets: (0 82) (3 349) (3 359) (3 366) (2 371) (4 682) (1 743) 
+Row: 27, Wildcard, Pallets: (0 260) (0 396) (5 536) 
+Row: 28, Wildcard, Pallets: (0 259) (0 380) (5 410) 
+Row: 29, Wildcard, Pallets: (5 225) (5 244) (5 382) 
+Row: 30, Wildcard, Pallets: (0 136) (0 225) (5 278) 
+Row: 31, Wildcard, Pallets: (0 226) 
+Row: 32, Wildcard, Pallets: (0 138) 
+Row: 9, Sequenz: 3, Pallets: (0 84) (3 332) (3 335) (3 337) (2 355) (5 834) 
+Row: 14, Sequenz: 2, Pallets: (3 326) (2 340) (4 570) (4 644) (1 709) (5 827) 
+Row: 18, Sequenz: 2, Pallets: (2 154) (2 268) (1 543) (4 553) (1 637) (0 850) 
+
+Pallets used: 120
+Weight used: 41724
+OBJECTIVE: 2524
+Computation Time: 90
+Wildcards used: 28
+U-Value: 1400
+Accepted Count Limit: 8

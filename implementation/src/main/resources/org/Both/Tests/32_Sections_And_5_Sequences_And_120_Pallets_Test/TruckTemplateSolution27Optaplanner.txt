@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (2 7) (3 171) (3 221) (3 255) (3 264) (3 272) 
+Row: 2, Wildcard, Pallets: (3 134) (3 163) (3 195) (3 212) (3 222) (3 265) 
+Row: 3, Wildcard, Pallets: (2 23) (3 60) (3 91) (3 108) (2 120) (1 141) (3 161) (3 212) (3 255) 
+Row: 4, Wildcard, Pallets: (1 51) (2 58) (3 101) (3 126) (3 214) (1 649) 
+Row: 5, Wildcard, Pallets: (3 84) (3 169) (1 282) (1 643) 
+Row: 6, Wildcard, Pallets: (3 114) (1 458) (1 620) 
+Row: 7, Wildcard, Pallets: (1 479) (1 701) 
+Row: 8, Wildcard, Pallets: (1 585) (1 615) 
+Row: 10, Wildcard, Pallets: (1 30) (1 545) (1 611) 
+Row: 11, Wildcard, Pallets: (1 68) (1 502) (1 610) 
+Row: 12, Wildcard, Pallets: (0 44) (1 108) (1 439) (1 602) 
+Row: 13, Wildcard, Pallets: (1 340) (1 401) (1 454) 
+Row: 14, Wildcard, Pallets: (0 56) (1 103) (1 242) (1 362) (1 415) 
+Row: 15, Wildcard, Pallets: (1 241) (1 396) (5 543) 
+Row: 16, Wildcard, Pallets: (5 214) (4 245) (5 738) 
+Row: 17, Wildcard, Pallets: (0 222) (1 236) (0 712) 
+Row: 20, Wildcard, Pallets: (0 476) (0 723) 
+Row: 21, Wildcard, Pallets: (5 495) (5 702) 
+Row: 22, Wildcard, Pallets: (5 471) (5 699) 
+Row: 23, Wildcard, Pallets: (0 511) (5 641) 
+Row: 24, Wildcard, Pallets: (5 586) (0 589) 
+Row: 25, Sequenz: 5, Pallets: (5 161) (3 308) (3 321) (3 323) (3 329) (4 595) (1 740) 
+Row: 27, Wildcard, Pallets: (5 461) (5 588) 
+Row: 28, Wildcard, Pallets: (5 213) (5 401) (5 567) 
+Row: 29, Wildcard, Pallets: (5 350) (0 385) (0 451) 
+Row: 30, Wildcard, Pallets: (5 328) (5 379) (0 390) 
+Row: 31, Wildcard, Pallets: (5 185) (0 380) 
+Row: 32, Wildcard, Pallets: (5 366) 
+Row: 26, Sequenz: 5, Pallets: (4 166) (2 204) (2 243) (2 336) (3 348) (3 355) (2 364) (0 779) 
+Row: 9, Sequenz: 2, Pallets: (2 172) (3 301) (4 547) (5 810) (5 845) 
+Row: 18, Sequenz: 3, Pallets: (2 127) (2 171) (4 383) (4 464) (0 726) (1 739) 
+Row: 19, Sequenz: 3, Pallets: (3 299) (3 300) (4 378) (5 747) (5 757) 
+
+Pallets used: 120
+Weight used: 43655
+OBJECTIVE: 5855
+Computation Time: 90
+Wildcards used: 27
+U-Value: 1400
+Accepted Count Limit: 8

@@ -33,7 +33,7 @@ public class BothTests {
 			TruckTemplateSolver.solveWithCPLEX(String.format(problemFilePath, i), String.format(solutionFilePathCplex, i), timeToSolve);
 			
 			//Solve with Optaplanner
-			SolverConfig config = TruckTemplateSolver.createConfig(timeToSolve, 16, IntStream.of(loadCapacityOfSections).sum(), 8, 2, 0);
+			SolverConfig config = TruckTemplateSolver.createConfig(timeToSolve, 16, IntStream.of(loadCapacityOfSections).sum(), 8, 0, 2);
 			TruckTemplateSolver.solveWithOptaplannerWithSolver(template.convertToOptaplannerProblem(), config, String.format(solutionFilePathOptaplanner, i), 1400);
 		}
 		

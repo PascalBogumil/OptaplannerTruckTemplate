@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (2 12) (2 15) (2 30) (2 88) (4 426) (4 629) 
+Row: 2, Wildcard, Pallets: (1 1) (2 12) (2 49) (4 505) (4 629) 
+Row: 3, Wildcard, Pallets: (2 25) (4 549) (4 621) 
+Row: 4, Wildcard, Pallets: (2 8) (1 15) (1 147) (4 497) (4 532) 
+Row: 5, Wildcard, Pallets: (1 17) (1 97) (4 482) (4 601) 
+Row: 6, Wildcard, Pallets: (5 13) (4 205) (1 465) (4 499) 
+Row: 7, Sequenz: 2, Pallets: (2 278) (2 281) (1 730) (0 784) (5 829) 
+Row: 8, Wildcard, Pallets: (1 276) (4 450) (4 470) 
+Row: 10, Wildcard, Pallets: (4 367) (1 377) (1 453) 
+Row: 11, Wildcard, Pallets: (4 328) (4 375) (1 428) 
+Row: 12, Wildcard, Pallets: (4 200) (1 287) (1 326) (1 375) 
+Row: 14, Wildcard, Pallets: (4 255) (1 263) (4 282) (1 334) 
+Row: 15, Wildcard, Pallets: (1 165) (1 183) (4 249) (1 262) (1 294) 
+Row: 17, Wildcard, Pallets: (1 141) (4 183) (4 268) (5 608) 
+Row: 18, Wildcard, Pallets: (4 97) (5 114) (4 251) (5 723) 
+Row: 19, Wildcard, Pallets: (4 180) (5 354) (5 652) 
+Row: 20, Wildcard, Pallets: (5 395) (5 783) 
+Row: 21, Wildcard, Pallets: (0 541) (0 624) 
+Row: 24, Wildcard, Pallets: (5 500) (5 624) 
+Row: 25, Wildcard, Pallets: (5 151) (5 484) (5 534) 
+Row: 26, Wildcard, Pallets: (0 276) (0 433) (5 491) 
+Row: 28, Wildcard, Pallets: (0 322) (5 423) (5 441) 
+Row: 29, Wildcard, Pallets: (0 293) (5 379) (0 424) 
+Row: 30, Wildcard, Pallets: (5 110) (5 272) (5 383) 
+Row: 31, Wildcard, Pallets: (0 306) 
+Row: 32, Wildcard, Pallets: (5 202) 
+Row: 27, Sequenz: 1, Pallets: (0 198) (0 216) (2 305) (2 371) (4 748) 
+Row: 9, Sequenz: 1, Pallets: (2 240) (2 251) (1 669) (5 784) (5 808) 
+Row: 23, Sequenz: 4, Pallets: (4 171) (1 616) (1 647) (4 744) (0 753) 
+Row: 22, Sequenz: 1, Pallets: (0 674) (0 678) (4 715) (4 731) 
+Row: 16, Sequenz: 2, Pallets: (2 139) (2 203) (1 540) (1 563) (1 580) (1 599) (4 682) 
+Row: 13, Sequenz: 4, Pallets: (2 117) (3 278) (1 538) (4 633) (4 649) (0 652) 
+
+Pallets used: 120
+Weight used: 46524
+OBJECTIVE: 11524
+Computation Time: 90
+Wildcards used: 25
+U-Value: 1400
+Accepted Count Limit: 8
