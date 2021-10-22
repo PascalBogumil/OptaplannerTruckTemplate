@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (2 28) (2 38) (2 51) (2 92) (2 97) (2 115) (1 145) (2 145) (2 223) (2 252) 
+Row: 2, Wildcard, Pallets: (2 21) (2 45) (4 82) (2 95) (2 116) (1 210) (2 233) (1 266) 
+Row: 3, Wildcard, Pallets: (1 8) (2 71) (2 171) (1 188) (1 317) (5 441) 
+Row: 4, Wildcard, Pallets: (2 103) (0 105) (1 211) (5 776) 
+Row: 5, Wildcard, Pallets: (2 28) (0 362) (5 775) 
+Row: 6, Wildcard, Pallets: (1 31) (0 414) (5 749) 
+Row: 8, Wildcard, Pallets: (0 428) (5 767) 
+Row: 10, Wildcard, Pallets: (0 468) (5 732) 
+Row: 11, Wildcard, Pallets: (5 474) (5 726) 
+Row: 12, Wildcard, Pallets: (5 471) (5 724) 
+Row: 14, Wildcard, Pallets: (0 53) (0 451) (5 694) 
+Row: 15, Wildcard, Pallets: (5 512) (5 673) 
+Row: 16, Wildcard, Pallets: (5 534) (5 654) 
+Row: 17, Wildcard, Pallets: (5 37) (5 508) (5 653) 
+Row: 20, Wildcard, Pallets: (0 89) (5 446) (5 644) 
+Row: 21, Sequenz: 3, Pallets: (4 145) (2 255) (2 255) (0 497) (0 528) 
+Row: 23, Wildcard, Pallets: (5 86) (0 413) (5 640) 
+Row: 24, Wildcard, Pallets: (5 407) (5 633) 
+Row: 25, Wildcard, Pallets: (5 269) (5 348) (5 577) 
+Row: 27, Wildcard, Pallets: (0 276) (0 315) (0 400) 
+Row: 28, Wildcard, Pallets: (5 246) (5 276) (0 330) 
+Row: 29, Wildcard, Pallets: (5 198) (5 232) (0 295) 
+Row: 30, Wildcard, Pallets: (0 171) (5 184) (0 258) 
+Row: 31, Wildcard, Pallets: (5 163) (5 226) 
+Row: 32, Wildcard, Pallets: (5 171) 
+Row: 26, Sequenz: 5, Pallets: (3 123) (3 227) (3 357) (3 363) (4 499) (4 583) (0 811) 
+Row: 7, Sequenz: 5, Pallets: (1 126) (2 355) (2 367) (1 600) (1 714) (0 780) 
+Row: 9, Sequenz: 2, Pallets: (4 429) (1 563) (0 628) (0 698) 
+Row: 22, Sequenz: 4, Pallets: (4 368) (1 533) (5 824) (5 843) 
+Row: 18, Sequenz: 2, Pallets: (3 25) (4 270) (2 348) (1 449) (1 471) (5 814) 
+Row: 13, Sequenz: 3, Pallets: (2 315) (2 325) (1 399) (5 791) (5 804) 
+Row: 19, Sequenz: 3, Pallets: (3 14) (2 273) (1 356) (0 529) (5 779) 
+
+Pallets used: 120
+Weight used: 44289
+OBJECTIVE: 10689
+Computation Time: 90
+Wildcards used: 24
+U-Value: 1400
+Accepted Count Limit: 8

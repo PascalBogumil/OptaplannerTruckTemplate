@@ -6,34 +6,34 @@ Row: 5, Wildcard, Pallets:
 Row: 6, Wildcard, Pallets: 
 Row: 7, Wildcard, Pallets: 
 Row: 8, Wildcard, Pallets: 
-Row: 9, Sequenz 3, Pallets: (1 5 315) (1 6 662) (3 2 319) (3 4 273) (4 4 34) (6 4 307) (8 4 156) 
+Row: 9, Wildcard, Pallets: 
 Row: 10, Wildcard, Pallets: 
 Row: 11, Wildcard, Pallets: 
-Row: 12, Wildcard, Pallets: 
+Row: 12, Sequenz 5, Pallets: (1 1 797) (1 3 45) (1 6 662) (4 3 75) (6 4 307) (12 4 87) 
 Row: 13, Wildcard, Pallets: 
-Row: 14, Sequenz 5, Pallets: (1 4 66) (2 5 31) (3 1 317) (5 5 155) (7 4 373) (10 4 274) (12 4 87) 
+Row: 14, Wildcard, Pallets: 
 Row: 15, Wildcard, Pallets: 
 Row: 16, Wildcard, Pallets: 
-Row: 17, Wildcard, Pallets: 
-Row: 18, Wildcard, Pallets: 
-Row: 19, Sequenz 3, Pallets: (1 1 797) (1 2 358) (6 5 629) (7 5 182) (11 4 215) (14 4 237) 
-Row: 20, Wildcard, Pallets: 
+Row: 17, Sequenz 2, Pallets: (1 5 315) (2 2 397) (3 6 287) (4 2 673) (5 3 150) (5 4 45) 
+Row: 18, Sequenz 4, Pallets: (2 1 110) (3 3 273) (6 2 207) (6 5 629) (7 4 373) (9 4 162) (14 4 237) 
+Row: 19, Sequenz 4, Pallets: (2 6 422) (3 2 319) (4 4 34) (4 5 719) (8 4 156) (8 5 106) 
+Row: 20, Sequenz 3, Pallets: (1 2 358) (1 4 66) (2 3 312) (2 4 131) (5 2 361) (5 5 155) (11 4 215) (13 4 322) (15 4 55) 
 Row: 21, Wildcard, Pallets: 
 Row: 22, Wildcard, Pallets: 
 Row: 23, Wildcard, Pallets: 
 Row: 24, Wildcard, Pallets: 
-Row: 25, Wildcard, Pallets: 
+Row: 25, Sequenz 1, Pallets: (2 5 31) (3 1 317) (3 4 273) (3 5 349) (7 5 182) (10 4 274) 
 Row: 26, Wildcard, Pallets: 
-Row: 27, Sequenz 4, Pallets: (3 3 273) (3 6 287) (4 2 673) (5 4 45) (6 2 207) (13 4 322) (15 4 55) 
-Row: 28, Sequenz 5, Pallets: (1 3 45) (2 1 110) (2 3 312) (3 5 349) (4 3 75) (4 5 719) (9 4 162) 
+Row: 27, Wildcard, Pallets: 
+Row: 28, Wildcard, Pallets: 
 Row: 29, Wildcard, Pallets: 
 Row: 30, Wildcard, Pallets: 
-Row: 31, Sequenz 4, Pallets: (2 2 397) (2 4 131) (2 6 422) (5 2 361) (5 3 150) (8 5 106) 
+Row: 31, Wildcard, Pallets: 
 Row: 32, Wildcard, Pallets: 
 
 Pallets used: 40
 Weight used: 10988
 OBJECTIVE: -25412.0
-Computation Time: 0.30814885902404787
+Computation Time: 2.037018117904663
 Wildcards used: 26
 U-Value: 1400

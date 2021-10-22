@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (3 2) (0 10) (3 229) (2 267) (3 326) (3 365) 
+Row: 2, Wildcard, Pallets: (0 2) (3 132) (3 210) (3 247) (2 260) (3 339) 
+Row: 3, Wildcard, Pallets: (2 41) (3 124) (3 131) (3 173) (2 203) (2 243) (2 276) 
+Row: 4, Wildcard, Pallets: (0 17) (2 28) (2 73) (2 119) (2 124) (3 174) (3 253) (4 409) 
+Row: 6, Wildcard, Pallets: (3 71) (2 124) (4 143) (3 207) (4 648) 
+Row: 7, Sequenz: 4, Pallets: (2 279) (2 299) (4 732) (0 758) (5 842) 
+Row: 8, Wildcard, Pallets: (3 153) (1 383) (4 653) 
+Row: 9, Wildcard, Pallets: (3 78) (4 82) (4 499) (4 535) 
+Row: 10, Wildcard, Pallets: (4 70) (4 487) (1 630) 
+Row: 11, Wildcard, Pallets: (4 36) (4 167) (4 472) (4 520) 
+Row: 12, Wildcard, Pallets: (1 310) (1 367) (1 485) 
+Row: 13, Wildcard, Pallets: (1 53) (1 117) (4 229) (0 317) (4 451) 
+Row: 14, Wildcard, Pallets: (5 63) (1 115) (1 334) (0 685) 
+Row: 15, Wildcard, Pallets: (1 119) (0 295) (5 765) 
+Row: 16, Wildcard, Pallets: (5 395) (5 800) 
+Row: 17, Wildcard, Pallets: (0 434) (5 758) 
+Row: 18, Wildcard, Pallets: (0 509) (5 647) 
+Row: 19, Wildcard, Pallets: (5 565) (0 623) 
+Row: 20, Wildcard, Pallets: (0 55) (5 502) (0 623) 
+Row: 23, Wildcard, Pallets: (0 579) (5 605) 
+Row: 24, Wildcard, Pallets: (0 98) (5 492) (5 603) 
+Row: 25, Wildcard, Pallets: (5 141) (0 457) (5 600) 
+Row: 26, Wildcard, Pallets: (5 241) (0 431) (5 477) 
+Row: 27, Wildcard, Pallets: (5 215) (0 384) (0 451) 
+Row: 28, Wildcard, Pallets: (0 181) (0 209) (0 414) 
+Row: 29, Wildcard, Pallets: (5 129) (5 146) (0 363) 
+Row: 30, Wildcard, Pallets: (5 89) (0 125) (0 199) 
+Row: 31, Wildcard, Pallets: (5 132) 
+Row: 32, Wildcard, Pallets: (0 121) 
+Row: 5, Sequenz: 4, Pallets: (4 26) (2 28) (3 40) (3 42) (2 309) (2 352) (3 366) (0 828) 
+Row: 22, Sequenz: 1, Pallets: (2 277) (3 365) (4 682) (0 737) (5 836) 
+Row: 21, Sequenz: 2, Pallets: (4 654) (4 657) (1 734) (1 742) (5 825) 
+
+Pallets used: 120
+Weight used: 40643
+OBJECTIVE: 1443
+Computation Time: 90
+Wildcards used: 28
+U-Value: 1400
+Accepted Count Limit: 8

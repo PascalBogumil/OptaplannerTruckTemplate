@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (2 4) (2 81) (3 231) (3 256) (3 301) (3 322) 
+Row: 2, Wildcard, Pallets: (3 70) (3 169) (3 170) (3 218) (3 248) (3 321) 
+Row: 3, Wildcard, Pallets: (1 11) (3 12) (3 33) (3 52) (3 69) (2 77) (3 114) (2 131) (3 162) (3 195) (3 266) 
+Row: 4, Wildcard, Pallets: (5 20) (3 26) (3 59) (3 96) (3 152) (3 223) (4 591) 
+Row: 5, Wildcard, Pallets: (2 69) (2 169) (4 345) (4 592) 
+Row: 6, Wildcard, Pallets: (3 126) (4 523) (4 550) 
+Row: 7, Wildcard, Pallets: (3 48) (4 112) (4 501) (4 511) 
+Row: 8, Wildcard, Pallets: (4 174) (4 455) (4 530) 
+Row: 9, Wildcard, Pallets: (4 165) (4 439) (4 504) 
+Row: 10, Wildcard, Pallets: (4 329) (4 420) (4 441) 
+Row: 11, Wildcard, Pallets: (4 106) (4 314) (4 343) (4 426) 
+Row: 12, Wildcard, Pallets: (4 150) (4 293) (0 371) (4 382) 
+Row: 13, Wildcard, Pallets: (0 104) (4 317) (5 767) 
+Row: 14, Sequenz: 2, Pallets: (2 185) (2 303) (0 578) (4 637) (5 778) 
+Row: 15, Wildcard, Pallets: (4 154) (5 305) (5 736) 
+Row: 16, Wildcard, Pallets: (5 367) (5 752) 
+Row: 17, Wildcard, Pallets: (0 364) (5 731) 
+Row: 18, Wildcard, Pallets: (5 515) (5 682) 
+Row: 20, Wildcard, Pallets: (5 508) (5 673) 
+Row: 22, Wildcard, Pallets: (0 168) (5 363) (5 668) 
+Row: 23, Wildcard, Pallets: (5 167) (5 358) (5 668) 
+Row: 24, Wildcard, Pallets: (5 239) (5 324) (5 637) 
+Row: 25, Wildcard, Pallets: (5 577) (5 619) 
+Row: 26, Wildcard, Pallets: (5 574) (5 618) 
+Row: 27, Wildcard, Pallets: (5 262) (0 313) (5 613) 
+Row: 28, Wildcard, Pallets: (5 227) (0 279) (5 602) 
+Row: 29, Wildcard, Pallets: (0 134) (0 166) (0 311) 
+Row: 30, Wildcard, Pallets: (0 241) 
+Row: 32, Wildcard, Pallets: (5 150) 
+Row: 31, Sequenz: 1, Pallets: (5 20) (2 66) (4 96) (3 347) (3 354) (2 362) (1 648) 
+Row: 19, Sequenz: 3, Pallets: (3 333) (3 342) (4 643) (4 672) (4 674) (5 802) 
+Row: 21, Sequenz: 4, Pallets: (1 251) (2 352) (2 361) (4 638) (4 640) (0 651) 
+
+Pallets used: 120
+Weight used: 41054
+OBJECTIVE: 1854
+Computation Time: 90
+Wildcards used: 28
+U-Value: 1400
+Accepted Count Limit: 8
