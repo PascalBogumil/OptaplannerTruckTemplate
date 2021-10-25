@@ -17,6 +17,8 @@ import com.github.javaparser.ast.expr.ThisExpr;
 
 public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTemplateSolution, OpRowChangeMove> {
 
+	private boolean firstCalculation = false;
+	
 	@Override
 	public Iterator<OpRowChangeMove> createOriginalMoveIterator(ScoreDirector<TruckTemplateSolution> solution) {
 		throw new UnsupportedOperationException();
@@ -24,7 +26,7 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 
 	@Override
 	public Iterator<OpRowChangeMove> createRandomMoveIterator(ScoreDirector<TruckTemplateSolution> solution, Random rand) {
-		return new OpRowChangeMoveIterator(solution, rand);
+		return new OpRowChangeMoveIterator(solution, rand, this);
 	}
 
 	@Override
@@ -33,19 +35,15 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 	}
 
 	public static class OpRowChangeMoveIterator implements Iterator<OpRowChangeMove> {
-		private /*static*/ boolean firstCalculation = false;
-
+		OpRowMoveIteratorFactory opRowMoveIteratorFactory;
 		private final Random rand;
 		private final ScoreDirector<TruckTemplateSolution> solution;		
 		private final List<OpPallet> pallets;
 		private final List<OpRow> rows;
 		private final List<OpRow> candidateRows;
 		
-		public OpRowChangeMoveIterator (ScoreDirector<TruckTemplateSolution> solution) {
-			this(solution, null);
-		}
-		
-		public OpRowChangeMoveIterator (ScoreDirector<TruckTemplateSolution> solution, Random rand) {
+		public OpRowChangeMoveIterator (ScoreDirector<TruckTemplateSolution> solution, Random rand, OpRowMoveIteratorFactory opRowMoveIteratorFactory) {
+			this.opRowMoveIteratorFactory = opRowMoveIteratorFactory;
 			this.rand = rand;
 			this.solution = solution;
 			this.pallets = solution.getWorkingSolution().getOpPallets();
@@ -57,15 +55,14 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 		
 		@Override
 		public boolean hasNext() {
-			long palletsWithoutRow = pallets.stream().filter(p -> p.getRow() == null).count();
-			return !firstCalculation || palletsWithoutRow != 0 && candidateRows.size() > 0;
+			return !opRowMoveIteratorFactory.firstCalculation || candidateRows.size() > 0;
 		}
 		
 		@Override
 		public OpRowChangeMove next() {
 			//Don't change the row for the first calculation
-			if(!firstCalculation) {
-				firstCalculation = true;
+			if(!opRowMoveIteratorFactory.firstCalculation) {
+				opRowMoveIteratorFactory.firstCalculation = true;
 				return new OpRowChangeMove(rows.get(0), rows.get(0).getCurrentSequence());
 			}
 			
