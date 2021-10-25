@@ -27,17 +27,17 @@ public class BothTests {
 		
 		for(int i = 1; i < numberOfTests+1; i++) {
 			TruckTemplate template = generator.generateTemplate();
-			template.saveTemplateAsCPLEXProblemFile(String.format(problemFilePath, i), 1400, timeToSolve);
+			//template.saveTemplateAsCPLEXProblemFile(String.format(problemFilePath, i), 1400, timeToSolve);
 			
 			//Solve with Cplex
-			TruckTemplateSolver.solveWithCPLEX(String.format(problemFilePath, i), String.format(solutionFilePathCplex, i), timeToSolve);
+			//TruckTemplateSolver.solveWithCPLEX(String.format(problemFilePath, i), String.format(solutionFilePathCplex, i), timeToSolve);
 			
 			//Solve with Optaplanner
 			SolverConfig config = TruckTemplateSolver.createConfig(timeToSolve, 16, IntStream.of(loadCapacityOfSections).sum(), 8, 0, 2);
 			TruckTemplateSolver.solveWithOptaplannerWithSolver(template.convertToOptaplannerProblem(), config, String.format(solutionFilePathOptaplanner, i), 1400);
 		}
 		
-		TruckTemplateSolver.sumDataFromSolutionFiles(Path.of(TEST_FOLDER_BOTH, testFolder), "ExtractionCplex.txt", "TruckTemplateSolution%sCplex.txt", numberOfTests);
+		//TruckTemplateSolver.sumDataFromSolutionFiles(Path.of(TEST_FOLDER_BOTH, testFolder), "ExtractionCplex.txt", "TruckTemplateSolution%sCplex.txt", numberOfTests);
 		TruckTemplateSolver.sumDataFromSolutionFiles(Path.of(TEST_FOLDER_BOTH, testFolder), "ExtractionOptaplanner.txt", "TruckTemplateSolution%sOptaplanner.txt", numberOfTests);
 	}
 }
