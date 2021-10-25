@@ -148,6 +148,7 @@ public class OpRowChangeMove extends AbstractMove<TruckTemplateSolution> {
 				if(currentSpaceLeft + pallet.getSize() <= OpSequence.getWildcardSpace() && currentWeightOfRow + pallet.getWeight() <= OpSequence.getWildcardLoadCapacity()) {
 					pallet.setRow(row);
 					palletsToPickFrom.remove(pallet);
+					j = 0;
 				}
 			}
 		}
