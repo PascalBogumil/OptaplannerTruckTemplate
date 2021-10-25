@@ -1,0 +1,40 @@
+Row: 2, Wildcard, Pallets: (4 201) (2 341) (4 651) 
+Row: 4, Wildcard, Pallets: (4 49) (4 475) (4 672) 
+Row: 5, Wildcard, Pallets: (4 554) (4 636) 
+Row: 6, Wildcard, Pallets: (4 553) (4 600) 
+Row: 7, Wildcard, Pallets: (4 48) (4 543) (4 584) 
+Row: 10, Wildcard, Pallets: (4 182) (4 469) (4 547) 
+Row: 11, Wildcard, Pallets: (4 267) (4 453) (4 471) 
+Row: 12, Wildcard, Pallets: (4 312) (4 417) (4 459) 
+Row: 14, Wildcard, Pallets: (4 346) (4 405) (4 444) 
+Row: 15, Wildcard, Pallets: (4 372) (4 396) (4 407) 
+Row: 16, Wildcard, Pallets: (4 90) (4 339) (4 363) (4 399) 
+Row: 17, Wildcard, Pallets: (4 217) (4 227) (4 336) (4 384) 
+Row: 19, Wildcard, Pallets: (4 127) (4 136) (4 148) (4 173) (4 220) (4 341) 
+Row: 22, Wildcard, Pallets: (4 78) (4 83) (4 105) (4 133) (4 168) (4 300) 
+Row: 23, Wildcard, Pallets: (4 79) (4 112) (4 211) (0 777) 
+Row: 27, Sequenz: 3, Pallets: (5 106) (0 121) (1 383) (4 733) 
+Row: 29, Wildcard, Pallets: (4 74) (4 139) (5 260) (0 703) 
+Row: 31, Wildcard, Pallets: (4 89) (0 426) (5 685) 
+Row: 32, Wildcard, Pallets: (5 458) (5 721) 
+Row: 30, Sequenz: 2, Pallets: (5 9) (4 11) (4 36) (1 187) (4 746) 
+Row: 3, Sequenz: 5, Pallets: (0 12) (4 26) (4 37) (0 803) 
+Row: 28, Sequenz: 1, Pallets: (0 10) (5 17) (1 226) (4 746) 
+Row: 1, Sequenz: 4, Pallets: (5 57) (0 59) (5 839) 
+Row: 25, Sequenz: 2, Pallets: (4 43) (0 69) (2 164) (2 341) (5 830) 
+Row: 8, Sequenz: 3, Pallets: (5 28) (0 101) (1 629) (1 725) 
+Row: 9, Sequenz: 3, Pallets: (5 98) (0 110) (1 528) (4 736) 
+Row: 24, Sequenz: 2, Pallets: (0 148) (0 168) (5 821) 
+Row: 26, Sequenz: 5, Pallets: (0 177) (0 194) (5 816) 
+Row: 18, Sequenz: 4, Pallets: (5 122) (3 144) (2 223) (4 714) (0 797) 
+Row: 20, Sequenz: 2, Pallets: (3 107) (5 140) (2 225) (4 712) (5 773) 
+Row: 21, Sequenz: 2, Pallets: (5 159) (1 309) (4 685) (5 763) 
+Row: 13, Sequenz: 4, Pallets: (0 199) (5 728) (5 745) 
+
+Pallets used: 117
+Weight used: 40390
+OBJECTIVE: 15190
+Computation Time: 120
+Wildcards used: 18
+U-Value: 1400
+Accepted Count Limit: 8

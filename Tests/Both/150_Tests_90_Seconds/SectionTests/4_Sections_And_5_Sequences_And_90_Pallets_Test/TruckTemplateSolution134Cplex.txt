@@ -1,0 +1,11 @@
+Row: 1, Sequenz 1, Pallets: (1 5 107) (8 2 118) (9 4 40) (11 3 230) (12 4 240) (15 3 230) (21 6 35) 
+Row: 2, Sequenz 3, Pallets: (2 1 84) (2 4 144) (8 6 254) (10 2 643) (14 3 375) 
+Row: 3, Sequenz 5, Pallets: (2 2 348) (3 5 109) (6 4 210) (13 4 157) (14 4 207) (15 4 187) (26 6 282) 
+Row: 4, Sequenz 5, Pallets: (3 2 603) (4 5 226) (6 5 31) (12 2 59) (20 6 81) 
+
+Pallets used: 24
+Weight used: 5000
+OBJECTIVE: 5000.0
+Computation Time: 0.3481428594589233
+Wildcards used: 0
+U-Value: 1400

@@ -1,23 +1,20 @@
 package org.implementation.trucktemplate;
 
+import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.stream.Collectors;
 import java.util.Objects;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 import org.optaplanner.core.api.score.director.ScoreDirector;
 import org.optaplanner.core.impl.heuristic.selector.move.factory.MoveIteratorFactory;
 
-import com.github.javaparser.ast.expr.ThisExpr;
-
 public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTemplateSolution, OpRowChangeMove> {
 
 	private boolean firstCalculation = false;
+	private List<String> alreadyVisitedConfiguration = new ArrayList<String>();
 	
 	@Override
 	public Iterator<OpRowChangeMove> createOriginalMoveIterator(ScoreDirector<TruckTemplateSolution> solution) {
@@ -31,7 +28,7 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 
 	@Override
 	public long getSize(ScoreDirector<TruckTemplateSolution> solution) {
-		return solution.getWorkingSolution().getOpRows().size()^solution.getWorkingSolution().getOpRows().get(0).getSequences().size();
+		return (long) Math.pow(solution.getWorkingSolution().getOpRows().stream().map(OpRow::getSequences).mapToInt(List::size).max().getAsInt(), solution.getWorkingSolution().getOpRows().size());
 	}
 
 	public static class OpRowChangeMoveIterator implements Iterator<OpRowChangeMove> {
@@ -55,7 +52,10 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 		
 		@Override
 		public boolean hasNext() {
-			return !opRowMoveIteratorFactory.firstCalculation || candidateRows.size() > 0;
+            //long palletsWithoutRow = pallets.stream().filter(p -> p.isUnassigned()).count();
+            boolean rowsWithMoreThanOneSequence = candidateRows.size() > 0;
+            boolean visitedLessConfigurationsThanAvailable = opRowMoveIteratorFactory.alreadyVisitedConfiguration.size() <= opRowMoveIteratorFactory.getSize(solution);
+            return (!opRowMoveIteratorFactory.firstCalculation || rowsWithMoreThanOneSequence) && visitedLessConfigurationsThanAvailable;
 		}
 		
 		@Override
@@ -69,7 +69,7 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 			OpRowChangeMove move = null;
 			
 			//Random row and sequence selection
-			int countOfSelectedMoves = 0;
+			//int countOfSelectedMoves = 0;
 			if(rand != null) {
 				do {
 					int randomRowIndex = rand.nextInt(candidateRows.size());
@@ -80,7 +80,10 @@ public class OpRowMoveIteratorFactory implements MoveIteratorFactory<TruckTempla
 				    
 				    OpSequence randomSequence = randomRow.getSequences().stream().filter(s -> !Objects.equals(s, randomRow.getCurrentSequence())).toList().get(randomSequenceIndex);
 				    move = new OpRowChangeMove(randomRow, randomSequence);
-				} while(!move.isMoveDoable(solution) && countOfSelectedMoves++ < 100000);
+				    
+				    if(!opRowMoveIteratorFactory.alreadyVisitedConfiguration.contains(solution.getWorkingSolution().toString() + ":" + move.toString()))
+                        opRowMoveIteratorFactory.alreadyVisitedConfiguration.add(solution.getWorkingSolution().getOpRows().stream().map(OpRow::getCurrentSequence).collect(Collectors.toList())+ ":" + move.toString());
+				} while(!move.isMoveDoable(solution));// && countOfSelectedMoves++ < 100000);
 			} 
 			
 			return move;

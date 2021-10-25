@@ -1,0 +1,39 @@
+Row: 1, Wildcard, Pallets: (3 4 294) 
+Row: 2, Sequenz 3, Pallets: (13 1 9) (14 2 366) (16 2 592) (19 1 19) 
+Row: 3, Wildcard, Pallets: 
+Row: 4, Wildcard, Pallets: 
+Row: 5, Wildcard, Pallets: 
+Row: 6, Wildcard, Pallets: (24 4 340) 
+Row: 7, Sequenz 4, Pallets: (1 1 682) (10 1 476) (14 1 333) 
+Row: 8, Sequenz 2, Pallets: (4 5 737) (9 1 481) (11 4 93) (14 5 18) (18 2 113) (19 4 54) 
+Row: 9, Sequenz 2, Pallets: (6 1 714) (13 4 146) (17 2 166) (18 1 408) (20 4 37) 
+Row: 10, Sequenz 3, Pallets: (2 5 633) (13 2 133) (20 1 474) (20 5 72) (22 5 166) 
+Row: 11, Wildcard, Pallets: 
+Row: 12, Sequenz 3, Pallets: (3 2 432) (3 5 387) (7 5 464) (13 5 184) (17 4 10) (17 5 271) (25 4 227) 
+Row: 13, Sequenz 4, Pallets: (7 2 414) (7 4 231) (10 5 437) (11 2 378) (12 2 247) (12 4 147) (15 2 116) 
+Row: 14, Sequenz 5, Pallets: (6 2 455) (15 1 554) (16 1 677) (21 4 174) (26 4 128) 
+Row: 15, Wildcard, Pallets: (22 4 202) 
+Row: 16, Wildcard, Pallets: 
+Row: 17, Sequenz 1, Pallets: (2 2 229) (5 2 747) (6 5 363) (11 1 235) (16 5 381) 
+Row: 18, Sequenz 3, Pallets: (1 6 564) (4 4 163) (6 4 277) (8 1 283) (9 5 698) 
+Row: 19, Sequenz 3, Pallets: (1 4 181) (4 2 421) (11 5 24) (14 4 201) (15 5 242) (16 4 170) (18 4 234) (21 5 496) 
+Row: 20, Wildcard, Pallets: (2 4 288) (5 4 302) (9 4 283) (10 4 281) 
+Row: 21, Sequenz 5, Pallets: (1 3 258) (5 1 347) (12 1 529) (12 5 563) (23 4 235) 
+Row: 22, Sequenz 3, Pallets: (1 2 252) (3 1 230) (8 2 653) (22 1 351) 
+Row: 23, Sequenz 5, Pallets: (2 1 566) (5 5 14) (8 4 89) (10 2 231) (15 4 172) (18 5 421) 
+Row: 24, Sequenz 4, Pallets: (9 2 303) (17 1 16) (19 5 627) (21 1 509) 
+Row: 25, Sequenz 3, Pallets: (1 5 97) (4 1 10) (7 1 641) (8 5 719) 
+Row: 26, Wildcard, Pallets: 
+Row: 27, Wildcard, Pallets: 
+Row: 28, Wildcard, Pallets: 
+Row: 29, Wildcard, Pallets: 
+Row: 30, Wildcard, Pallets: 
+Row: 31, Wildcard, Pallets: 
+Row: 32, Wildcard, Pallets: 
+
+Pallets used: 90
+Weight used: 28587
+OBJECTIVE: 6187.0
+Computation Time: 4.628786235809327
+Wildcards used: 16
+U-Value: 1400
