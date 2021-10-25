@@ -88,7 +88,7 @@
 	<classpathentry kind="lib" path="libs/xstream-1.4.15.jar"/>
 	<classpathentry kind="lib" path="/home/bogumil/Desktop/CPLEXInstall/opl/lib/oplall.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/bogumil/Desktop/CPLEXInstall/opl/lib/x86-64_linux"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/bogumil/Desktop/CPLEXInstall/opl/bin/x86-64_linux"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
