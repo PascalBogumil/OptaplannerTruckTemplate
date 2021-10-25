@@ -1,0 +1,31 @@
+Row: 1, Sequenz 3, Pallets: (5 1 237) (7 5 93) (19 2 291) (24 2 300) (30 2 71) 
+Row: 2, Sequenz 3, Pallets: (3 3 91) (8 4 99) (10 6 274) (34 6 96) (38 2 437) 
+Row: 3, Wildcard, Pallets: (18 6 669) (22 2 31) (31 6 499) 
+Row: 4, Wildcard, Pallets: (20 2 552) (24 4 79) (36 2 568) 
+Row: 5, Sequenz 3, Pallets: (6 1 633) (17 6 245) (33 6 606) 
+Row: 6, Sequenz 4, Pallets: (3 1 171) (8 3 262) (12 5 734) (13 4 265) (25 6 59) 
+Row: 7, Sequenz 2, Pallets: (6 4 364) (6 5 31) (15 4 252) (16 4 235) (19 4 253) (33 2 139) (41 6 225) 
+Row: 8, Sequenz 3, Pallets: (1 4 250) (4 5 125) (10 4 161) (26 6 43) (31 2 659) (39 2 258) 
+Row: 9, Sequenz 2, Pallets: (1 3 256) (5 3 127) (10 2 157) (13 5 492) (15 6 326) (17 4 279) (18 4 362) 
+Row: 10, Sequenz 3, Pallets: (4 3 354) (7 2 328) (8 5 644) (9 4 82) (12 2 398) (29 6 190) 
+Row: 11, Sequenz 3, Pallets: (2 4 87) (3 2 591) (4 1 613) (9 6 483) (11 4 222) 
+Row: 12, Sequenz 4, Pallets: (2 5 450) (3 4 183) (7 3 118) (8 2 147) (35 2 616) (35 6 486) 
+Row: 13, Sequenz 5, Pallets: (1 1 731) (37 6 767) (39 6 497) 
+Row: 14, Sequenz 1, Pallets: (10 5 233) (22 6 335) (23 2 500) (37 2 639) (40 2 290) 
+Row: 15, Sequenz 1, Pallets: (8 6 795) (11 6 662) (21 6 543) 
+Row: 16, Sequenz 2, Pallets: (2 2 143) (5 2 286) (5 6 240) (7 4 343) (13 2 635) (25 4 353) 
+Row: 17, Sequenz 3, Pallets: (12 4 197) (18 2 388) (21 4 277) (32 6 432) (38 6 205) 
+Row: 18, Sequenz 2, Pallets: (1 6 357) (12 6 414) (27 6 727) 
+Row: 19, Sequenz 3, Pallets: (7 1 670) (13 6 415) (19 6 415) 
+Row: 20, Sequenz 5, Pallets: (1 5 545) (2 1 249) (6 3 69) (11 2 442) (14 4 179) (41 2 15) 
+Row: 21, Sequenz 1, Pallets: (3 5 326) (6 2 253) (9 5 54) (29 2 106) (36 6 258) 
+Row: 22, Wildcard, Pallets: (4 6 849) (25 2 345) 
+Row: 23, Sequenz 4, Pallets: (2 3 110) (2 6 102) (17 2 554) (23 4 168) (23 6 66) 
+Row: 24, Sequenz 1, Pallets: (4 4 192) (5 4 45) (14 6 387) (20 4 80) (20 6 140) (22 4 154) 
+
+Pallets used: 113
+Weight used: 36525
+OBJECTIVE: 32325.0
+Computation Time: 120.03908336830139
+Wildcards used: 3
+U-Value: 1400

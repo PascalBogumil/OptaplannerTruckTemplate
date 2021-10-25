@@ -1,0 +1,39 @@
+Row: 1, Wildcard, Pallets: (1 2 533) (6 1 644) 
+Row: 2, Sequenz 4, Pallets: (1 3 349) (3 6 97) (10 2 179) (11 3 25) (19 1 320) 
+Row: 3, Wildcard, Pallets: 
+Row: 4, Sequenz 5, Pallets: (2 6 541) (11 1 75) (28 2 87) (30 2 185) 
+Row: 5, Wildcard, Pallets: (2 2 623) (12 2 551) 
+Row: 6, Sequenz 3, Pallets: (1 6 424) (4 2 43) (5 3 124) (9 3 208) (20 2 137) (24 2 43) 
+Row: 7, Wildcard, Pallets: 
+Row: 8, Wildcard, Pallets: 
+Row: 9, Sequenz 4, Pallets: (4 6 756) (7 1 301) (17 1 348) 
+Row: 10, Wildcard, Pallets: 
+Row: 11, Sequenz 1, Pallets: (6 6 235) (13 1 601) (27 1 341) 
+Row: 12, Sequenz 1, Pallets: (3 3 321) (3 4 354) (14 2 126) (24 1 505) (25 1 688) 
+Row: 13, Wildcard, Pallets: (17 2 487) 
+Row: 14, Sequenz 1, Pallets: (2 3 118) (2 4 357) (9 1 358) (20 1 788) (26 2 357) 
+Row: 15, Wildcard, Pallets: (31 2 671) 
+Row: 16, Sequenz 1, Pallets: (3 1 667) (5 4 368) (12 3 248) (19 2 143) (23 2 85) (25 2 466) 
+Row: 17, Sequenz 4, Pallets: (2 1 578) (7 6 712) (23 1 710) 
+Row: 18, Wildcard, Pallets: (29 2 504) 
+Row: 19, Sequenz 1, Pallets: (1 1 542) (1 5 291) (4 3 182) (5 1 791) (14 3 154) 
+Row: 20, Sequenz 3, Pallets: (4 5 132) (7 2 686) (21 1 679) (22 1 432) 
+Row: 21, Wildcard, Pallets: (18 2 722) 
+Row: 22, Wildcard, Pallets: (11 2 430) 
+Row: 23, Sequenz 3, Pallets: (2 5 247) (7 3 8) (13 3 219) (21 2 393) (22 2 120) (28 1 377) 
+Row: 24, Sequenz 2, Pallets: (5 6 32) (6 2 297) (12 1 681) (15 2 200) 
+Row: 25, Sequenz 3, Pallets: (3 5 436) (4 1 567) (8 3 117) (10 3 34) (16 1 331) 
+Row: 26, Wildcard, Pallets: (3 2 347) (13 2 545) 
+Row: 27, Sequenz 1, Pallets: (6 3 109) (8 1 317) (10 1 325) (15 3 105) (16 2 119) 
+Row: 28, Sequenz 4, Pallets: (1 4 335) (4 4 153) (8 2 4) (14 1 319) (26 1 189) 
+Row: 29, Wildcard, Pallets: (9 2 570) (27 2 322) 
+Row: 30, Wildcard, Pallets: (5 2 519) 
+Row: 31, Wildcard, Pallets: (18 1 639) 
+Row: 32, Wildcard, Pallets: (15 1 791) 
+
+Pallets used: 90
+Weight used: 32189
+OBJECTIVE: 9789.0
+Computation Time: 1.8326078100204468
+Wildcards used: 16
+U-Value: 1400

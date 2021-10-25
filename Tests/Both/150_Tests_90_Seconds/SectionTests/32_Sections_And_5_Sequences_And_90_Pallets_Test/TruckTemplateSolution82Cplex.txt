@@ -1,0 +1,39 @@
+Row: 1, Wildcard, Pallets: (4 6 803) 
+Row: 2, Sequenz 5, Pallets: (1 2 407) (1 4 146) (4 4 59) (12 6 153) (15 6 176) 
+Row: 3, Wildcard, Pallets: (1 6 835) 
+Row: 4, Sequenz 1, Pallets: (3 3 164) (7 4 332) (10 4 91) (12 1 23) (13 1 216) (13 4 145) 
+Row: 5, Wildcard, Pallets: (7 2 551) 
+Row: 6, Wildcard, Pallets: (4 3 227) (10 1 799) 
+Row: 7, Wildcard, Pallets: 
+Row: 8, Sequenz 3, Pallets: (2 3 55) (6 3 329) (8 5 474) (23 6 66) (25 1 391) 
+Row: 9, Sequenz 3, Pallets: (3 5 499) (5 5 697) (7 6 167) (9 6 118) 
+Row: 10, Sequenz 5, Pallets: (3 2 635) (9 1 166) (9 5 511) (14 1 97) 
+Row: 11, Sequenz 2, Pallets: (1 1 527) (4 1 226) (25 6 634) 
+Row: 12, Sequenz 4, Pallets: (6 5 680) (7 1 370) (10 2 491) (22 6 332) 
+Row: 13, Wildcard, Pallets: 
+Row: 14, Sequenz 2, Pallets: (5 6 382) (8 2 556) (10 5 707) (17 6 350) 
+Row: 15, Sequenz 4, Pallets: (2 1 103) (6 2 731) (7 5 59) (8 6 761) 
+Row: 16, Sequenz 5, Pallets: (3 6 724) (11 1 822) (22 1 420) 
+Row: 17, Sequenz 2, Pallets: (2 4 214) (4 2 711) (6 4 343) (10 6 418) (21 1 283) 
+Row: 18, Sequenz 4, Pallets: (18 1 577) (19 1 626) (21 6 579) 
+Row: 19, Sequenz 3, Pallets: (4 5 737) (9 4 101) (12 4 321) (16 6 411) (20 1 375) 
+Row: 20, Sequenz 4, Pallets: (11 6 417) (14 6 646) (18 6 765) 
+Row: 21, Sequenz 4, Pallets: (6 1 642) (8 1 627) (15 1 573) 
+Row: 22, Sequenz 4, Pallets: (5 2 247) (5 3 168) (6 6 224) (8 4 275) (19 6 491) 
+Row: 23, Sequenz 1, Pallets: (1 5 450) (3 1 305) (3 4 160) (5 1 422) (5 4 140) 
+Row: 24, Sequenz 5, Pallets: (1 3 305) (2 5 451) (11 4 160) (16 1 101) (24 6 461) 
+Row: 25, Wildcard, Pallets: 
+Row: 26, Wildcard, Pallets: 
+Row: 27, Wildcard, Pallets: 
+Row: 28, Wildcard, Pallets: 
+Row: 29, Sequenz 2, Pallets: (2 2 95) (9 2 443) (17 1 161) (23 1 69) 
+Row: 30, Sequenz 2, Pallets: (13 6 485) (24 1 235) (26 1 277) 
+Row: 31, Wildcard, Pallets: (20 6 584) 
+Row: 32, Wildcard, Pallets: (2 6 741) 
+
+Pallets used: 90
+Weight used: 35023
+OBJECTIVE: 18223.0
+Computation Time: 1.7299916658401489
+Wildcards used: 12
+U-Value: 1400

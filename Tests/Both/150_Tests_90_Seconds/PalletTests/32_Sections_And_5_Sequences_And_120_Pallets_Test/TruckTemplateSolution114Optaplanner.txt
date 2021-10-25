@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (2 219) (3 309) (2 324) (3 346) 
+Row: 2, Wildcard, Pallets: (1 5) (3 266) (2 273) (2 299) (2 336) 
+Row: 3, Wildcard, Pallets: (3 111) (2 249) (3 253) (2 267) (2 315) 
+Row: 4, Wildcard, Pallets: (2 80) (2 185) (3 198) (3 207) (3 250) (2 274) 
+Row: 5, Wildcard, Pallets: (3 77) (2 142) (3 148) (2 167) (3 184) (3 206) (2 265) 
+Row: 6, Wildcard, Pallets: (2 99) (2 123) (3 147) (2 184) (2 224) (1 416) 
+Row: 7, Wildcard, Pallets: (2 49) (2 131) (3 191) (0 198) (1 620) 
+Row: 8, Wildcard, Pallets: (2 154) (4 396) (1 645) 
+Row: 9, Wildcard, Pallets: (5 24) (2 117) (1 471) (1 542) 
+Row: 10, Wildcard, Pallets: (0 76) (1 470) (1 567) 
+Row: 11, Wildcard, Pallets: (1 305) (1 328) (1 535) 
+Row: 12, Wildcard, Pallets: (5 235) (1 247) (1 297) (1 395) 
+Row: 13, Wildcard, Pallets: (1 247) (4 310) (5 626) 
+Row: 14, Wildcard, Pallets: (0 176) (1 273) (0 750) 
+Row: 15, Wildcard, Pallets: (0 342) (0 845) 
+Row: 16, Wildcard, Pallets: (0 458) (0 734) 
+Row: 17, Wildcard, Pallets: (0 451) (0 721) 
+Row: 19, Sequenz: 3, Pallets: (3 97) (5 152) (3 362) (1 649) (5 737) 
+Row: 20, Wildcard, Pallets: (0 508) (0 688) 
+Row: 21, Wildcard, Pallets: (5 532) (0 657) 
+Row: 22, Wildcard, Pallets: (0 505) (0 651) 
+Row: 23, Wildcard, Pallets: (0 557) (0 590) 
+Row: 24, Wildcard, Pallets: (0 194) (5 426) (0 576) 
+Row: 25, Wildcard, Pallets: (0 222) (0 424) (0 554) 
+Row: 27, Wildcard, Pallets: (0 294) (0 305) (0 426) 
+Row: 28, Wildcard, Pallets: (0 188) (0 278) (5 366) 
+Row: 29, Wildcard, Pallets: (0 166) (5 181) (0 295) 
+Row: 30, Wildcard, Pallets: (0 164) (0 211) 
+Row: 32, Wildcard, Pallets: (5 168) 
+Row: 31, Sequenz: 2, Pallets: (2 7) (1 10) (2 12) (3 17) (2 29) (3 43) (3 54) (4 113) (1 692) 
+Row: 26, Sequenz: 1, Pallets: (1 30) (0 62) (2 64) (4 266) (2 368) (1 681) 
+Row: 18, Sequenz: 3, Pallets: (3 64) (1 119) (1 126) (1 168) (2 348) (4 504) (1 651) 
+
+Pallets used: 120
+Weight used: 36625
+OBJECTIVE: -2575
+Computation Time: 90
+Wildcards used: 28
+U-Value: 1400
+Accepted Count Limit: 8

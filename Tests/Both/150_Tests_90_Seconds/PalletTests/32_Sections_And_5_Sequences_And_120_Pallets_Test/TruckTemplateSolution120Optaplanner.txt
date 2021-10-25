@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (3 252) (2 303) (2 313) (2 331) 
+Row: 2, Wildcard, Pallets: (1 6) (2 15) (2 61) (3 201) (3 285) (2 303) (2 329) 
+Row: 3, Wildcard, Pallets: (2 23) (2 121) (2 172) (3 178) (2 193) (2 204) (2 307) 
+Row: 4, Wildcard, Pallets: (1 7) (2 34) (2 53) (2 87) (2 166) (3 172) (3 180) (1 189) (2 299) 
+Row: 5, Wildcard, Pallets: (2 27) (1 33) (2 58) (2 166) (0 169) (3 193) (1 553) 
+Row: 6, Wildcard, Pallets: (1 5) (2 38) (5 91) (2 173) (1 359) (1 442) 
+Row: 7, Wildcard, Pallets: (3 163) (1 280) (0 336) (1 406) 
+Row: 8, Wildcard, Pallets: (4 574) (0 622) 
+Row: 9, Wildcard, Pallets: (5 38) (1 331) (5 807) 
+Row: 10, Wildcard, Pallets: (5 383) (5 814) 
+Row: 11, Wildcard, Pallets: (5 391) (0 795) 
+Row: 13, Wildcard, Pallets: (5 326) (5 793) 
+Row: 14, Wildcard, Pallets: (0 279) (0 783) 
+Row: 16, Wildcard, Pallets: (0 440) (5 760) 
+Row: 17, Wildcard, Pallets: (5 423) (0 749) 
+Row: 19, Wildcard, Pallets: (5 468) (0 728) 
+Row: 21, Wildcard, Pallets: (5 506) (0 675) 
+Row: 22, Wildcard, Pallets: (5 476) (5 674) 
+Row: 23, Wildcard, Pallets: (5 539) (5 647) 
+Row: 24, Sequenz: 4, Pallets: (5 10) (2 20) (0 81) (2 351) (1 718) 
+Row: 26, Wildcard, Pallets: (5 563) (0 633) 
+Row: 27, Wildcard, Pallets: (5 529) (0 627) 
+Row: 28, Wildcard, Pallets: (0 188) (0 459) (0 533) 
+Row: 29, Wildcard, Pallets: (0 261) (5 455) (5 463) 
+Row: 30, Wildcard, Pallets: (5 253) (0 257) (5 459) 
+Row: 31, Wildcard, Pallets: (5 209) (5 453) 
+Row: 32, Wildcard, Pallets: (0 254) 
+Row: 25, Sequenz: 3, Pallets: (0 21) (0 30) (3 308) (3 332) (2 359) (2 375) 
+Row: 12, Sequenz: 3, Pallets: (5 35) (3 84) (4 185) (3 290) (1 681) (1 696) 
+Row: 15, Sequenz: 1, Pallets: (0 104) (4 229) (4 258) (2 338) (2 341) (1 677) 
+Row: 18, Sequenz: 5, Pallets: (0 146) (4 263) (3 287) (4 319) (2 334) (4 614) 
+Row: 20, Sequenz: 3, Pallets: (3 131) (3 145) (0 146) (4 414) (4 437) (1 608) 
+
+Pallets used: 120
+Weight used: 39260
+OBJECTIVE: 2860
+Computation Time: 90
+Wildcards used: 26
+U-Value: 1400
+Accepted Count Limit: 8

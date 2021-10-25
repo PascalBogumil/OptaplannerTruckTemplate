@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (4 19) (2 82) (2 113) (2 124) (2 156) (1 706) 
+Row: 2, Wildcard, Pallets: (4 11) (2 109) (2 128) (1 251) (1 700) 
+Row: 3, Wildcard, Pallets: (1 16) (2 114) (4 369) (1 696) 
+Row: 4, Wildcard, Pallets: (4 1) (2 5) (1 503) (1 680) 
+Row: 5, Wildcard, Pallets: (0 29) (1 472) (1 689) 
+Row: 6, Wildcard, Pallets: (1 521) (1 678) 
+Row: 7, Sequenz: 3, Pallets: (3 85) (5 199) (5 222) (2 286) (2 290) (2 310) 
+Row: 8, Wildcard, Pallets: (1 570) (1 588) 
+Row: 9, Wildcard, Pallets: (4 152) (1 463) (1 582) 
+Row: 10, Wildcard, Pallets: (4 218) (1 434) (1 544) 
+Row: 11, Wildcard, Pallets: (4 283) (1 431) (1 451) 
+Row: 13, Wildcard, Pallets: (1 66) (4 337) (1 359) (4 433) 
+Row: 15, Wildcard, Pallets: (1 167) (1 275) (1 319) (1 430) 
+Row: 16, Wildcard, Pallets: (0 125) (4 218) (4 239) (4 270) (4 348) 
+Row: 17, Wildcard, Pallets: (1 183) (1 186) (1 190) (1 236) (1 278) 
+Row: 18, Wildcard, Pallets: (1 179) (1 188) (4 267) (0 566) 
+Row: 20, Wildcard, Pallets: (0 127) (4 143) (4 202) (0 695) 
+Row: 22, Wildcard, Pallets: (1 186) (0 330) (5 676) 
+Row: 23, Wildcard, Pallets: (0 422) (5 733) 
+Row: 24, Wildcard, Pallets: (0 527) (0 659) 
+Row: 25, Wildcard, Pallets: (0 506) (0 643) 
+Row: 26, Wildcard, Pallets: (0 91) (0 412) (0 632) 
+Row: 27, Wildcard, Pallets: (0 575) (5 596) 
+Row: 28, Wildcard, Pallets: (0 216) (0 402) (0 577) 
+Row: 30, Wildcard, Pallets: (0 175) (0 305) (0 573) 
+Row: 31, Wildcard, Pallets: (0 78) (0 354) 
+Row: 32, Wildcard, Pallets: (0 263) 
+Row: 29, Sequenz: 3, Pallets: (5 12) (3 57) (3 81) (5 174) (2 333) (2 338) 
+Row: 12, Sequenz: 3, Pallets: (1 12) (3 110) (3 152) (2 220) (5 287) (3 294) (4 663) 
+Row: 19, Sequenz: 4, Pallets: (1 32) (2 35) (2 213) (5 396) (4 539) (1 731) 
+Row: 21, Sequenz: 4, Pallets: (1 55) (1 62) (3 108) (2 199) (1 714) (0 770) 
+Row: 14, Sequenz: 3, Pallets: (3 108) (2 162) (4 451) (5 458) (0 730) 
+
+Pallets used: 120
+Weight used: 38733
+OBJECTIVE: 2333
+Computation Time: 90
+Wildcards used: 26
+U-Value: 1400
+Accepted Count Limit: 8

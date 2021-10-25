@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (3 16) (2 83) (2 96) (2 126) (2 164) (2 201) (2 223) (2 277) 
+Row: 2, Wildcard, Pallets: (3 43) (0 44) (2 76) (2 111) (2 194) (2 269) (4 461) 
+Row: 3, Wildcard, Pallets: (2 5) (2 88) (0 158) (2 204) (1 364) (1 377) 
+Row: 4, Wildcard, Pallets: (5 116) (2 156) (1 338) (1 567) 
+Row: 6, Wildcard, Pallets: (2 64) (5 322) (5 814) 
+Row: 8, Wildcard, Pallets: (4 374) (0 803) 
+Row: 9, Wildcard, Pallets: (0 388) (5 808) 
+Row: 10, Wildcard, Pallets: (5 399) (5 779) 
+Row: 11, Wildcard, Pallets: (5 370) (5 776) 
+Row: 12, Wildcard, Pallets: (0 439) (5 756) 
+Row: 13, Wildcard, Pallets: (0 458) (5 731) 
+Row: 15, Wildcard, Pallets: (5 475) (0 725) 
+Row: 16, Wildcard, Pallets: (5 489) (5 710) 
+Row: 17, Sequenz: 3, Pallets: (5 88) (3 169) (3 258) (4 546) (5 821) 
+Row: 20, Wildcard, Pallets: (0 499) (5 700) 
+Row: 22, Wildcard, Pallets: (5 499) (5 691) 
+Row: 23, Wildcard, Pallets: (5 511) (0 686) 
+Row: 24, Wildcard, Pallets: (0 527) (5 655) 
+Row: 27, Wildcard, Pallets: (5 268) (5 332) (0 594) 
+Row: 28, Wildcard, Pallets: (5 293) (5 303) (5 496) 
+Row: 29, Wildcard, Pallets: (0 201) (5 226) (5 314) 
+Row: 30, Wildcard, Pallets: (5 103) (0 177) (0 295) 
+Row: 31, Wildcard, Pallets: (5 212) 
+Row: 32, Wildcard, Pallets: (5 153) 
+Row: 5, Sequenz: 4, Pallets: (2 21) (2 25) (4 36) (5 50) (1 140) (3 354) (2 372) 
+Row: 7, Sequenz: 4, Pallets: (0 11) (2 53) (4 91) (1 200) (3 327) (3 332) (2 360) 
+Row: 25, Sequenz: 3, Pallets: (0 12) (4 101) (4 175) (1 206) (3 322) (2 357) 
+Row: 26, Sequenz: 5, Pallets: (0 25) (4 225) (1 287) (4 298) (2 323) (2 324) 
+Row: 14, Sequenz: 3, Pallets: (0 25) (2 306) (3 318) (2 320) (2 323) (4 345) (4 347) 
+Row: 18, Sequenz: 3, Pallets: (0 43) (3 263) (3 291) (4 374) (4 406) (4 564) 
+Row: 19, Sequenz: 2, Pallets: (0 111) (3 127) (2 278) (4 525) (0 842) 
+Row: 21, Sequenz: 1, Pallets: (3 57) (5 67) (3 105) (4 474) (0 839) 
+
+Pallets used: 120
+Weight used: 38431
+OBJECTIVE: 6231
+Computation Time: 90
+Wildcards used: 23
+U-Value: 1400
+Accepted Count Limit: 8

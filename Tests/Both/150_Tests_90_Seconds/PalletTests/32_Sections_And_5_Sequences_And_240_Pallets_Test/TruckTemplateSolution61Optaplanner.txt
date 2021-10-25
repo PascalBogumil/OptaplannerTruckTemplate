@@ -1,0 +1,40 @@
+Row: 1, Wildcard, Pallets: (3 171) (5 299) (4 726) 
+Row: 3, Wildcard, Pallets: (5 74) (1 395) (4 726) 
+Row: 4, Wildcard, Pallets: (1 528) (1 671) 
+Row: 17, Wildcard, Pallets: (1 534) (1 666) 
+Row: 22, Wildcard, Pallets: (1 539) (1 661) 
+Row: 23, Wildcard, Pallets: (1 530) (1 646) 
+Row: 27, Wildcard, Pallets: (5 38) (1 495) (1 642) 
+Row: 28, Wildcard, Pallets: (1 561) (1 632) 
+Row: 30, Wildcard, Pallets: (5 213) (1 387) (1 591) 
+Row: 5, Sequenz: 1, Pallets: (3 18) (0 35) (3 35) (4 51) (5 850) 
+Row: 31, Sequenz: 5, Pallets: (5 6) (0 78) (1 97) (3 304) (3 340) 
+Row: 2, Sequenz: 3, Pallets: (5 13) (0 87) (1 111) (1 703) 
+Row: 6, Sequenz: 2, Pallets: (5 19) (0 93) (5 842) 
+Row: 29, Sequenz: 2, Pallets: (5 21) (5 23) (5 830) 
+Row: 32, Sequenz: 4, Pallets: (5 36) (0 113) (5 820) 
+Row: 7, Sequenz: 5, Pallets: (4 72) (1 106) (1 125) (4 232) (4 246) (4 251) 
+Row: 26, Sequenz: 3, Pallets: (3 65) (3 75) (3 120) (0 126) (3 281) (5 817) 
+Row: 9, Sequenz: 1, Pallets: (0 147) (1 156) (1 159) (5 810) 
+Row: 10, Sequenz: 3, Pallets: (0 179) (1 206) (1 227) (5 806) 
+Row: 11, Sequenz: 5, Pallets: (0 195) (1 240) (4 259) (5 802) 
+Row: 24, Sequenz: 3, Pallets: (0 197) (0 256) (1 278) (4 738) 
+Row: 25, Sequenz: 1, Pallets: (5 14) (1 279) (0 280) (4 734) 
+Row: 8, Sequenz: 1, Pallets: (0 300) (0 354) (0 830) 
+Row: 21, Sequenz: 1, Pallets: (3 253) (3 262) (1 302) (0 326) (4 353) (4 365) 
+Row: 15, Sequenz: 1, Pallets: (3 42) (3 130) (4 274) (1 295) (4 351) (5 799) 
+Row: 16, Sequenz: 3, Pallets: (3 181) (3 250) (0 357) (0 462) (1 700) 
+Row: 18, Sequenz: 2, Pallets: (3 131) (3 180) (4 411) (0 473) (5 777) 
+Row: 12, Sequenz: 1, Pallets: (5 47) (4 426) (1 683) (5 771) 
+Row: 13, Sequenz: 4, Pallets: (5 50) (4 449) (4 733) (5 767) 
+Row: 14, Sequenz: 2, Pallets: (5 57) (4 562) (4 581) (5 766) 
+Row: 19, Sequenz: 1, Pallets: (1 307) (0 501) (0 522) (4 626) 
+Row: 20, Sequenz: 3, Pallets: (5 58) (1 362) (1 680) (5 764) 
+
+Pallets used: 122
+Weight used: 44598
+OBJECTIVE: 31998
+Computation Time: 90
+Wildcards used: 9
+U-Value: 1400
+Accepted Count Limit: 8
